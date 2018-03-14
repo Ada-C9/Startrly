@@ -1,0 +1,55 @@
+a:hover {
+  color: cyan;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote {
+  font-size: 1em;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+blockquote + p:before {
+  content: "\002d \002d"
+}
+
+body {
+  font-family: 'Poppins', serif;
+}
+
+.footer {
+  border-top: 1px solid black;
+}
+
+.header .button {
+  background-color: darkgrey;
+  border: 5px solid white;
+  border-radius: 15px;
+  color: white;
+  display: inline-block;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.header sub {
+  text-transform: capitalize;
+}
+
+.important-quote {
+  background-color: deepskyblue;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color: white;
+  font-style: italic;
+  line-height: 2.5em;
+}
+
+li {
+  list-style-type: none;
+}
