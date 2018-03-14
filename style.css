@@ -1,0 +1,51 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Navigation Styling */
+
+#top-nav ul {
+  display: inline-grid;
+  list-style-type: none;
+  grid-template-columns: 4fr 2fr 2fr 1fr;
+  width: 100%;
+}
+
+#top-nav ul li {
+  display: block;
+  font-size: .75em;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+#top-nav ul li:first-child {
+  display: block;
+  font-size: .75em;
+  font-weight: 700;
+  text-align: left;
+}
+
+/*  Tagline Blurb Styling*/
+
+#tagline {
+  border-bottom: solid 1px gray;
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tagline a {
+  display: block;
+  padding: 1rem 1rem;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  margin: 2rem
+}
+
+#tagline sub {
+  font-size: 1.5em;
+  font-weight: 400;
+}
