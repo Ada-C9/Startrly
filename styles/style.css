@@ -27,3 +27,56 @@ nav li {
 nav li:first-child {
   width: 60%;
 }
+
+/* The following is for the 'Startly Section' */
+
+section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  min-height: 350px;
+}
+
+section:nth-of-type(1) h1{
+  font-size: 2.5em;
+  margin-top: 3%;
+}
+
+section:nth-of-type(1) sub{
+  margin: 1%;
+  font-size: 1.75em;
+}
+
+section:nth-of-type(1) a{
+  margin-top: 65px;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.75em;
+  color: black;
+}
+
+section:nth-of-type(1) a:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+
+
+
+
+
+section:nth-of-type(1)
+
+
+section:nth-of-type(1)
+
+
+section:nth-of-type(1)
+
+
+section:nth-of-type(1)
