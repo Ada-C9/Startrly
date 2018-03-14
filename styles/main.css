@@ -82,3 +82,13 @@ body div section:last-child {
 body div section div {
   min-width: 20vw;
 }
+
+blockquote {
+  font-style: italic;
+  margin-top: 8vw;
+}
+
+blockquote + p {
+  text-align: right;
+  margin-right: 20px;
+}
