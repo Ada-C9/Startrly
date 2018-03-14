@@ -80,7 +80,6 @@ ul.why-section li {
   /* make why section text float next to images */
   display: grid;
   grid-template: 10fr / 1fr 2fr;
-
 }
 
 body section ul.why-section li p {
@@ -99,6 +98,18 @@ body section ul.why-section li strong {
 body section ul.why-section li img {
   display: inline-block;
   grid-row: 1 / span 5;
+}
+
+ul.team-section li {
+  text-align: center;
+}
+
+ul.team-section li span {
+  display: block;
+}
+
+ul.team-section li img {
+  border-radius: 100%;
 }
 
 body div section:last-child {
