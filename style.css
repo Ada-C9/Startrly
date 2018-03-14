@@ -1,5 +1,21 @@
+/* Whole page styling */
 * {
   font-family: 'Raleway', sans-serif;
+  max-width: 1800px;
+}
+
+a:hover {
+  color: teal;
+}
+
+/* General Styling */
+
+.container {
+  width: 100%;
+  min-width: 280px;
+  margin: 2em -2em;
+  padding: 2em;
+  border-bottom: solid 1px gray;
 }
 
 /* Navigation Styling */
@@ -7,7 +23,7 @@
 #top-nav ul {
   display: inline-grid;
   list-style-type: none;
-  grid-template-columns: 4fr 2fr 2fr 1fr;
+  grid-template-columns: 4fr repeat(2, 2fr) 1fr;
   width: 100%;
 }
 
@@ -29,23 +45,80 @@
 /*  Tagline Blurb Styling*/
 
 #tagline {
-  border-bottom: solid 1px gray;
   display: flex;
   flex-flow: column wrap;
-  min-height: 250px;
+  min-height: 150px;
   justify-content: space-between;
   align-items: center;
 }
 
+#tagline h1 {
+  font-size: 1.75em;
+}
+
 #tagline a {
   display: block;
-  padding: 1rem 1rem;
-  border: solid 1px lightgray;
+  padding: .6rem .75rem;
+  border: solid 2px lightgray;
   border-radius: 5px;
-  margin: 2rem
+  margin: 2rem;
+  text-decoration: none;
+  color: black;
+  font-size: .8em;
+}
+
+#tagline a:hover {
+  background-color: teal;
+  color: white;
+  font-weight: bold;
 }
 
 #tagline sub {
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* Blockquote Styling */
+
+.block-quote, .attribution {
+  font-family: serif;
+  font-style: italic;
+  width: 75%;
+}
+
+.block-quote::before, .block-quote::after  {
+  content: "\"";
+}
+
+.attribution {
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+}
+
+.attribution::before {
+  content: "--"
+}
+
+/* Why Block Styling */
+#about h2{
+  text-align: center;
+  margin: -.5rem 0 2.5rem;
+}
+
+#about ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+#about ul li{
+  max-width: 30%;
+  padding: 0 .25rem;
+}
+
+#about ul img{
+  float:left;
+  margin: 0 1em;
 }
