@@ -13,9 +13,20 @@ a:hover {
 .container {
   width: 100%;
   min-width: 280px;
-  margin: 2em -2em;
+  margin: 2em -1em ;
   padding: 2em;
   border-bottom: solid 1px gray;
+}
+
+.container ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.container h2{
+  text-align: center;
+  margin: -.5rem 0 2.5rem;
 }
 
 /* Navigation Styling */
@@ -105,22 +116,40 @@ a:hover {
 }
 
 /* Why Block Styling */
-#about h2{
-  text-align: center;
-  margin: -.5rem 0 2.5rem;
-}
-
 #about ul li {
   max-width: 30%
-}
-
-#about ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
 }
 
 #about ul img{
   float: left;
   margin: 0 1em;
+}
+
+/* Team Styling */
+#team ul {
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#team ul span {
+  margin: -3rem;
+  padding: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+#team ul img {
+  border-radius: 100px;
+  border: solid .05rem lightgray;
+  padding: .3rem;
+  align-self: center;
+  margin: 2rem;
+  -webkit-filter: grayscale(1);
+  filter: gray;
+}
+
+/* Disable grayscale on hover */
+#team ul img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
 }
