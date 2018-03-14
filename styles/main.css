@@ -1,3 +1,37 @@
+/*****************************************
+COLORS:
+Bermuda Gray (#6D8CA0): Background
+Azure Blue (#336699): Navbar, footer
+Ecru White (#F4F5E7): Text
+Orange Peel (#FF9E01): Links
+******************************************/
+
 body {
-  background-color: blue;
+  margin: 0;
+  padding: 0;
+  color: #F4F5E7;
+}
+
+.container {
+  display: grid;
+  background-color: #6D8CA0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  max-height: 500px;
+}
+
+.header {
+  background-color: #336699;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.nav {
+  background-color: #f0e442;
+}
+
+.footer {
+  background-color: #336699;
 }
