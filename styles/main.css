@@ -1,3 +1,15 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+body > nav, body > div section {
+  padding: 20px;
+}
+
 body > div {
   display: grid;
   width: 100vw;
@@ -14,7 +26,6 @@ body div nav {
 body div section {
   border: solid 2px green;
   grid-column: 1 / 7;
-
 }
 
 body div > section:nth-of-type(1){
@@ -23,4 +34,27 @@ body div > section:nth-of-type(1){
 
 body div > section:nth-of-type(2), body div > section:nth-of-type(4) {
   height: 27vh;
+}
+
+body section ul.display-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+body section ul.display-flex li {
+  border: solid 4px blue;
+  width: 300px;
+  min-height: 125px;
+  margin: 20px;
+  align-content: space-between;
+}
+
+body div section:last-child {
+  display: flex;
+}
+
+body div section div {
+  min-width: 20vw;
 }
