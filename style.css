@@ -80,6 +80,9 @@ a:hover {
 }
 
 /* Blockquote Styling */
+.block-quote {
+  margin-left: 5rem;
+}
 
 .block-quote, .attribution {
   font-family: serif;
@@ -107,18 +110,17 @@ a:hover {
   margin: -.5rem 0 2.5rem;
 }
 
-#about ul{
+#about ul li {
+  max-width: 30%
+}
+
+#about ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
 }
 
-#about ul li{
-  max-width: 30%;
-  padding: 0 .25rem;
-}
-
 #about ul img{
-  float:left;
+  float: left;
   margin: 0 1em;
 }
