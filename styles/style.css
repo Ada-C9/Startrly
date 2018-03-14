@@ -1,0 +1,20 @@
+
+* {
+  border: black 1px solid;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+.flexbox-container {
+  display: flex;
+
+}
+
+.css-block-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr 4fr 1fr;
+}
+
+.quote {
+
+}
