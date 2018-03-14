@@ -1,0 +1,43 @@
+#main-container {
+  display: grid;
+  grid-template: 10vw repeat(6, 1fr) / 100vw;
+  font-family: Montserrat;
+}
+
+/* Nav Bar */
+/* is a grid better here? */
+nav ul {
+  display: flex;
+  height: 10vh;
+  list-style-type: none;
+  margin-right: 6vw;
+}
+
+nav ul li:first-of-type {
+  margin-right: auto;
+}
+
+nav ul li:nth-of-type(2) {
+  padding-right: 8vw;
+}
+
+/* Header */
+#main-header section {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+#main-header a {
+  margin: 4em;
+  padding: 1.3rem;
+  border: solid #d3d3d3 0.1em;
+  border-radius: 0.5rem;
+  color: black;
+  text-decoration: none;
+  font-size: 0.6em;
+}
