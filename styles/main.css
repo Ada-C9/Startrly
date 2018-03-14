@@ -73,6 +73,32 @@ body section ul.display-flex li {
   min-height: 125px;
   margin: 20px;
   align-content: space-between;
+
+}
+
+ul.why-section li {
+  /* make why section text float next to images */
+  display: grid;
+  grid-template: 10fr / 1fr 2fr;
+
+}
+
+body section ul.why-section li p {
+  display: inline-block;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+body section ul.why-section li strong {
+  display: inline-block;
+  height: 20px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+body section ul.why-section li img {
+  display: inline-block;
+  grid-row: 1 / span 5;
 }
 
 body div section:last-child {
