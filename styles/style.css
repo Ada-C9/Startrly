@@ -1,3 +1,29 @@
+/* The following is for the entire body */
+
 body {
+  background-color: lightgray;
+}
+
+/* The following is for the nav section. */
+
+nav {
   background-color: gray;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  width: 15%;
+  padding: 3px;
+  margin: 3px;
+}
+
+nav li:first-child {
+  width: 60%;
 }
