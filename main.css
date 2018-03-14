@@ -1,0 +1,52 @@
+/*Google Font to use
+.css-selector {
+  font-family: 'Telex', sans-serif;
+}*/
+
+/*formatting for all of the body*/
+body {
+  background-color: LightCyan;
+  font-family: 'Average', serif;
+}
+
+body a {
+  color: RoyalBlue
+}
+body a:hover {
+  color: SteelBlue;
+  text-decoration: none;
+}
+
+
+/*formatting for the nav*/
+nav {
+  width: 100vw;
+  height: 5vh
+}
+
+nav ul {
+  display: grid;
+  grid-area: 1fr / 6fr
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li:first-child {
+  grid-column: 1/2
+}
+
+nav ul li:nth-child(2) {
+  grid-column: 5 / 6
+}
+
+nav ul li:last-child {
+  grid-column: 6 / 7
+}
+
+/*formatting for the welcome-statement*/
+
+.welcome-statement {
+
+}
