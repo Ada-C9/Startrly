@@ -6,11 +6,16 @@
 
 /* Nav Bar */
 /* is a grid better here? */
+
 nav ul {
+  /*position: fixed;*/
   display: flex;
   height: 10vh;
   list-style-type: none;
-  margin-right: 6vw;
+  margin-right: auto;
+  /*justify-content: flex-end;
+  float: right;*/
+  padding-right: 8vw;
 }
 
 nav ul li:first-of-type {
