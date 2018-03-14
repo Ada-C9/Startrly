@@ -1,0 +1,129 @@
+/* HSL */
+/* $color1: hsla(313%, 27%, 43%, 1);
+$color2: hsla(315%, 100%, 99%, 1);
+$color3: hsla(0%, 1%, 81%, 1);
+$color4: hsla(330%, 2%, 33%, 1);
+$color5: hsla(293%, 43%, 12%, 1);
+
+/* RGB */
+/* $color1: rgba(138, 79, 125, 1);
+$color2: rgba(255, 251, 254, 1);
+$color3: rgba(208, 207, 207, 1);
+$color4: rgba(86, 82, 84, 1);
+$color5: rgba(40, 17, 43, 1); */
+
+/********** global **********/
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav, section {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/********** nav **********/
+nav ul {
+  display: grid;
+  grid-template-columns: 70% 20% 10%;
+}
+
+nav li {
+  display: inline;
+}
+
+/********** header **********/
+.header {
+  height: 200px;
+  display: grid;
+  grid-template-rows: 1fr 0px 4fr;
+  align-items: center;
+  text-align: center;
+}
+
+sub {
+  font-size: 1em;
+}
+
+/********** quote **********/
+.quote blockquote {
+  text-align: center;
+}
+
+.quote p {
+  text-align: right;
+}
+
+/********** reasons **********/
+.reasons {
+  text-align: center;
+  min-height: 300px;
+  min-width: 660px;
+}
+
+.reasons ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.reasons li {
+  display: grid;
+  grid-template: 10px 90px / 100px 120px;
+  text-align: left;
+}
+
+li img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+li strong {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+li p {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+/********** team **********/
+.team {
+  text-align: center;
+}
+
+.team ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.team li {
+  display: flex;
+  flex-direction: column;
+}
+
+.team img {
+  border-radius: 75px;
+}
+
+/********** sponsors **********/
+.sponsors {
+  text-align: center;
+}
+
+.sponsors ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/********** footer **********/
+.footer {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
