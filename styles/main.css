@@ -22,6 +22,10 @@ body {
   font-family: 'Poppins', serif;
 }
 
+.cite {
+  text-align: right;
+}
+
 .footer {
   border-top: 1px solid black;
 }
@@ -52,4 +56,18 @@ body {
 
 li {
   list-style-type: none;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns 100%;
+  grid-template-rows: 100%;
+}
+
+.team-bio img {
+  border-color: lightgrey;
+  border-radius: 360px;
+  padding: 5px;
+  box-shadow: 0 0 0 2px lightgrey;
+  margin: 5px;
 }
