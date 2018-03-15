@@ -71,9 +71,15 @@ blockquote::before, blockquote::after {
 
 /* why section */
 .why h2 {
-  
+  text-align: center;
+  padding: 2em 0 1.5em 0;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
+
 .why ul {
   display: grid;
   grid-template: 1fr / repeat(3, 1fr);
+  list-style-type: none;
 }
