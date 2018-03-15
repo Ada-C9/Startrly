@@ -1,0 +1,46 @@
+
+
+ul {
+  line-height: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav li {
+  letter-spacing: 0.1em;
+  display: inline;
+}
+
+#nav li a:hover {
+  background-color: #39322D
+  color:#88B4DB
+}
+
+#nav li {
+  justify-content: flex-end;
+
+}
+
+
+.header {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header sub {
+  margin: 30px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.header a {
+  border-style: solid;
+}
+
+
+.content{}
+
+.footer{}
