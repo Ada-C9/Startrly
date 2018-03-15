@@ -1,0 +1,156 @@
+/* --------------------------------------------- */
+/* PAGE: */
+
+
+
+body {
+  display: grid;
+  grid-template-rows: repeat(8, 800px);
+  grid-template-areas:
+  "Header "
+  "Intro"
+  "Quote"
+  "Why"
+  "Quote2"
+  "Team"
+  "Sponsors"
+  "Footer footer"
+  /* grid-gap:  */
+}
+
+* {
+  font-family: Helvetica;
+}
+
+/*
+header {
+margin: auto;
+text-align: center;
+} */
+
+/* --------------------------------------------- */
+/* NAV */
+
+nav ul {
+  grid-area: Header;
+  background-color: #2ca0ff;
+
+  list-style-type: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+
+
+  /* margin: auto;
+  width: 90%;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center; */
+}
+
+
+
+div#startrly{
+  margin-right: auto;
+}
+
+
+
+/* nav ul li { */
+/* list-style-type: none; */
+/* display: inline; */
+/* font-weight: bold; */
+/* } */
+
+
+/* --------------------------------------------- */
+/* INTRO */
+
+.head-title{
+  grid-area: Intro;
+  background-color: #8ca0ff;
+  text-align: center;
+  padding: 120px
+}
+
+.head-title sub {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.head-title a {
+  text-decoration: none;
+  color: grey;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* --------------------------------------------- */
+/* QUOTE */
+
+.quote {
+  grid-area: Quote;
+  background-color: #2ca0ff;
+  font-style: italic;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.quote p {
+  text-align: right;
+}
+
+.quote p::before {
+  content: "--";
+}
+
+section blockquote {
+  line-height: 2.5;
+}
+section blockquote::before {
+  content: " '' ";
+}
+section blockquote::after {
+  content: " '' ";
+}
+section {
+  /* border-bottom: 1px solid black; */
+}
+
+
+/* --------------------------------------------- */
+/* WHY */
+
+.why {
+  grid-area: Why;
+  background-color: #9ca0ff;
+}
+
+/* --------------------------------------------- */
+/* TEAM */
+
+.team {
+  grid-area: Team;
+  background-color: #2ca0ff;
+}
+
+/* --------------------------------------------- */
+/* SPONSORS */
+
+.sponsors {
+  grid-area: Sponsors;
+  background-color: #9ca0ff;
+}
+
+/* --------------------------------------------- */
+/* FOOTER */
+
+.footer {
+  grid-area: Footer;
+  background-color: #2ca0ff;
+}
