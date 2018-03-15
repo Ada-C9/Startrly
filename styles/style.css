@@ -12,9 +12,6 @@ ul {
 
 section {
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-bottom: 1px gray solid;
 }
 
 /********** nav **********/
@@ -30,13 +27,14 @@ nav {
 nav ul {
   padding: 20px 20px 20px 20px;
   display: grid;
-  grid-template-columns: 70% 20% 10%;
-  background-color: purple;
+  grid-template-columns: 65% 20% 15%;
+  background-color: #85C7F2;
   margin: 0;
 }
 
 nav li {
   padding: 0 20px 0 20px;
+  width: max-content;
 }
 
 /********** header **********/
@@ -45,9 +43,9 @@ nav li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* justify-content: center; */
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .header h1 {
@@ -64,15 +62,17 @@ nav li {
   color: black;
   font-size: 1.5em;
   text-decoration: none;
-  border: 2px gray solid;
   border-radius: 5px;
   margin-top: 40px;
   padding: 10px;
   width: max-content;
+  background-color: #85C7F2;
+  border: 2px white solid;
 }
 
 .header a:hover {
-  background-color: gray;
+  background-color: white;
+  border: 2px #85C7F2 solid;
 }
 
 /********** quote **********/
@@ -82,6 +82,7 @@ nav li {
   font-style: italic;
   line-height: 2;
   padding: 50px 100px 50px 100px;
+  background-color: #85C7F2;
 }
 
 .quote blockquote {
@@ -107,21 +108,26 @@ nav li {
 /********** why **********/
 .why {
   min-height: 300px;
-  padding: 30px 0 20px 0;
+  padding: 30px 0 0 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .why ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin-top: 40px;
-  padding: 0 0px 0 40px;
+  padding: 0 0 0 40px;
+  grid-gap: 30px;
 }
 
 .why li {
-  flex: 1;
   display: grid;
-  grid-template: 10px 90px / 100px 200px;
+  grid-template: 10px 80px / 100px 200px;
   grid-gap: 10px;
   text-align: left;
+  min-height: 150px;
+  padding: 20px;
 }
 
 li img {
@@ -143,7 +149,6 @@ li p {
 .team {
   max-width: 900px;
   margin: 0 auto;
-  border: none;
   padding: 50px 0px 50px 0px;
 }
 
@@ -169,23 +174,21 @@ li p {
 }
 
 /********** sponsors **********/
-.sponsors {
-  padding-bottom: 50px;
-}
-
 .sponsors ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px 0 50px 0;
 }
 
 /********** footer **********/
 .footer {
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  border-bottom: none;
-  padding: 20px 100px 50px 100px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 20px 40px 50px 40px;
+  background-color: #85C7F2;
 }
+
+/********** small screen **********/
