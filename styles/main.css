@@ -96,32 +96,19 @@ body section ul.display-flex li {
   align-content: space-between;
 }
 
-/* change text to wrap around images  */
+/* why section styles  */
 
 ul.why-section li {
-  /* make why section text float next to images */
-  display: grid;
-  grid-template: 10fr / 1fr 2fr;
-  grid-column-gap: 1em;
-}
-
-body section ul.why-section li p {
-  display: inline-block;
-  grid-column-start: 2;
-  grid-row-start: 1;
-}
-
-body section ul.why-section li strong {
-  display: inline-block;
-  height: 20px;
-  grid-column-start: 2;
-  grid-row-start: 1;
+  width: 27vw;
+  margin: 10px;
 }
 
 body section ul.why-section li img {
-  display: inline-block;
-  grid-row: 1 / span 5;
+  float: left;
+  margin-right: 10px;
 }
+
+/* team styles  */
 
 ul.team-section li {
   text-align: center;
