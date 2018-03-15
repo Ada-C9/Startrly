@@ -14,12 +14,17 @@ h1 {
 
 h2 {
   text-align: center;
+  padding-top: .5em;
 }
 
 /* HEADER */
 nav {
   background-color: #ffc1cc;
-  padding: 2px;
+  opacity: .95;
+  padding: 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav ul {
@@ -45,7 +50,7 @@ nav li {
 
 .hero sub {
   padding: 2em;
-  min-width: 2000px;
+  min-width: 500px;
   text-align: center;
 }
 
@@ -177,9 +182,8 @@ nav li {
 /* Footer */
 .footer {
   display: grid;
-  /* grid-template-areas: 1/1/5/2; */
   grid-template-columns: 1fr 1fr 3fr;
-  border-top: dotted 1px gray;
+  background-color: #fff4f6;
 }
 
 .footer div {
