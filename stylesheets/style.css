@@ -143,6 +143,8 @@ blockquote::before, blockquote::after {
 
 #sponsors ul {
   list-style-type: none;
+  width: 96vw;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -152,7 +154,7 @@ blockquote::before, blockquote::after {
 }
 
 #sponsors img {
-  margin: 0 2rem;
+  margin: 0 1.8rem;
 }
 
 /* footer */
