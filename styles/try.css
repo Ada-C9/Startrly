@@ -10,10 +10,15 @@ main {
   padding-top: 40px;
 }
 
-.quote {
-  border-bottom: none
+
+.quote:first-of-type {
+  border-top: dotted .25em #ff758d;
+}
+.quote:nth-of-type(2) {
+  border-top: dotted .25em #E8E8E8;
+  border-bottom: dotted .25em #E8E8E8;
 }
 
-
-
-/* FOOTER */
+.quote:nth-of-type(3) {
+  border-bottom: dotted .25em #E8E8E8;
+}
