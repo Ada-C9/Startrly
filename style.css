@@ -15,10 +15,9 @@ a:hover {
 /* General Styling */
 
 .container {
-  width: 100%;
   min-width: 280px;
-  margin: 2em 0;
-  padding: 2em 0;
+  margin: 2em;
+  padding: 2em;
   border-bottom: solid 1px gray;
 }
 
@@ -35,7 +34,7 @@ a:hover {
 
 .color-section {
   margin: -2em 0;
-    background-color: #667761;
+    background-color: #657660;
   color: hsla(32, 100%, 97%, 1);
 }
 
