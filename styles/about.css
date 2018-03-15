@@ -15,19 +15,20 @@
   text-align: center;
 }
 
-.about-content {
+/* MAIN CONTENT */
+.content {
   display: flex;
   flex-direction: column;
   margin-left: 2em;
   margin-top: 1em;
-  margin-bottom: 1em
+  margin-bottom: 1em;
 }
 
-.about-content section {
+.content section {
   padding: 1em;
 }
 
-.about-content p {
-  margin-left: 4em;
+.content p {
+  margin-left: 4.5em;
   margin-right: 2em;
 }

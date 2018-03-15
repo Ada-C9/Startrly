@@ -2,23 +2,19 @@
   border: black 1px solid;
 } */
 
-/* HEADER */
-
 /* MAIN */
 main {
   text-align: center;
   padding-top: 40px;
 }
 
-
+/* QUOTES */
 .quote:first-of-type {
   border-top: dotted .25em #ff758d;
-}
-.quote:nth-of-type(2) {
-  border-top: dotted .25em #E8E8E8;
   border-bottom: dotted .25em #E8E8E8;
 }
 
 .quote:nth-of-type(3) {
+  border-top: dotted .25em #E8E8E8;
   border-bottom: dotted .25em #E8E8E8;
 }
