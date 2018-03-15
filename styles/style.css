@@ -10,7 +10,7 @@ body {
 nav {
   background-color: #A0A083;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.25em;
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,9 +23,9 @@ nav ul {
 
 nav li {
   display: inline-block;
-  width: 15%;
-  padding: 3px;
-  margin: 3px;
+  width: 17%;
+  padding: 2px;
+  margin: 2px;
 }
 
 nav li:first-child {
@@ -112,15 +112,25 @@ section:nth-of-type(1) a:hover {
 with 'Meet the team' */
 
 section:nth-of-type(5) {
+  text-align: center;
+  margin: 2px;
+}
 
+section:nth-of-type(5) h2 {
+  margin-top: 75px;
 }
 
 section:nth-of-type(5) ul {
   list-style-type: none;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
 
+section:nth-of-type(5) li {
+  padding: 2px;
+  margin: 5%;
 }
 
 section:nth-of-type(5) li img {
@@ -133,18 +143,46 @@ section:nth-of-type(5) li span {
   display: block;
 }
 
+
+
+
+
+
+/* The following is for the 6th section
+with 'Sponsors' */
+
+
+section:nth-of-type(6) h2 {
+  margin-top: 75px;
+  text-align: center;
+}
+
+section:nth-of-type(6) ul {
+  list-style-type: none;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section:nth-of-type(6) li {
+  padding: 2px;
+}
+
+
+
 /* The following is for the last section --Footer */
 
 #footer {
   border: solid #4D6A6D 1px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  align-items: flex-start;
   font-size: 1em;
 }
 
 #footer div {
-  width: 25%;
+  /* width: 25%; */
   margin-left: 5%;
 }
 
