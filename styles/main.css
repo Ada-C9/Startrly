@@ -1,42 +1,16 @@
-a:hover {
-  color: cyan;
-}
+/* Top-Nav */
 
-blockquote:before {
-  content: open-quote;
-}
-
-blockquote {
-  font-size: 1em;
-}
-
-blockquote:after {
-  content: close-quote;
-}
-
-blockquote + p:before {
-  content: "\002d \002d"
-}
-
-body {
-  font-family: 'Poppins', serif;
-}
-
-.cite {
-  text-align: right;
-}
-
-.footer {
-  border-top: 1px solid black;
+.top-nav-list {
   display: grid;
-  grid-template-columns: .25fr .25fr;
-  align-items: left;
+  grid-template-columns: 4fr 1fr 1fr;
 }
+
+/* Header */
 
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr) .5fr ;
+  grid-template-rows: 1fr .25fr 1fr;
   justify-items: center;
   align-items: center;
 }
@@ -57,13 +31,14 @@ body {
   text-transform: capitalize;
 }
 
-.important-quote {
-  background-color: deepskyblue;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  color: white;
-  font-style: italic;
-  line-height: 2.5em;
+/* Main */
+
+a:hover {
+  color: cyan;
+}
+
+body {
+  font-family: 'Poppins', serif;
 }
 
 li {
@@ -77,10 +52,6 @@ li {
   align-items: stretch;
 }
 
-.sponsors img {
-
-}
-
 .team-bio img {
   border-color: lightgrey;
   border-radius: 360px;
@@ -89,8 +60,85 @@ li {
   margin: 5px;
 }
 
-.top-nav-list {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+.sponsors img {
+  margin: 1em;
+}
 
+.sponsor-list {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.why h2 {
+  display: grid;
+  justify-items: center;
+}
+
+.why-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.why-list li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.why-list img {
+  /* margin: .5em; */
+}
+
+.why-list p {
+  justify-items: top;
+  display: flex;
+  flex-wrap: wrap;
+  margin: .5em;
+}
+
+/* Quotes */
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote {
+  font-size: 1em;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+blockquote + p:before {
+  content: "\002d \002d"
+}
+
+.cite {
+  text-align: right;
+}
+
+.important-quote {
+  background-color: deepskyblue;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-style: italic;
+  line-height: 2.5em;
+  align-items: center;
+}
+
+/* Footer */
+
+.footer {
+  border-top: 1px dotted black;
+  display: grid;
+  grid-template-columns: .25fr .25fr;
+  align-items: left;
 }
