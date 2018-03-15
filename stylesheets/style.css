@@ -1,6 +1,6 @@
 #main-container {
   display: grid;
-  grid-template: 10vw repeat(6, 1fr) / 100vw;
+  grid-template: 7 / 100vw;
   font-family: Montserrat;
 }
 
@@ -31,7 +31,7 @@ nav ul li:nth-of-type(2) {
   display: flex;
   width: 100vw;
   height: 50vh;
-  padding-top: 30vh;
+  padding-bottom: 20vh;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -51,23 +51,16 @@ nav ul li:nth-of-type(2) {
 
 /* Blockquote sections */
 .blockquote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   border-top: solid thin black;
   border-bottom: solid thin black;
-  /*grid-template: 30vh 10vh/ 100vw;
-  align-items: center;
-  text-align: left;*/
   font-style: italic;
   font-size: 1.8em;
 }
 
 .blockquote blockquote {
-  /*min-height: 40vw;*/
-  padding:  30vw;
+  padding: 15vw 10vw 0 10vw;
 }
-.blockquote > p {
-  grid-row-start: -1;
+.blockquote p {
+  padding: 0 15vw 15vw 10vw;
+  text-align: right;
 }
