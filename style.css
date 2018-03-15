@@ -1,0 +1,30 @@
+* {
+  font-family: Arial;
+}
+
+/* Styling for nav  */
+ nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: lightgray;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+  font-size: 12pt;
+  font-weight: bold;
+  width: 12%;
+  margin: 7px;
+  padding-right: 25px;
+  /* background-color: lightgray; */
+}
+
+nav > ul > li:first-child {
+  text-align: left;
+  width: 65%
+}
