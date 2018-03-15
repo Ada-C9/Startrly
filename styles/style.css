@@ -81,12 +81,6 @@ a {
   border: dotted white;
 }
 
-/* .hero a[href]:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-} */
-
 /* QUOTE */
 
 .quote {
@@ -145,6 +139,9 @@ a {
   padding: 0;
 }
 
+.side-along p {
+  font-style: italic;
+}
 /* TEAM */
 
 .team {

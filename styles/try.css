@@ -1,28 +1,19 @@
-* {
+/* * {
   border: black 1px solid;
-}
+} */
 
 /* HEADER */
 
-nav ul {
-  padding: 0;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 6fr 1fr;
+/* MAIN */
+main {
+  text-align: center;
+  padding-top: 40px;
 }
 
-/* MAIN */
-body {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  max-height: 400vw;
+.quote {
+  border-bottom: none
 }
 
 
 
 /* FOOTER */
-section {
-  /* align-self: flex-end; */
-
-}
