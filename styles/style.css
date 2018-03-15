@@ -45,14 +45,24 @@ nav li {
 
 .hero sub {
   padding: 2em;
+  min-width: 2000px;
+  text-align: center;
 }
 
 .hero a[href] {
+  max-width: 130px;
+  min-width: 130px;
   border: dotted gray;
   padding: .5em;
   border-radius: 20px;
   text-decoration: none;
   color: gray
+}
+
+.hero a[href]:hover {
+  background-color: #ff758d;
+  color: white;
+  border: dotted white;
 }
 
 /* QUOTE */
