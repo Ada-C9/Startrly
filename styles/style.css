@@ -3,18 +3,115 @@
   border: black 1px solid;
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Lato', sans-serif;
+  list-style: none;
+  padding: 0;
+  /* text-align: center; */
+
+  /* justify-content: center; */
+}
+
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .flexbox-container {
   display: flex;
 
+
 }
 
 .css-block-container {
   display: grid;
-  grid-template-rows: 1fr 2fr 2fr 2fr 2fr 4fr 1fr;
+  padding: 100px;
+
+  /* width: 60%; */
+  /* align: center; */
+
+  /* max-height: 370vh; */
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr 4fr 2fr 1fr;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 1.7fr 6.6fr 1.7fr; */
+
+  grid-template-areas:
+    "heading"
+    "company"
+    "quote"
+    "why"
+    "quote-two"
+    "team"
+    "sponsors"
+    "footer";
+}
+
+.heading {
+  grid-area: heading;
+  background-color: Red;
+  border: black 1px solid;
+}
+
+.company_name {
+  grid-area: company;
+  background-color: orange;
+  border: black 1px solid;
+}
+
+.why {
+  grid-area: why;
+  background-color: yellow;
+  border: black 1px solid;
 }
 
 .quote {
+  grid-area: quote;
+  background-color: green;
+  border: black 1px solid;
+  font-style: italic;
+  justify-content: center;
+}
 
+.quote-two {
+  grid-area: quote-two;
+  background-color: blue;
+  border: black 1px solid;
+  font-style: italic;
+  justify-content: center;
+}
+
+.team {
+  grid-area: team;
+  background-color: indigo;
+  border: black 1px solid;
+  font-style: bold;
+}
+
+.sponsors {
+  grid-area: sponsors;
+  background-color: violet;
+  border: black 1px solid;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: grey;
+  border: black 1px solid;
+}
+
+
+.five_columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.column_five {
+  grid-column-start: 5;
+}
+
+.column_four {
+  grid-column-start: 4;
 }
