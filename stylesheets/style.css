@@ -6,10 +6,15 @@
 
 /* Nav Bar */
 nav ul {
+  opacity: 1;
+  background: white;
+  width: 100vw;
+  margin-top: -0.5vw;
+  padding-top: 3vh;
   position: fixed;
-  display: grid;
   list-style-type: none;
-  grid-template: 10vh / 70vw 15vw 1fr;
+  display: grid;
+  grid-template: 5vh / 70vw 15vw 1fr;
 }
 
 nav ul li:first-of-type {
@@ -157,6 +162,8 @@ footer {
   display: grid;
   grid-template: 1fr / 1fr 1fr;
   width: 50vw;
+  margin-left: 5vw;
+  margin-bottom: 10vw;
 }
 
 footer h3 {
