@@ -64,3 +64,31 @@ nav li {
   padding-right: 5rem;
   font-style: italic;
 }
+
+#team img {
+  border-radius: 20em;
+  padding: 0.2em;
+  border: 1px lightgray solid;
+}
+
+#team h2 {
+  text-align: center;
+}
+
+#team ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 5rem 0 5rem;
+}
+
+#team li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+#team span {
+  padding-top: 1rem;
+}
