@@ -79,17 +79,18 @@ nav ul {
 /********** why **********/
 .why {
   min-height: 300px;
-  min-width: 660px;
 }
 
 .why ul {
   display: flex;
+  margin-top: 40px;
 }
 
 .why li {
   flex: 1;
   display: grid;
-  grid-template: 10px 90px / 100px 120px;
+  grid-template: 10px 90px / 100px 200px;
+  grid-gap: 10px;
   text-align: left;
 }
 
