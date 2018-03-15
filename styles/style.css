@@ -8,18 +8,57 @@ ul, li {
   list-style-type: none;
 }
 
-.container {
-  display: grid;
-  grid-template: repeat(6, 20%) / 1fr;
+h1 {
+  font-size: 3rem;
 }
 
- /* Below styles apply to the navigation */
+h2 {
+  text-align: center;
+}
+
+sub {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+a {
+  color: #000;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: lightblue;
+  border-radius: 0.5rem;
+}
+
+a:hover {
+  background-color: lightgray;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid lightblue;
+  margin: 0.5em;
+}
+
+section {
+  margin: 4em 0 4em 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+ /* Below styles apply to the navigation and footer */
 nav, footer {
   padding: 0;
   background-color: lightblue;
 }
 
-nav ul {
+nav ul, footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -65,14 +104,30 @@ nav li {
   font-style: italic;
 }
 
-#team img {
-  border-radius: 20em;
-  padding: 0.2em;
-  border: 1px lightgray solid;
+#why ul {
+  display: flex;
+  flex-flow: row;
+  padding: 0 3rem 0 3rem;
 }
 
-#team h2 {
-  text-align: center;
+#why li {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem 0 2rem;
+}
+
+.float-right {
+  padding: 0 1rem 0 1rem;
+}
+
+#why img {
+  height: 100px;
+}
+
+#team img {
+  border-radius: 5rem;
+  padding: 0.2rem;
+  border: 1px lightgray solid;
 }
 
 #team ul {
@@ -91,4 +146,15 @@ nav li {
 
 #team span {
   padding-top: 1rem;
+}
+
+#sponsors ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#sponsors li {
+  padding: 0 0.4rem 0 0.4rem;
 }
