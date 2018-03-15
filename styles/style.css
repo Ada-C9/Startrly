@@ -2,6 +2,20 @@
   border: black 1px solid;
 } */
 
+/* BASICS */
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5em;
+}
+
+h2 {
+  text-align: center;
+}
+
 /* HEADER */
 nav {
   background-color: #ffc1cc;
@@ -49,9 +63,21 @@ nav li {
   font-style: italic;
 }
 
+.quote blockquote::before {
+  content: "\"";
+}
+
+.quote blockquote::after {
+  content: "\"";
+}
+
 .quote p {
   text-align: right;
-  padding-right: 5%;
+  padding-right: 20%;
+}
+
+.quote p::before {
+  content: "—";
 }
 
 /* WHY? */
@@ -60,9 +86,9 @@ nav li {
   flex-direction: column;
 }
 
-.side-along h2 {
+/* .side-along h2 {
   text-align: center;
-}
+} */
 
 .side-along ul {
   padding: 0;
@@ -99,11 +125,6 @@ nav li {
   flex-direction: column;
 }
 
-/* change to an id later? */
-.team h2 {
-  text-align: center;
-}
-
 .team ul {
   padding: 0;
   list-style-type: none;
@@ -129,10 +150,6 @@ nav li {
 .gallery {
   display: flex;
   flex-direction: column;
-}
-
-.gallery h2 {
-  text-align: center;
 }
 
 .gallery ul {
