@@ -1,0 +1,200 @@
+/* Whole page styling */
+* {
+  font-family: 'Raleway', sans-serif;
+  background-color: hsla(32, 100%, 97%, 1);
+}
+
+a:hover {
+  color: teal;
+}
+
+#main {
+  max-width: 1150px;
+}
+
+/* General Styling */
+
+.container {
+  min-width: 280px;
+  margin: 2em;
+  padding: 2em;
+  border-bottom: solid 1px gray;
+}
+
+.container ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.container h2{
+  text-align: center;
+  margin: -.5rem 0 2.5rem;
+}
+
+.color-section {
+  margin: -2em 0;
+    background-color: #657660;
+  color: hsla(32, 100%, 97%, 1);
+}
+
+.color-section * {
+  background-color: inherit;
+}
+
+/* Navigation Styling */
+
+
+#top-nav ul {
+  display: inline-grid;
+  list-style-type: none;
+  grid-template-columns: 4fr repeat(2, 1fr);
+  width: 100%;
+  border-bottom: solid .5rem hsla(349, 48%, 9%, 0.3);
+  position: fixed;
+  padding: 2em 2em;
+  top: 0;
+  z-index: 1;
+  background-color: hsla(32, 100%, 97%, 1);
+}
+
+#top-nav ul li {
+  display: block;
+  font-size: .75em;
+  font-weight: 700;
+  text-align: center;
+  background-color: inherit;
+
+}
+
+#top-nav ul li:first-child {
+  display: block;
+  font-size: .75em;
+  font-weight: 700;
+  text-align: left;
+}
+
+#top-nav ul li:last-child {
+  padding-right: 5em;
+  text-align: center;
+}
+/*  Tagline Blurb Styling*/
+
+#tagline {
+  margin-top: 5em;
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+}
+
+#tagline h1 {
+  font-size: 1.75em;
+}
+
+#tagline a {
+  display: block;
+  padding: .6rem .75rem;
+  border: solid 2px lightgray;
+  border-radius: 5px;
+  margin: 2rem;
+  text-decoration: none;
+  color: black;
+  font-size: .8em;
+}
+
+#tagline a:hover {
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+}
+
+#tagline sub {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* Blockquote Styling */
+.block-quote {
+  margin-left: 5rem;
+}
+
+.block-quote, .attribution {
+  font-family: serif;
+  font-style: italic;
+  width: 75%;
+}
+
+.block-quote::before, .block-quote::after  {
+  content: "\"";
+}
+
+.attribution {
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+}
+
+.attribution::before {
+  content: "--"
+}
+
+/* Why Block Styling */
+#about ul li {
+  max-width: 30%
+}
+
+#about ul img{
+  float: left;
+  margin: 0 1em;
+}
+
+/* Team Styling */
+#team ul {
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#team ul span {
+  line-height: 1.5em;
+  display: block;
+  text-align: center;
+}
+
+#team ul img {
+  border-radius: 100px;
+  border: solid .05rem lightgray;
+  padding: .3rem;
+  align-self: center;
+  margin: 2rem 4rem;
+  -webkit-filter: grayscale(1);
+  filter: gray;
+}
+
+/* Disable grayscale on hover */
+#team ul img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+/* Sponsors Styling */
+
+#sponsors ul {
+  flex-flow: wrap row;
+  justify-content: space-equal;
+}
+
+/* Footer Styling */
+#footer {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+#footer ul {
+  list-style-type: none;
+}
