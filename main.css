@@ -10,6 +10,7 @@ body {
 
   background-color: LightCyan;
   font-family: 'Average', serif;
+  color: DimGrey;
   margin: 8px;
 }
 
@@ -25,14 +26,14 @@ body a:hover {
 /*formatting for the nav*/
 nav {
   width: 100vw;
-  min-height: 75px
+  min-height: 75px;
 }
 
 nav ul {
   grid-row: 1 / 2;
 
   display: grid;
-  grid-area: 3fr / 6fr
+  grid-area: 8fr
 
 }
 
@@ -41,33 +42,54 @@ nav ul li {
 }
 
 nav ul li:first-child {
-  grid-row: 2 / 3;
   grid-column: 1/2
 }
 
 nav ul li:nth-child(2) {
-  grid-row: 2 / 3;
-  grid-column: 5 / 6
+  grid-column: 7 / 8;
+  text-align: right;
 }
 
 nav ul li:last-child {
-  grid-row: 2 / 3;
-  grid-column: 6 / 7
+  grid-column: 8 / 9;
+  text-align: center;
 }
 
 /*formatting for the welcome-statement*/
 
 #welcome-statement {
   grid-row: 2 / 3;
-  width: 100vw;
-  height: 10vh;
   margin: 1em;
   font-family: 'Telex', sans-serif;
   text-align: center;
+  width: 100vw;
 }
 
 #welcome-statement h1 {
   font-size: 3em;
+  margin: .5em;
+}
+
+#welcome-statement sub {
+  display: block;
+  font-size: 2em;
+  padding: 1em;
+  min-width: 200px
+}
+
+#welcome-statement a {
+  display: block;
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 20em;
+  margin-right: 20em;
+  text-decoration: none;
+  border: solid;
+  border-radius: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  min-width: 200px
 }
 
 /*formatting for the quotes*/
@@ -76,17 +98,30 @@ nav ul li:last-child {
   border-top-width: thin;
   border-bottom-style: solid;
   border-bottom-width: thin;
-  padding:
+  font-style: italic;
+  padding: 2em;
+
+}
+
+.quote blockquote {
+  padding: 1em;
+  line-height: 2em;
+}
+
+.quote p {
+  text-align: right;
 }
 
 /*formatting for the first quote*/
 .quote:nth-of-type(1) {
   grid-row: 3 / 4;
 }
+
 /*formatting for the why section*/
 .why {
   grid-row: 4 / 5;
 }
+
 
 /*formatting for the second quote*/
 .quote:nth-of-type(2) {
