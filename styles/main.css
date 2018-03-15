@@ -6,21 +6,13 @@ ul {
 h2 {
   text-align: center;
 }
+
 body > nav, body > div section {
   padding: 20px;
   border-bottom: solid 1px #ddd;
 }
 
-body > div {
-  display: grid;
-  width: 100vw;
-  grid-template-columns: repeat(6), 1fr);
-  grid-template-rows: repeat(7, auto);
-}
-
-body div nav {
-  grid-column: 1 / 7;
-}
+/* nav styles  */
 
 body div nav ul {
   display: grid;
@@ -43,12 +35,11 @@ body div nav ul li:nth-child(3) {
   grid-column-start: 10;
 }
 
-body div section {
-  grid-column: 1 / 7;
-}
+/* hero banner styles  */
 
-body div > section:nth-of-type(1){
-  height: 60vh;
+body div > section.hero {
+  margin-top: -10vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -75,9 +66,21 @@ div.hook a {
 
 }
 
+/* blockquote styles  */
+
 body div > section:nth-of-type(2), body div > section:nth-of-type(4) {
-  height: 27vh;
+  height: 30vh;
 }
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote + p {
+  text-align: right;
+}
+
+/* stuff inside why and team sections  */
 
 body section ul.display-flex {
   display: flex;
@@ -91,8 +94,9 @@ body section ul.display-flex li {
   min-height: 125px;
   margin: 20px;
   align-content: space-between;
-
 }
+
+/* change text to wrap around images  */
 
 ul.why-section li {
   /* make why section text float next to images */
@@ -131,6 +135,8 @@ ul.team-section li img {
   border-radius: 100%;
 }
 
+/* footer styles  */
+
 body div section:last-child {
   display: flex;
 }
@@ -142,12 +148,4 @@ body div section div {
 div.quote {
   width: 60vw;
   margin: 50px auto;
-}
-
-blockquote {
-  font-style: italic;
-}
-
-blockquote + p {
-  text-align: right;
 }
