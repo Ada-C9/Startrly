@@ -3,6 +3,8 @@
 body {
   background-color: #EAE0CC;
   color: black;
+  font-family: 'Economica', sans-serif;
+  font-size: 1.25em;
 }
 
 /* The following is for the nav section. */
@@ -10,11 +12,9 @@ body {
 nav {
   background-color: #A0A083;
   font-weight: bold;
-  font-size: 1.25em;
   position: fixed;
   top: 0;
   width: 100%;
-
 }
 
 nav ul {
@@ -23,16 +23,17 @@ nav ul {
 
 nav li {
   display: inline-block;
-  width: 17%;
-  padding: 2px;
-  margin: 2px;
+  width: 15%;
+  padding-left: 2px;
+  margin-left: 2px;
 }
 
 nav li:first-child {
   width: 60%;
 }
 
-/* The following is for the 'Startly Section' */
+/* The following is for the
+first section -- 'Startly Section' */
 
 section:nth-of-type(1) {
   margin-top: 0;
@@ -42,7 +43,7 @@ section:nth-of-type(1) {
   justify-content: center;
   align-items: center;
   background-color: #C9ADA1;
-  min-height: 350px;
+  min-height: 500px;
   border-bottom: solid #4D6A6D 1px;
 }
 
@@ -68,19 +69,18 @@ section:nth-of-type(1) a{
 }
 
 section:nth-of-type(1) a:hover {
-  background-color: gray;
-  color: white;
+  background-color: #A0A083;
 }
 
-/* The following is for the two blockquote sections */
+/* The following is for the two
+blockquote sections */
 
 .quote {
-  border: solid darkgray 1px;
-  background-color: lightbeige;
+  border-bottom: solid #4D6A6D 1px;
 }
 
 .quote blockquote {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-style: italic;
   padding: 8% 5% 2% 5%;
   line-height: 1.75em;
@@ -99,7 +99,7 @@ section:nth-of-type(1) a:hover {
 .quote p {
   text-align: right;
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1.5em;
   padding: 0 5% 8%;
 }
 
@@ -107,6 +107,77 @@ section:nth-of-type(1) a:hover {
   content: "--"
 }
 
+
+/* The following is for the 3rd section
+with 'Why' */
+section:nth-of-type(3) {
+  border-bottom: solid #4D6A6D 1px;
+  font-size: 1.2em;
+}
+
+section:nth-of-type(3) h2 {
+  text-align: center;
+}
+
+section:nth-of-type(3) ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+section:nth-of-type(3) li {
+  width: 430px;
+}
+
+section:nth-of-type(3) img {
+  float: left;
+  margin: 3px;
+}
+
+section:nth-of-type(3) strong {
+  /* display: inline; */
+  margin-left: 5px;
+}
+
+section:nth-of-type(3) p {
+  margin-left: 5px;
+}
+
+
+@media only screen and (max-device-width: 600px) {
+
+    section:nth-of-type(3) li {
+      width: 90%;
+    }
+    section:nth-of-type(3) img {
+      display: none;
+    }
+
+    #footer li {
+      width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    section:nth-of-type(3) li {
+      width: 90%;
+    }
+    section:nth-of-type(3) img {
+      display: none;
+    }
+    #footer li {
+      width: 90%;
+    }
+}
+/* @media only screen and (max-width: 600px) {
+    section:nth-of-type(3) img {
+      display: none;
+    }
+} */
 
 /* The following is for the 5th section
 with 'Meet the team' */
@@ -131,6 +202,8 @@ section:nth-of-type(5) ul {
 section:nth-of-type(5) li {
   padding: 2px;
   margin: 5%;
+  max-width: 40%;
+  min-width: 300px;
 }
 
 section:nth-of-type(5) li img {
@@ -144,13 +217,12 @@ section:nth-of-type(5) li span {
 }
 
 
-
-
-
-
 /* The following is for the 6th section
 with 'Sponsors' */
 
+section:nth-of-type(6) {
+  border-bottom: solid #4D6A6D 1px;
+}
 
 section:nth-of-type(6) h2 {
   margin-top: 75px;
@@ -159,9 +231,9 @@ section:nth-of-type(6) h2 {
 
 section:nth-of-type(6) ul {
   list-style-type: none;
-  padding: 5px;
+  /* padding: 3px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -172,18 +244,17 @@ section:nth-of-type(6) li {
 
 
 
-/* The following is for the last section --Footer */
+/* The following is for the last
+section --Footer */
 
 #footer {
-  border: solid #4D6A6D 1px;
   display: flex;
   align-items: flex-start;
   font-size: 1em;
 }
 
 #footer div {
-  /* width: 25%; */
-  margin-left: 5%;
+  margin: 5%;
 }
 
 #footer ul {
