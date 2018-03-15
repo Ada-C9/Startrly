@@ -98,6 +98,7 @@ ul.why-section li {
   /* make why section text float next to images */
   display: grid;
   grid-template: 10fr / 1fr 2fr;
+  grid-column-gap: 1em;
 }
 
 body section ul.why-section li p {
