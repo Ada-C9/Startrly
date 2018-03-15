@@ -5,46 +5,54 @@
 /*background color to one section*/
 /*identify repeated styles and dry up code*/
 
-.container {
-  display:grid;
-  /*width: 80vw;
-  height: 400vh;*/
-}
+
 
 
 /*full body styles*/
 body {
   font-family: Arial,sans-serif;
   margin: 100px;
-  background: #ff69b4;
+  /*background: #ff69b4;
   background:-webkit-linear-gradient(bottom, #ff69b4, #e6e6fa);
   background: -moz-linear-gradient(bottom, #ff69b4, #e6e6fa);
   background: -ms-linear-gradient(bottom, #ff69b4, #e6e6fa);
   background: -o-linear-gradient(bottom, #ff69b4, #e6e6fa);
-  background: linear-gradient(to top, #ff69b4, #e6e6fa);;
+  background: linear-gradient(to top, #ff69b4, #e6e6fa);;*/
+}
+
+h2 {
+  text-align: center;
 }
 
 /*nav section styles*/
+
+
 .nav ul {
+  display:flex;
   list-style-type: none;
   /*background-color: grey;*/
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
-  width: 100%;
+  justify-content:flex-end;
 }
+/*makes responsive*/
+
 
 .nav li{
-  display: inline;
-  text-align: center;
-  padding: 3px;
-  margin: 100px;
   color:hotpink;
-  font-size: 1em;
+  font-size: 1.9em;
   font-weight: bold;
 
 }
 
+.nav #try{
+  padding-right: 60px;
+}
 /*startly in nav should be far left*/
+
+.nav #startly {
+  flex:1;
+}
 
 /*change nav words to links*/
 /*nav:hover {
@@ -55,9 +63,10 @@ body {
 /*header section styles*/
 .header {
   text-align: center;
-  border-bottom: 2px solid grey;
-  /*display:grid;*/
+  display:flex;
+  flex-direction: column;
   padding-bottom: 20px;
+  justify-content: space-between;
 }
 
 a[href] {
@@ -66,7 +75,7 @@ a[href] {
   color: hotpink;
   border-style:solid;
   background-color: white;
-  
+
   /*grid-column-st: 1/ span 1;*/
 
 }
@@ -89,32 +98,32 @@ a[href] {
 .quote:nth-child(2n){
   text-align: right;
   border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
 
 /*why section styles*/
+
+
+
 .why {
   display: flex;
 
-
 }
-.why ul {
+
+.why li {
   list-style-type: none;
-  border-bottom: 2px solid grey;
-  float:left;
-}
-
-.why h2 {
-  text-align: center;
+  align-self: auto;
 
 }
 
 /*team section styles*/
 .team{
-  border-top: 2px solid grey;
+
 }
 
 
 /*footer section styles*/
 footer {
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
