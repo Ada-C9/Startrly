@@ -60,6 +60,10 @@ nav ul {
   width: max-content;
 }
 
+.header a:hover {
+  background-color: gray;
+}
+
 /********** quote **********/
 .quote {
   font-family: 'Playfair Display', serif;
