@@ -83,13 +83,11 @@ Styling for first section Startly */
 .second-section{
   font-style: italic;
   border-bottom: solid .5px lightgray;
-  min height: 200px;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  min height: 100px;
+  padding: 5% 23% 1% 23%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  line-height: 30pt;
 }
 
 .second-section blockquote:before {
@@ -100,6 +98,10 @@ Styling for first section Startly */
 }
 
 .second-section p {
-  justify-content: right;
-  align-items: right;
+  padding-right: 0;
+  text-align: right;
+}
+
+.second-section p:before{
+  content: "--";
 }
