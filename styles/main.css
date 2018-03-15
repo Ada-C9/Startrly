@@ -3,6 +3,11 @@
   font-family: arial;
 }
 
+/* applies a border to the bottom of each box model */
+.container section {
+  border-bottom: lightblue 1px solid;
+}
+
 /* syle for the nav list items */
 #nav ul {
   margin: 0px;
@@ -22,22 +27,23 @@
 /* controling the nav flexbox */
 #nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: 4.5fr 0.5fr 0.5fr; */
 }
 
 /* move first list in nav to the left */
 #nav ul li:first-of-type {
-/* TODO: move nav option to the left */
-
+  margin-right: auto;
 }
 
 /* move remainder nav lists to the right */
 #nav ul li:nth-of-type(1n+2) {
-/* TODO: move both right navoption to the right */
-flex-direction: row;
-
+  margin-left: 80px;
+  margin-right: 50px;
 }
 
+/* css for the header id */
 #header {
   display: flex;
   flex-direction: column;
@@ -47,17 +53,16 @@ flex-direction: row;
   background-color: lightyellow;
 }
 
+/* css for the header title: Startrly */
 #header h1 {
   color: #688BF3;
   font-family: arial;
   font-size: 35pt;
   font-family: 'Limelight', bold;
   margin: auto;
-  /* border-style: dotted;
-  border-radius: 20px;
-  background-color: lightyellow; */
 }
 
+/* css for the tagline */
 #header sub {
   line-height: 70px;
   font-weight: bold;
@@ -65,23 +70,27 @@ flex-direction: row;
   margin-bottom: 25px;
 }
 
+/* css for the button in the header */
 #header a {
   padding: 20px 30px;
   margin-bottom: 70px;
-  border: lightblue 2px solid;
-  border-radius: 5px;
+  border: lightblue 3px solid;
+  border-radius: 7px;
   text-decoration: none;
   color: purple;
 }
 
+/* adding the front quotation marks */
 .blockquote::before {
   content: "\201C";
 }
 
+/* adding the back quotation marks */
 .blockquote::after {
   content: "\201D";
 }
 
+/* css for both quotes */
 .blockquote {
   font-style: italic;
   text-align: left;
@@ -90,12 +99,8 @@ flex-direction: row;
   letter-spacing: 1px;
 }
 
-
-.container section:nth-of-type(2) p {
+/* css for both blockquote authors */
+.blockquote-author {
   text-align: right;
   margin-bottom: 50px;
-}
-
-.container section {
-  border-bottom: black 1px solid;
 }
