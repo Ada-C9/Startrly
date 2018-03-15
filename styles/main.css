@@ -4,23 +4,32 @@ nav ul {
 }
 
 li#a {
-  margin-left: 20px;
-  margin-right: auto;
+  flex-grow: 1;
 }
 
 li#b {
-  margin-right: 100px;
-  margin-left: auto;
+  margin-right: 3%;
 }
 
 li#c {
-  margin-right: 50px;
+  margin-right: 3%;
 }
+
+/* li#a :hover{
+  color: lightblue
+}
+
+li#b :hover{
+  color: lightblue
+}
+
+li#c :hover{
+  color: lightblue
+} */
 
 .tagline {
   text-align: center;
   margin-top: 10%;
-  /* border-top: .25mm ridge lightgray; */
 }
 
 .tagline h1 {
@@ -205,4 +214,9 @@ li#c {
 
 .support, .about {
   margin: 5%;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0
 }
