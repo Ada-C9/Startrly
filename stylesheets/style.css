@@ -46,3 +46,23 @@ nav ul li:nth-of-type(2) {
   text-decoration: none;
   font-size: 0.6em;
 }
+
+/* Blockquote sections */
+.blockquote {
+  display: grid;
+  /*grid-template: 30vh 10vh/ 100vw;
+  border-top: solid thin black;
+  border-bottom: solid thin black;
+  align-items: center;
+  text-align: left;*/
+  font-style: italic;
+  font-size: 1.8em;
+}
+
+.blockquote blockquote {
+  grid-row: 2 ;
+  padding:  10vw;
+}
+.blockquote > p {
+  grid-row-start: -1;
+}
