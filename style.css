@@ -79,3 +79,27 @@ Styling for first section Startly */
 .first-section a:visited{
   color: #191970;
 }
+
+.second-section{
+  font-style: italic;
+  border-bottom: solid .5px lightgray;
+  min height: 200px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-section blockquote:before {
+  content: open-quote;
+}
+.second-section blockquote:after {
+  content: close-quote;
+}
+
+.second-section p {
+  justify-content: right;
+  align-items: right;
+}
