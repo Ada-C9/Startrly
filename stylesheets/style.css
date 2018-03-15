@@ -1,7 +1,7 @@
 #main-container {
-  display: grid;
-  grid-template: 7 / 100vw;
-  font-family: Montserrat;
+  /*display: grid;
+  grid-template: repeat(7 1fr) / 1;*/
+  font-family: Montserrat, sans-serif;
 }
 
 /* Nav Bar */
@@ -49,17 +49,21 @@ nav ul li:nth-of-type(2) {
 
 /* Blockquote sections */
 .blockquote {
+  width: 98vw;
+  margin: auto;
+  text-align: center;
   border-top: solid thin black;
   border-bottom: solid thin black;
   font-style: italic;
   font-size: 1.8em;
+  line-height: 2em;
 }
 
 .blockquote blockquote {
-  padding: 15vw 10vw 0 10vw;
+  padding: 10vw 10vw 0 10vw;
 }
 .blockquote p {
-  padding: 0 15vw 15vw 10vw;
+  padding: 0 15vw 10vw 10vw;
   text-align: right;
 }
 .blockquote p::before {
@@ -70,23 +74,40 @@ blockquote::before, blockquote::after {
 }
 
 /* why section */
+#why {
+  font-family: Arial, sans-serif;
+}
+
 #why h2 {
   text-align: center;
   padding: 2em 0 1.5em 0;
-  font-family: Arial;
   font-weight: 700;
   font-size: 1.8rem;
 }
 
 #why ul {
   display: grid;
-  grid-template: 1fr / repeat(3, 1fr);
+  grid-template: 1fr / repeat(3, 25vw);
   list-style-type: none;
+  justify-content: space-around;
+}
+
+#why ul strong {
+  font-size: 1.2em;
+}
+
+#why ul img {
+  margin: 0 0.5em;
+  float: left;
 }
 
 /* Team */
+#team ul {
+
+}
+
 #team img {
-  padding: 0.8rem;
+  padding: 0.3rem;
   border: solid thin grey;
   border-radius: 100%;
 }
