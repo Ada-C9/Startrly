@@ -1,0 +1,44 @@
+nav ul {
+  height: .5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style-type: none;
+  font-weight: bold;
+  wrap: none;
+  font-size: .75em;
+}
+
+nav ul li:nth-of-type(2) {
+  margin-left: 50%;
+}
+
+nav ul li:last-of-type {
+  margin-right: 5%
+}
+
+.intro {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid pink;
+}
+
+.intro h1 {
+  flex: .20;
+}
+
+.intro sub {
+  flex: .20;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.intro a[href] {
+  padding: .5em;
+  border: thin solid blue;
+  border-radius: .5em;
+  text-decoration: none;
+}
