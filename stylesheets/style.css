@@ -76,13 +76,14 @@ blockquote::before, blockquote::after {
 /* why section */
 #why {
   font-family: Arial, sans-serif;
+  margin-bottom: 7vw;
 }
 
 #why h2 {
   text-align: center;
   padding: 2em 0 1.5em 0;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 #why ul {
@@ -102,12 +103,49 @@ blockquote::before, blockquote::after {
 }
 
 /* Team */
-#team ul {
-
+#team h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 10rem;
 }
 
-#team img {
+#team ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10vw;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#team ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#team ul img {
+  margin: 5rem;
   padding: 0.3rem;
   border: solid thin grey;
   border-radius: 100%;
+}
+
+/* Sponsors */
+#sponsors h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+#sponsors ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#sponsors img {
+  margin: 0 2rem;
 }
