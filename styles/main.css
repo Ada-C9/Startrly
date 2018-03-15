@@ -5,33 +5,92 @@ Azure Blue (#336699): Navbar, footer
 Ecru White (#F4F5E7): Text
 Orange Peel (#FF9E01): Links
 ******************************************/
-
+html, body {
+  height: 100%;
+  width: 100%;
+}
 body {
-  margin: 0;
   padding: 0;
   color: #F4F5E7;
+  background-color: #6D8CA0;
 }
 
-.container {
+.grid-container {
   display: grid;
-  background-color: #6D8CA0;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(9, 1fr);
-  max-height: 500px;
+  grid-template-rows: repeat(auto-fit,minmax(300px, 1fr));
 }
 
 .header {
   background-color: #336699;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  height: 30%;
 }
 
-.nav {
-  background-color: #f0e442;
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-container>li {
+  padding: 1em;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+nav ul li:nth-last-child(-n+2) {
+  font-size: 1.5em
+}
+
+.header nav ul {
+  list-style: none;
+}
+
+.jumbotron-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 2px gray solid;
+}
+
+.jumbotron-container h1 {
+  padding: 20px 20px;
+}
+
+.jumbotron-container sub {
+  margin-top: 20px;
+
+}
+
+.jumbotron-container a {
+}
+
+.first-quote-container {
+  border: solid black 2px; /* for testing */
+
+}
+
+.why {
+  border: solid black 2px; /* for testing */
+}
+
+.second-quote {
+  border: solid black 2px; /* for testing */
+}
+
+.team {
+  border: solid black 2px; /* for testing */
+}
+
+.sponsors {
+  border: solid black 2px; /* for testing */
 }
 
 .footer {
+  border: solid black 2px; /* for testing */
   background-color: #336699;
 }
