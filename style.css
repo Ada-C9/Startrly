@@ -1,6 +1,7 @@
 /* Whole page styling */
 * {
   font-family: 'Raleway', sans-serif;
+  background-color: hsla(32, 100%, 97%, 1);
 }
 
 a:hover {
@@ -16,7 +17,7 @@ a:hover {
 .container {
   width: 100%;
   min-width: 280px;
-  margin: 2em 0 ;
+  margin: 2em 0;
   padding: 2em 0;
   border-bottom: solid 1px gray;
 }
@@ -32,13 +33,30 @@ a:hover {
   margin: -.5rem 0 2.5rem;
 }
 
+.color-section {
+  margin: -2em 0;
+    background-color: #667761;
+  color: hsla(32, 100%, 97%, 1);
+}
+
+.color-section * {
+  background-color: inherit;
+}
+
 /* Navigation Styling */
+
 
 #top-nav ul {
   display: inline-grid;
   list-style-type: none;
   grid-template-columns: 4fr repeat(2, 2fr) 1fr;
   width: 100%;
+  border-bottom: solid .5rem hsla(349, 48%, 9%, 0.3);
+  position: fixed;
+  padding: 2em;
+  top: 0;
+  z-index: 1;
+  background-color: hsla(32, 100%, 97%, 1);
 }
 
 #top-nav ul li {
@@ -46,6 +64,7 @@ a:hover {
   font-size: .75em;
   font-weight: 700;
   text-align: center;
+  background-color: inherit;
 
 }
 
@@ -59,11 +78,14 @@ a:hover {
 /*  Tagline Blurb Styling*/
 
 #tagline {
+  margin-top: 5em;
   display: flex;
   flex-flow: column wrap;
   min-height: 150px;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
 }
 
 #tagline h1 {
@@ -135,8 +157,7 @@ a:hover {
 }
 
 #team ul span {
-  margin: -3rem;
-  padding: 1.5rem 0;
+  line-height: 1.5em;
   display: block;
   text-align: center;
 }
