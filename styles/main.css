@@ -57,7 +57,6 @@ li {
 
 .main {
   display: grid;
-  /* grid-template-rows: 5% 20% 15% 20% 15% 25% 15%); */
   grid-template-columns: 1fr;
   align-items: stretch;
 }
@@ -87,11 +86,14 @@ li {
 }
 
 .sponsor-list {
-  align-content: center;
-  align-items: center;
+  /* align-content: center;
+  align-items: center; */
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: auto;
+  min-width: 30%;
 }
 
 .why-list {
