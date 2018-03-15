@@ -1,5 +1,6 @@
-nav ul {
-  height: .5em;
+/* top nagivation bar */
+  nav ul {
+  height: .75em;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -17,13 +18,14 @@ nav ul li:last-of-type {
   margin-right: 5%
 }
 
+/* intro, tagline, button */
 .intro {
-  height: 250px;
+  height: 275px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid pink;
+  border-bottom: thin solid lightgray;
 }
 
 .intro h1 {
@@ -41,4 +43,24 @@ nav ul li:last-of-type {
   border: thin solid blue;
   border-radius: .5em;
   text-decoration: none;
+}
+
+/* quote */
+.quote {
+  height: 200px;
+  display: flex;
+  border-bottom: thin solid lightgray;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote blockquote {
+  font-style: italic;
+  line-height: 2em;
+  align-self: center;
+}
+
+.quote p {
+  font-style: italic;
+  margin-left: 75%;
 }
