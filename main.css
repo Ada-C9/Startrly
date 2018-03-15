@@ -7,16 +7,17 @@
 }
 
 /* background color for whole page */
-/* * {
-  background-color: purple;
-} */
 
 /* takes out bullets from ul */
 ul {
     list-style-type: none;
 }
 
-/* nav br style */
+a {
+  text-decoration: none;
+}
+
+/* nav bar style */
 nav ul {
   display: flex;
   margin-right: 10vw;
@@ -33,7 +34,46 @@ nav ul li:nth-of-type(2) {
 
 
 /* startrly title*/
-h1 {
-  font-size: 5em;
-  position: center;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3em;
+  border-bottom: solid 2px;
+  border-color: lightgrey;
+}
+
+.header a {
+  margin: 60px 0 80px 0;
+  font-size: .4em;
+  text-align: center;
+  vertical-align: center;
+  height: 50px;
+  width: 200px;
+  background: white;
+  border-radius: 7px;
+  border: solid 2px lightgrey;
+  padding: 23px 0px 0px 0px;
+}
+
+.quote {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  margin: 60px 150px;
+}
+.quote p {
+  text-align: right;
+  /* margin-right: 50px; */
+}
+
+.quote blockquote:before {
+  content: "\""
+}
+.quote blockquote:after {
+  content: "\""
+}
+.quote p:before {
+  content: "--"
 }
