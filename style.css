@@ -2,8 +2,12 @@
   font-family: Arial;
 }
 
+h2 {
+  text-align: center
+}
+
 /* Styling for nav  */
- nav {
+nav {
   position: fixed;
   width: 100%;
   top: 0;
@@ -21,10 +25,9 @@ nav > ul > li {
   width: 12%;
   margin: 7px;
   padding-right: 25px;
-  /* background-color: lightgray; */
 }
 
 nav > ul > li:first-child {
   text-align: left;
-  width: 65%
+  width: 62%
 }
