@@ -15,36 +15,27 @@ body > nav, body > div section {
 /* nav styles  */
 
 body div nav ul {
+  text-align: left;
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: 5fr 1fr 1fr;
 }
 
 body div nav ul li {
   display: inline-block;
-}
-
-body div nav ul li:first-child {
-  grid-column-start: 2;
-}
-
-body div nav ul li:nth-child(2) {
-  grid-column-start: 8;
-}
-
-body div nav ul li:nth-child(3) {
-  grid-column-start: 10;
+  margin-left: 30px;
+  padding-left: 30px;
 }
 
 /* hero banner styles  */
 
 body div > section.hero {
-  margin-top: -10vw;
+  margin-top: -8vw;
   height: 100vh;
   display: flex;
   justify-content: center;
 }
 
-div.hook {
+div.hero-content {
   text-align: center;
   align-self: center;
   padding: 20px;
@@ -53,17 +44,16 @@ h1 {
   font-size: 4em;
 }
 
-div.hook sub {
+div.hero-content sub {
   font-size: 1.5em;
 }
 
-div.hook a {
+div.hero-content a {
   display: block;
   text-decoration: none;
   padding: 10px;
   margin-top: 30px;
   border: solid 1px lightblue;
-
 }
 
 /* blockquote styles  */
@@ -80,14 +70,19 @@ blockquote + p {
   text-align: right;
 }
 
-/* stuff inside why and team sections  */
+div.quote {
+  width: 60vw;
+  margin: 50px auto;
+}
 
-body section ul.display-flex {
+/* why and team sections  */
+.display-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
+
 
 body section ul.display-flex li {
   width: 300px;
@@ -96,7 +91,7 @@ body section ul.display-flex li {
   align-content: space-between;
 }
 
-/* why section styles  */
+/* why styles  */
 
 ul.why-section li {
   width: 27vw;
@@ -124,15 +119,11 @@ ul.team-section li img {
 
 /* footer styles  */
 
-body div section:last-child {
-  display: flex;
+body div > section:last-child {
+  justify-content: flex-start;
 }
 
-body div section div {
-  min-width: 20vw;
-}
-
-div.quote {
-  width: 60vw;
-  margin: 50px auto;
+body div > section:last-child div.links {
+  margin-left: 30px;
+  min-width: 15vw;
 }
