@@ -164,6 +164,8 @@ li p {
   border: 2px gray solid;
   border-radius: 80px;
   margin: 20px 68px;
+  width: 150px;
+  height: 150px;
 }
 
 /********** sponsors **********/
