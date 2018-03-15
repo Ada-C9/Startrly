@@ -5,13 +5,9 @@
     margin:2em
 }
 
-/* .header{
-  grid-row: 1/3 span
-  display:flex;
-  justify-content: center;
-  margin: 100px
-  flex-flow:row;
-} */
+h2 {
+  text-align: center;
+}
 
 nav ul{
   display: grid;
@@ -29,19 +25,59 @@ nav ul{
   margin: 2em;
 }
 .why li {
-  padding:2em
+  padding: 1em;
 }
 
 .why p {
-  max-width: 400px
+  max-width: 400px;
+  text-align: left;
 }
 
-section blockquote ::before, section blockquote::after {
+section blockquote::before, section blockquote::after {
   content: "\""
 }
 
 
 .blockquote {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
+
+section p {
+  text-align: right;
+}
+
+.team img {
+  border-radius: 300px;
+  margin: 1em;
+}
+
+.team {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.team li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em;
+}
+
+.sponsors ul {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr 8fr;
+}
+ .footer h3 {
+   display: flex;
+   align-items: flex-start;
+ }
