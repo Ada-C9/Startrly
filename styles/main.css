@@ -1,12 +1,96 @@
-nav ul {
-  list-style-type: none;
-  font-weight: bold;
-  background-color: lightgray;
-  /* margin: auto; */
+/* font for the whole site */
+* {
+  font-family: arial;
 }
 
-.nav {
+/* syle for the nav list items */
+#nav ul {
+  margin: 0px;
+  line-height: 60px;
+  list-style-type: none;
+  font-weight: bold;
+  background-color: lightblue;
+  color: purple;
+}
+
+/* change the nav list item when hovering over */
+#nav ul li:hover {
+  color: lightyellow;
+  text-decoration: underline;
+}
+
+/* controling the nav flexbox */
+#nav ul {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+}
+
+#nav ul li:nth-last-child(3){
+  /* display: flex;
+  align-self: flex-start; */
+  /* text-align: left; */
+  /* align-items: stretch; */
+  justify-content: flex-end;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 7rem;
+  align-items: center;
+  background-color: lightyellow;
+}
+
+#header h1 {
+  color: #688BF3;
+  font-family: arial;
+  font-size: 35pt;
+  font-family: 'Limelight', bold;
+  margin: auto;
+  /* border-style: dotted;
+  border-radius: 20px;
+  background-color: lightyellow; */
+}
+
+#header sub {
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+#header a {
+  padding: 20px 30px;
+  margin-bottom: 70px;
+  border: lightblue 2px solid;
+  border-radius: 5px;
+  text-decoration: none;
+  color: purple;
+}
+
+.blockquote::before {
+  content: "\201C";
+}
+
+.blockquote::after {
+  content: "\201D";
+}
+
+.blockquote {
+  font-style: italic;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 70px 150px 110px 150px;
+  letter-spacing: 1px;
+}
+
+
+.container section:nth-of-type(2) p {
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.container section {
+  border-bottom: black 1px solid;
 }
