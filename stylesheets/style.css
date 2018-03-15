@@ -30,6 +30,8 @@ nav ul li:nth-of-type(2) {
 #main-header section {
   display: flex;
   width: 100vw;
+  height: 50vh;
+  padding-top: 30vh;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -49,10 +51,13 @@ nav ul li:nth-of-type(2) {
 
 /* Blockquote sections */
 .blockquote {
-  display: grid;
-  /*grid-template: 30vh 10vh/ 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   border-top: solid thin black;
   border-bottom: solid thin black;
+  /*grid-template: 30vh 10vh/ 100vw;
   align-items: center;
   text-align: left;*/
   font-style: italic;
@@ -60,8 +65,8 @@ nav ul li:nth-of-type(2) {
 }
 
 .blockquote blockquote {
-  grid-row: 2 ;
-  padding:  10vw;
+  /*min-height: 40vw;*/
+  padding:  30vw;
 }
 .blockquote > p {
   grid-row-start: -1;
