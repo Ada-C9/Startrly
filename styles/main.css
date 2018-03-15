@@ -5,6 +5,11 @@ Azure Blue (#336699): Navbar, footer
 Ecru White (#F4F5E7): Text
 Orange Peel (#FF9E01): Links
 ******************************************/
+
+/*****************************************
+                 GENERAL
+******************************************/
+
 html, body {
   height: 100%;
   width: 100%;
@@ -19,6 +24,19 @@ body {
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  border-bottom: 2px gray solid;
+}
+
+/*****************************************
+             HEADER & NAVBAR
+******************************************/
 
 .header {
   background-color: #336699;
@@ -51,14 +69,9 @@ nav ul li:nth-last-child(-n+2) {
   list-style: none;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 25rem;
-  border-bottom: 2px gray solid;
-}
+/*****************************************
+             JUMBOTRON SECTION
+******************************************/
 
 .jumbotron h1 {
   display: flex;
@@ -101,6 +114,10 @@ nav ul li:nth-last-child(-n+2) {
   font-style: italic;
 }
 
+/*****************************************
+            BLOCKQUOTE SECTIONS
+******************************************/
+
 .quote blockquote {
   font-size: 2em;
   font-style: italic;
@@ -115,21 +132,38 @@ nav ul li:nth-last-child(-n+2) {
   margin: 1em 4em;
 }
 
+/*****************************************
+             WHY? SECTION
+******************************************/
+
 .why {
   border-bottom: 2px gray solid;
+  height: 100%;
 }
 
-.second-quote {
-  border-bottom: 2px gray solid;
+.why h2 {
+  font-size: 4em;
 }
+
+/*****************************************
+             TEAM SECTION
+******************************************/
 
 .team {
   border-bottom: 2px gray solid;
 }
 
+/*****************************************
+             SPONSORS SECTION
+******************************************/
+
 .sponsors {
   border-bottom: 2px gray solid;
 }
+
+/*****************************************
+             FOOTER SECTION
+******************************************/
 
 .footer {
   border-bottom: 2px gray solid;
