@@ -28,6 +28,17 @@ body {
 
 .footer {
   border-top: 1px solid black;
+  display: grid;
+  grid-template-columns: .25fr .25fr;
+  align-items: left;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr) .5fr ;
+  justify-items: center;
+  align-items: center;
 }
 
 .header .button {
@@ -35,12 +46,14 @@ body {
   border-radius: 10px;
   color: black;
   display: inline-block;
-  padding: 15px 25px;
+  padding: 5px 5px;
   text-decoration: none;
   text-transform: capitalize;
 }
 
 .header sub {
+  font-size: 21px;
+  font-weight: bolder;
   text-transform: capitalize;
 }
 
@@ -57,10 +70,15 @@ li {
   list-style-type: none;
 }
 
-.sponsors {
+.main {
   display: grid;
-  grid-template-columns 100%;
-  grid-template-rows: 100%;
+  /* grid-template-rows: 5% 20% 15% 20% 15% 25% 15%); */
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+.sponsors img {
+
 }
 
 .team-bio img {
@@ -69,4 +87,10 @@ li {
   padding: 5px;
   box-shadow: 0 0 0 2px lightgrey;
   margin: 5px;
+}
+
+.top-nav-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+
 }
