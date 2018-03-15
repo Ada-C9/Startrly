@@ -11,6 +11,10 @@ nav {
   background-color: #A0A083;
   font-weight: bold;
   font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 }
 
 nav ul {
@@ -31,13 +35,15 @@ nav li:first-child {
 /* The following is for the 'Startly Section' */
 
 section:nth-of-type(1) {
+  margin-top: 0;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #C9ADA1;
   min-height: 350px;
-  border: solid #4D6A6D 1px;
+  border-bottom: solid #4D6A6D 1px;
 }
 
 section:nth-of-type(1) h1{
@@ -48,6 +54,8 @@ section:nth-of-type(1) h1{
 section:nth-of-type(1) sub{
   margin: 1%;
   font-size: 1.75em;
+  position: inherit;
+
 }
 
 section:nth-of-type(1) a{
@@ -101,12 +109,22 @@ section:nth-of-type(1) a:hover {
 }
 
 
+/* The following is for the last section --Footer */
 
+#footer {
+  border: solid #4D6A6D 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 1em;
+}
 
-section:nth-of-type(3)
+#footer div {
+  width: 25%;
+  margin-left: 5%;
+}
 
-
-section:nth-of-type(4)
-
-
-section:nth-of-type(5)
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+}
