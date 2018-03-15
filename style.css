@@ -49,11 +49,11 @@ a:hover {
 #top-nav ul {
   display: inline-grid;
   list-style-type: none;
-  grid-template-columns: 4fr repeat(2, 2fr) 1fr;
+  grid-template-columns: 4fr repeat(2, 1fr);
   width: 100%;
   border-bottom: solid .5rem hsla(349, 48%, 9%, 0.3);
   position: fixed;
-  padding: 2em;
+  padding: 2em 2em;
   top: 0;
   z-index: 1;
   background-color: hsla(32, 100%, 97%, 1);
@@ -75,6 +75,10 @@ a:hover {
   text-align: left;
 }
 
+#top-nav ul li:last-child {
+  padding-right: 5em;
+  text-align: center;
+}
 /*  Tagline Blurb Styling*/
 
 #tagline {
