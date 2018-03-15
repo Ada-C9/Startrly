@@ -1,0 +1,41 @@
+
+
+/*.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  font-family: 'Poppins', sans-serif;
+  background: #fff9e0;
+  background:-webkit-linear-gradient(bottom, #fff9e0, #fde57c);
+  background: -moz-linear-gradient(bottom, #fff9e0, #fde57c);
+  background: -ms-linear-gradient(bottom, #fff9e0, #fde57c);
+  background: -o-linear-gradient(bottom, #fff9e0, #fde57c);
+  background: linear-gradient(to top, #fff9e0, #fde57c);
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 10;
+}
+
+.header nav ul {
+  display: flex;
+  background: #000072;
+  color: #FFFFFF;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 15px;
+  position: fixed;
+}
+
+.content {
+  padding: 100px 15px 15px 15px;
+}
+
+.team ul {
+  background: #FDBA63;
+  list-style-type: none;
+}
+
+.team img {
+  border-radius: 100px;
+}*/
