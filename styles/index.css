@@ -2,6 +2,7 @@
   list-style-type: none;
 }
 
+/* ENTIRE PAGE */
 .body-grid-container {
   display: grid;
   grid-template-rows: 10% repeat(7, auto) 10%;
@@ -12,60 +13,9 @@
   border: 1px dashed black;
 }
 
-ul li.why-grid-container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  /* grid-template-rows: 20% 80%; */
-  border: 1px dashed blue;
-  grid-template-areas:
-  "aside title"
-  "aside quote";
-}
-
-.why-grid-container img {
-  grid-area: aside;
-  align-self: center;
-  height: 100px;
-  width: 100px;
-}
-
-.why-grid-container p {
-  grid-area: quote;
-  align-content: center;
-}
-
-.why-grid-container strong {
-  grid-area: title;
-}
-
-
+/* HEADER SECTION */
 #button {
   display: block;
-}
-
-.meet-the-team li, .sponsors li {
-  display: inline-block;
-}
-
-.why li {
-  width: 28%;
-  padding: 10px;
-}
-
-#support, #about {
-  width: 20%;
-  display: inline-block;
-}
-
-blockquote {
-  /* height: auto; */
-  text-align: center;
-  font-style: italic;
-}
-
-blockquote + p {
-  text-align: right;
-  padding-right: 30px;
 }
 
 #startly-header, #trynow-header, #about-header {
@@ -76,21 +26,71 @@ blockquote + p {
   text-align: center;
 }
 
-.flex-container {
+/* QUOTES */
+blockquote {
+  text-align: center;
+  font-style: italic;
+}
+
+blockquote + p {
+  text-align: right;
+  padding-right: 30px;
+}
+
+
+/* WHY SECTION  */
+ul li.why-grid-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  /* grid-template-rows: 20% 80%; */
+  border: 1px dashed blue;
+  grid-template-areas:
+  "aside title"
+  "aside quote";
+}
+
+li.why-grid-container img {
+  grid-area: aside;
+  align-self: center;
+  height: 100px;
+  width: 100px;
+}
+
+li.why-grid-container p {
+  grid-area: quote;
+  align-content: center;
+}
+
+li.why-grid-container strong {
+  grid-area: title;
+}
+
+ul.why-flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 3vw;
 }
 
-.team-flex-container {
+section.why li {
+  width: 28%;
+  padding: 10px;
+}
+
+
+/* MEET THE TEAM */
+.meet-the-team li, .sponsors li {
+  display: inline-block;
+}
+
+ul.team-flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.team-flex-container img {
+ul.team-flex-container img {
   border: 1px gray solid;
   padding: 1px;
   width: 130px;
@@ -98,6 +98,12 @@ blockquote + p {
   border-radius: 50%
 }
 
-.team-flex-container span {
+ul.team-flex-container span {
   display: block;
+}
+
+/* FOOTER */
+#support, #about {
+  width: 20%;
+  display: inline-block;
 }
