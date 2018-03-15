@@ -12,15 +12,15 @@ ul {
 
 section {
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px gray solid;
 }
 
 /********** nav **********/
 nav {
-  margin: 20px 40px;
+  padding: 20px 100px 20px 100px;
+  font-weight: bold;
 }
 
 nav ul {
@@ -35,16 +35,23 @@ nav ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.header h1 {
+  font-size: 3em;
 }
 
 .header sub {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: capitalize;
 }
 
 .header a {
   color: black;
+  font-size: 1.5em;
   text-decoration: none;
   border: 2px gray solid;
   border-radius: 5px;
@@ -56,8 +63,14 @@ nav ul {
 /********** quote **********/
 .quote {
   font-family: 'Playfair Display', serif;
+  font-size: 20px;
   font-style: italic;
   line-height: 2;
+  padding: 50px 100px 50px 100px;
+}
+
+.quote blockquote {
+  text-align: left;
 }
 
 .quote blockquote::before {
@@ -79,6 +92,7 @@ nav ul {
 /********** why **********/
 .why {
   min-height: 300px;
+  padding: 30px 0 20px 0;
 }
 
 .why ul {
@@ -113,6 +127,8 @@ li p {
 .team {
   max-width: 900px;
   margin: 0 auto;
+  border: none;
+  padding: 50px 0px 50px 0px;
 }
 
 .team ul {
@@ -135,12 +151,16 @@ li p {
 }
 
 /********** sponsors **********/
+.sponsors {
+  padding-bottom: 50px;
+}
 
 .sponsors ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 20px;
 }
 
 /********** footer **********/
@@ -148,4 +168,6 @@ li p {
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  border-bottom: none;
+  padding: 20px 100px 50px 100px;
 }
