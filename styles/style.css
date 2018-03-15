@@ -3,13 +3,16 @@
 } */
 
 /* BASICS */
+
 body {
   font-family: 'Cormorant Garamond', serif;
+  color: black;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 5em;
+  opacity: 1;
 }
 
 h2 {
@@ -18,6 +21,7 @@ h2 {
 }
 
 /* HEADER */
+
 nav {
   background-color: #ffc1cc;
   opacity: .95;
@@ -40,7 +44,13 @@ nav li {
   padding-right: 5%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* HERO */
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -61,7 +71,8 @@ nav li {
   padding: .5em;
   border-radius: 20px;
   text-decoration: none;
-  color: gray
+  color: gray;
+  text-align: center;
 }
 
 .hero a[href]:hover {
@@ -70,7 +81,14 @@ nav li {
   border: dotted white;
 }
 
+/* .hero a[href]:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+} */
+
 /* QUOTE */
+
 .quote {
   padding: 2em;
   border-top: dotted 1px gray;
@@ -79,11 +97,11 @@ nav li {
 }
 
 .quote blockquote::before {
-  content: "\"";
+  content: "\“";
 }
 
 .quote blockquote::after {
-  content: "\"";
+  content: "\”";
 }
 
 .quote p {
@@ -96,30 +114,21 @@ nav li {
 }
 
 /* WHY? */
+
 .side-along {
   display: flex;
   flex-direction: column;
 }
 
-/* .side-along h2 {
-  text-align: center;
-} */
-
 .side-along ul {
   padding: 0;
   list-style-type: none;
-  /* display: flex;
-  flex-direction: row wrap;
-  align-content: flex-end;
-  margin: 20px; */
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .side-along li {
-  display: flex;
-  flex-flow: column wrap;
   margin: 20px;
   max-width: 25%;
 }
@@ -127,7 +136,9 @@ nav li {
 .side-along img {
   max-width: 100px;
   max-height: 100px;
-  padding-bottom: 1em;
+  padding-bottom: .25em;
+  padding-right: .25em;
+  float: left;
 }
 
 .side-along li strong {
@@ -135,6 +146,7 @@ nav li {
 }
 
 /* TEAM */
+
 .team {
   display: flex;
   flex-direction: column;
@@ -162,6 +174,7 @@ nav li {
 }
 
 /* SPONSORS */
+
 .gallery {
   display: flex;
   flex-direction: column;
@@ -180,6 +193,7 @@ nav li {
 }
 
 /* Footer */
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
@@ -192,7 +206,6 @@ nav li {
 
 .footer div:first-of-type {
   margin-left: 20px;
-
 }
 
 .footer ul {
