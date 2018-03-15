@@ -1,11 +1,14 @@
 /* Whole page styling */
 * {
   font-family: 'Raleway', sans-serif;
-  max-width: 1800px;
 }
 
 a:hover {
   color: teal;
+}
+
+#main {
+  max-width: 1150px;
 }
 
 /* General Styling */
@@ -152,4 +155,22 @@ a:hover {
 #team ul img:hover {
   -webkit-filter: grayscale(0);
   filter: none;
+}
+
+/* Sponsors Styling */
+
+#sponsors ul {
+  flex-flow: wrap row;
+  justify-content: space-equal;
+}
+
+/* Footer Styling */
+#footer {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+#footer ul {
+  list-style-type: none;
 }
