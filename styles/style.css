@@ -11,7 +11,7 @@
 /*full body styles*/
 body {
   font-family: Arial,sans-serif;
-  margin: 100px;
+  margin: 50px;
   background-color: #e6e6fa;
   /*background: #ff69b4;
   background:-webkit-linear-gradient(bottom, #ff69b4, #e6e6fa);
@@ -31,18 +31,20 @@ h2 {
 .nav ul {
   display:flex;
   list-style-type: none;
-  /*background-color: grey;*/
-  /*position: fixed;*/
+  position: fixed;
   top: 0;
+  width: 80%;
+  /*height: 200px;*/
   justify-content:flex-end;
 }
 /*makes responsive*/
 
 
-.nav li{
+.nav li a {
   color:hotpink;
   font-size: 1.9em;
   font-weight: bold;
+  text-decoration: none;
 
 }
 
@@ -56,9 +58,10 @@ h2 {
 }
 
 /*change nav words to links*/
-/*nav:hover {
-  background-color: #ff69b4;
-}*/
+.nav a:hover {
+  background-color: #000000;
+  border-radius: 100%;
+}
 
 
 /*header section styles*/
@@ -70,16 +73,14 @@ h2 {
   justify-content: space-between;
 }
 
-a[href] {
-  /*border-radius: 10%;*/
+.header a {
+  border-radius: 100%;
   color: hotpink;
-  /*border-style:solid;*/
+  border-style:solid;
+  text-decoration: none;
   /*background-color: white;*/
 
-  /*grid-column-st: 1/ span 1;*/
-
 }
-
 
 
 .header h1{
@@ -92,7 +93,13 @@ a[href] {
 /*quote section styles*/
 .quote {
   padding: 60px;
-  background-color: #dbc2fb;
+  /*background-color: #dbc2fb;*/
+  background: #ff69b4;
+  background:-webkit-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -moz-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -ms-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -o-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: linear-gradient(to top, #ff69b4, #e6e6fa);;
 
 
 }
@@ -110,13 +117,13 @@ a[href] {
 
 /*why section styles*/
 
-
+.why img{
+ float:left;
+}
 
 .why {
-  /*display: flex;*/
-  /*align-content: center;*/
   display:grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(6, auto);
 }
 
 .why li {
@@ -125,23 +132,26 @@ a[href] {
 
 /*team section styles*/
 
-.team ul {
-  display:grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: repeat(5, 100px);
+.team {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 .team li img {
   border-radius: 100%;
+  justify-content: center;
 }
 
 .team li span {
-
+  text-align:center;
+  display: block;
 }
-.team li{
+
+.team li {
   list-style-type: none;
-
-
 }
+
 
 /* sponsors section styles*/
 .sponsors  {
@@ -160,6 +170,12 @@ a[href] {
   display:grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(2,auto);
+  background: #ff69b4;
+  background:-webkit-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -moz-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -ms-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -o-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: linear-gradient(to top, #ff69b4, #e6e6fa);;
 }
 
 #footer ul {
