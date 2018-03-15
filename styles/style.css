@@ -1,8 +1,18 @@
+/********** import **********/
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
 
 /********** global **********/
-h1, h2, h3, li, sub, a {
+li, h1, h2, h3, sub, a, p, strong, span {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 1.7em;
+  color: #5E565A;
+}
+
+section {
+  text-align: center;
 }
 
 ul {
@@ -10,14 +20,13 @@ ul {
   padding: 0;
 }
 
-section {
-  text-align: center;
+img {
+  width: 150px;
+  hight: 150px;
 }
 
 /********** nav **********/
 nav {
-  font-size: 1.2em;
-  font-weight: bold;
   position: fixed;
   top: 0;
   width: 100%;
@@ -25,26 +34,31 @@ nav {
 }
 
 nav ul {
-  padding: 20px 20px 20px 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #EF767A;
+  background-color: #5E565A;
+
+  padding: 20px;
   display: grid;
-  grid-template-columns: 65% 20% 15%;
-  background-color: #85C7F2;
+  grid-template-columns: 7fr 2fr 1fr;
   margin: 0;
 }
 
 nav li {
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   width: max-content;
 }
 
 /********** header **********/
 .header {
   height: 200px;
+  padding-top: 70px;
+  padding-bottom: 550px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 550px;
 
   background-image: url("../images/banner-image.png");
   background-attachment: fixed;
@@ -54,41 +68,53 @@ nav li {
 }
 
 .header h1 {
-  font-size: 3em;
+  font-family: Playfair, serif;
+  font-size: 4em;
+  color: #EF767A;
+
+  margin: 30px;
 }
 
 .header sub {
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-family: Playfair, serif;
   font-size: 1.5em;
   font-weight: bold;
-  text-transform: capitalize;
+  color: #51513D;
+
   min-width: 600px;
+  min-height: 20px;
 }
 
 .header a {
-  color: black;
-  font-size: 1.5em;
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 40px;
-  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #EF767A;
+  background-color: #5E565A;
+
   width: max-content;
-  background-color: #85C7F2;
-  border: 2px white solid;
+  margin-top: 20px;
+  padding: 10px;
+
+  border-radius: 10px;
 }
 
 .header a:hover {
-  background-color: white;
-  border: 2px #85C7F2 solid;
+  color: white;
 }
 
 /********** quote **********/
 .quote {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
   font-style: italic;
+  font-size: 20px;
+  color: #51513D;
+  background-color: #A9CBB7;
   line-height: 2;
-  padding: 50px 100px 50px 100px;
-  background-color: #85C7F2;
+
+  padding: 50px 100px;
 }
 
 .quote blockquote {
@@ -104,6 +130,7 @@ nav li {
 }
 
 .quote p {
+  font-family: 'Playfair Display', serif;
   text-align: right;
 }
 
@@ -113,40 +140,40 @@ nav li {
 
 /********** why **********/
 .why {
+  max-width: 1500px;
   min-height: 300px;
-  padding: 30px 0 0 0;
-  max-width: 1000px;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 .why ul {
+  padding: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin-top: 40px;
-  padding: 0 0 0 40px;
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
 }
 
 .why li {
-  display: grid;
-  grid-template: 10px 80px / 100px 200px;
-  grid-gap: 10px;
   text-align: left;
+
   min-height: 150px;
   padding: 20px;
+  display: grid;
+  grid-template: 20px 120px / 150px 200px;
+  grid-gap: 10px;
 }
 
-li img {
+.why li img {
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
 }
 
-li strong {
+.why li strong {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
 
-li p {
+.why li p {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
@@ -155,7 +182,7 @@ li p {
 .team {
   max-width: 900px;
   margin: 0 auto;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px;
 }
 
 .team ul {
@@ -166,44 +193,55 @@ li p {
 
 .team li {
   line-height: 2;
+
   display: flex;
   flex-direction: column;
 }
 
 .team img {
+  margin: 20px 68px;
   padding: 5px;
+
   border: 2px gray solid;
   border-radius: 80px;
-  margin: 20px 68px;
-  width: 150px;
-  height: 150px;
 }
 
 /********** sponsors **********/
 .sponsors ul {
+  padding: 20px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 0 50px 0;
+}
+
+.sponsors li {
+  min-width: 200px;
 }
 
 /********** footer **********/
 .footer {
   text-align: left;
+  font-size: 1.2em;
+  color: #EF767A;
+  background-color: #5E565A;
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  padding: 20px 40px 50px 40px;
-  background-color: #85C7F2;
+  padding: 20px 40px;
 }
 
 /********** small screen **********/
 @media screen and (max-width: 600px) {
+  nav ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .why {
-    min-height: 300px;
-    padding: 30px 0 0 0;
     max-width: 350px;
+    min-height: 300px;
     margin: 0 auto;
+    padding: 30px 0;
   }
 
   .why li {
