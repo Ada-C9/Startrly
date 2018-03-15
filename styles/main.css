@@ -95,12 +95,17 @@
   font-style: italic;
   text-align: left;
   line-height: 1.5em;
-  margin: 70px 150px 110px 150px;
+  margin: 70px 150px 10px 150px;
   letter-spacing: 1px;
 }
 
 /* css for both blockquote authors */
 .blockquote-author {
   text-align: right;
-  margin-bottom: 50px;
+  margin: 70px 90px;
+  font-style: italic;
+}
+
+.blockquote-author::before {
+  content: "--";
 }
