@@ -3,8 +3,12 @@ ul {
   padding: 0;
 }
 
-h2 {
-  text-align: center;
+h1, h2, h3 {
+  font-family: 'Futura', sans-serif;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
 body > nav, body > div section {
@@ -66,8 +70,20 @@ blockquote {
   font-style: italic;
 }
 
+blockquote::before {
+  content: '\201c';
+}
+
+blockquote::after {
+  content: '\201d';
+}
+
 blockquote + p {
   text-align: right;
+}
+
+blockquote + p::before {
+  content: '\2014';
 }
 
 div.quote {
@@ -76,6 +92,11 @@ div.quote {
 }
 
 /* why and team sections  */
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
 .display-flex {
   display: flex;
   flex-direction: row;
