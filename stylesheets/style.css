@@ -70,7 +70,7 @@ blockquote::before, blockquote::after {
 }
 
 /* why section */
-.why h2 {
+#why h2 {
   text-align: center;
   padding: 2em 0 1.5em 0;
   font-family: Arial;
@@ -78,8 +78,15 @@ blockquote::before, blockquote::after {
   font-size: 1.8rem;
 }
 
-.why ul {
+#why ul {
   display: grid;
   grid-template: 1fr / repeat(3, 1fr);
   list-style-type: none;
+}
+
+/* Team */
+#team img {
+  padding: 0.8rem;
+  border: solid thin grey;
+  border-radius: 100%;
 }
