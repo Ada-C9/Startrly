@@ -1,6 +1,15 @@
 nav ul {
   list-style: none;
   display: flex;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #45B39D;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 li#a {
@@ -30,10 +39,13 @@ li#c :hover{
 .tagline {
   text-align: center;
   margin-top: 10%;
+  margin-bottom: 5%
 }
 
 .tagline h1 {
-  font-size: 2.5em
+  font-size: 3em;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
 }
 
 .tagline sub {
@@ -60,7 +72,7 @@ li#c :hover{
 #mxlorem {
   display: flex;
   font-family: cursive;
-  margin: 100px;
+  margin: 4%;
   border-top: .25mm ridge lightgray;
   border-bottom: .25mm ridge lightgray;
   font-size: 1.3em;
@@ -92,56 +104,55 @@ li#c :hover{
   text-align: center;
   font-size: 2em;
   font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 5%;
 }
 
 #why ul {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 85%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   border-bottom: .25mm ridge lightgray;
-  grid-gap: 20px
-}
-
-#why #a {
-  display: grid;
-  /* flex-direction: column;
-  flex-wrap: wrap; */
-  grid-template-columns: 100px auto;
   grid-gap: 20px;
+  margin-left: 5%
 }
 
-#why #a strong {
-  /* grid-column-start: 2; */
-  /* background-color: pink; */
-}
-
-#why #a p {
-  /* grid-column-start: 2; */
-  /* background-color: blue; */
-}
-
-#why #b {
+#why .a {
   display: grid;
   grid-template-columns: 120px 3fr 1fr;
 }
 
-#why #b p {
+#why .a strong {
   grid-column-start: 2;
 }
 
-#why #c {
+#why .a p {
+  grid-column-start: 2;
+}
+
+#why .b {
   display: grid;
   grid-template-columns: 120px 3fr 1fr;
 }
 
-#why #c p {
+#why .b p {
+  grid-column-start: 2;
+}
+
+#why .c {
+  display: grid;
+  grid-template-columns: 120px 3fr 1fr;
+}
+
+#why .c p {
   grid-column-start: 2;
 }
 
 #mxipsum {
   display: flex;
   font-family: cursive;
-  margin: 100px;
+  margin: 6%;
   border-bottom: .25mm ridge lightgray;
   min-height: 200px;
   font-size: 1.3em;
@@ -171,6 +182,9 @@ li#c :hover{
 
 .sponsers h2, #team h2 {
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 3%;
+  font-size: 2em;
 }
 
 .sponsers ul, #team ul {
@@ -184,7 +198,7 @@ li#c :hover{
 }
 
 #team li {
-  margin: 5%;
+  margin: 4%;
 }
 
 #team img {
@@ -207,13 +221,16 @@ li#c :hover{
 
 .footer {
   display: flex;
-  margin: 0 10%;
   border-top: .25mm ridge lightgray;
-
+  background-color: #45B39D;
 }
 
 .support, .about {
   margin: 5%;
+}
+
+.support {
+  margin-left: 10%;
 }
 
 .footer ul {
