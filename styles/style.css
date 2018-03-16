@@ -1,0 +1,186 @@
+/* stylesheet for startly webpage  */
+body {
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.quotations {
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  color: #8B8B8C;
+}
+/* --------all of the page----------- */
+
+.container {
+  display: grid;
+  grid-template-rows: 0.25fr 0.5fr 0.5fr 0.5fr .25fr;
+}
+
+.container section:first-child {
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+}
+
+.header {
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  text-align: right;
+  top: 2%;
+  border-bottom: 0.75px solid white;
+  background-color: white;
+  width: 100%;
+  color: grey;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.header ul li {
+  display: inline-block;
+}
+
+.header ul li:first-of-type {
+  border: grey;
+}
+
+.title {
+  background-color: #DFDCE6;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.title h1 {
+  margin-top: 80px;
+}
+
+.title a {
+  font-size: .8em;
+  color: #B945CF;
+  display: block;
+  border: 1px solid grey;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  border-radius: 25px;
+  padding: 20px 0;
+  background-color: #E9E3EA;
+  text-decoration: none;
+  font-style: italic;
+
+}
+
+.title a:hover {
+  color: #45CF57;
+  text-decoration: underline;
+}
+
+.title sub {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: .8em;
+  font-style: italic;
+}
+/*------------why----------- */
+.why {
+  font-size: 2.5em;
+  border-bottom: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 35px; */
+
+}
+
+.why h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.why img {
+float: left;
+margin-right: 0.8em;
+}
+
+.why p {
+  max-width: 400px;
+  text-align: left;
+  font-size: 0.75em;
+}
+
+
+/* -------The team-------------- */
+
+.team {
+  background-color: #F1F3EC;
+}
+
+.team h2 {
+  font-size: 2em;
+  text-align: center;
+}
+.team ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  font-size: 2em;
+}
+
+.team ul li {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.team img {
+  border-radius: 50%;
+  border: grey double 5px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  transition: .2s;
+}
+
+.team img:hover {
+  transform: scale(1.5);
+}
+
+/*---------sponsors--------*/
+
+.sponsors h2 {
+  font-size: 3em;
+}
+
+.sponsors ul {
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {
+  text-align: left;
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer h3 {
+  text-align: left;
+}
