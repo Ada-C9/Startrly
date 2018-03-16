@@ -22,6 +22,7 @@ background-color: #f0e442;
 grid-row: auto / span 2;
 } */
 
+
 body {
   display: grid;
   /* grid-template: 100px 500px / 200px 100px 50%; */
@@ -29,6 +30,12 @@ body {
   grid-template-rows: repeat(9, 1fr);
 }
 
+.topish {
+  background-color: lightgreen;
+  padding: 80px;
+  /* padding-bottom: 100px; */
+  /* align-content: center; */
+}
 
 .menu {
   list-style-type: none;
@@ -40,50 +47,40 @@ body {
   vertical-align: top; */
 }
 
-.start {
+.start { /* nav bar */
   margin-right: auto
 }
 
-/* .try {
-margin-left: auto;
-} */
-
-.about {
+.about { /* nav bar */
   margin-left: 50px;
 }
 
-body div section h1 {
-  padding: .4em;
-  padding-top: 3em;
+.header  h1:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: auto; */
+  padding-bottom: 2em;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
-
-.topish {
-  background-color: lightgreen;
-  /* border: 1rem */
-  padding: 85px;
-}
-
-sub {
-  font-size: 25pt;
+.header sub {
+  font-size: 1.1em;
+  padding-bottom: 40px;
   text-align: center;
 }
 
 /* should this be a button? */
-.action-call {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.header a {
+  position: block;
+  text-align: center;
   background-color: #FFF8DC;
-  border-radius: 12% 12%;
-  border-style: groove;
-  width: 180px;
+  width: 200px;
   text-decoration: none;
-  margin: 5px;
-  padding: 5px;
-  white-space:nowrap;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
 }
 
 body div section {
@@ -97,7 +94,7 @@ blockquote {
   padding: 1em;
 }
 
-.quote-block {
+.quoteish {
   border-top: solid;
   border-bottom: solid;
   padding: 20px;
