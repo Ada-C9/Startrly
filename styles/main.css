@@ -178,7 +178,6 @@
   .pics li span{
     text-align: center;
     display:block;
-    margin: flex-end;
     line-height: 25px;
   }
 
