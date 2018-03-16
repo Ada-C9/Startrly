@@ -90,7 +90,7 @@
   content: "\201D";
 }
 
-/* css for both quotes */
+/* css for both blockquotes */
 .blockquote {
   font-style: italic;
   text-align: left;
@@ -106,6 +106,35 @@
   font-style: italic;
 }
 
+/* adding -- in front of the blockquote authors */
 .blockquote-author::before {
   content: "--";
+}
+
+/* Why? block h2 header alignment  */
+.why-block-content h2 {
+  text-align: center;
+  margin: 50px 50px;
+}
+
+/* Why? block contents alignment  */
+.why-block-content ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* Why? block alignment for all the images */
+.why-block-content ul li img {
+  float: left;
+  align-content: flex-start;
+}
+
+/* adding margin for the Why? block li and all its contents */
+.comfortable *, .robust *, .convenient * {
+  margin: 10px 10px 60px 10px;
+}
+
+.comfortable, .robust, .convenient {
+  min-width: 300px;
+  flex-wrap: wrap;
 }
