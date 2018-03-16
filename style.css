@@ -9,7 +9,6 @@ h2 {
 nav {
   position: fixed;
   width: 100%;
-  top: 0;
   background-color: #264d73;
   font-family: Arial;
   color: white;
@@ -17,20 +16,14 @@ nav {
 
 nav > ul {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 7fr 2fr 1fr;
+  margin: 5;
 }
 
 nav > ul > li {
-  display: inline-block;
-  font-size: 12pt;
-  font-weight: bold;
-  width: 12%;
-  margin: 7px;
-  padding-right: 25px;
-}
-
-nav > ul > li:first-child {
-  text-align: left;
-  width: 62%
+  padding: 0 40px;
+  width: max-content;
 }
 
 /*Styling for home section Startly */
