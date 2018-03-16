@@ -16,11 +16,22 @@
 }
 
 {margin-top: 3em}
+/*  styling for all h2*/
+ h2{
+  text-align: center;
+}
+
 
 /* styling for all ul*/
 
 ul{
   list-style-type: none;
+}
+
+/* styling for last two sets of li */
+
+/* li{
+  text-align: center;
 } */
 
 /*  styling for navbar*/
@@ -81,5 +92,39 @@ font-size: 1.25em;
 /* selling points styling*/
 
 .why{
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.why-child{
+  float: left;
+     margin-right: 2em;
+
+}
+
+.why-child1{
+  max-width: 400px;
+ text-align: left;
+}
+
+/* meet the team */
+
+.organize{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.organize li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.organize img{
+  border-radius: 85%;
 }
