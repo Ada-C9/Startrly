@@ -118,7 +118,7 @@ a.cta:hover {
 }
 
 /* Why Section */
-.why-list, .why-list li {
+.why-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -131,8 +131,9 @@ a.cta:hover {
   max-width: 30%;
 }
 
-.why-text-wrapper {
-  margin-left: 15px;
+.why-list img {
+  float: left;
+  margin-right: 5%;
 }
 
 /* Team-members section */
