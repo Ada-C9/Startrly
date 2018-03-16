@@ -126,6 +126,11 @@
   section blockquote:after{
     content: close-quote;
   }
+  .quote{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
   /* make quote name align right */
   .quote p{
