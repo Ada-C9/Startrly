@@ -1,0 +1,275 @@
+/* The following is for the entire body */
+
+body {
+  background-color: #EAE0CC;
+  color: black;
+  font-family: 'Economica', sans-serif;
+  font-size: 1.25em;
+
+}
+
+/* The following is for the nav section. */
+
+nav {
+  background-color: #A0A083;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  width: 15%;
+  padding-left: 2px;
+  margin-left: 2px;
+}
+
+nav li:first-child {
+  width: 60%;
+}
+
+/* The following is for the
+first section -- 'Startly Section' */
+
+section:nth-of-type(1) {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #C9ADA1 url('../images/startup_typical.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+  border-bottom: solid #4D6A6D 1px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+section:nth-of-type(1) h1{
+  font-size: 2.5em;
+  margin-top: 3%;
+}
+
+section:nth-of-type(1) sub{
+  margin: 1%;
+  font-size: 1.75em;
+  position: inherit;
+}
+
+section:nth-of-type(1) a{
+  margin-top: 65px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.75em;
+  color: white;
+  text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+section:nth-of-type(1) a:hover {
+  background-color: #A0A083;
+  color:
+}
+
+/* The following is for the two
+blockquote sections */
+
+.quote {
+  border-bottom: solid #4D6A6D 1px;
+}
+
+.quote blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 8% 5% 2% 5%;
+  line-height: 1.75em;
+  /* border-top: solid gray 1px; */
+  margin-top: 0;
+}
+
+.quote blockquote:before{
+  content: "\201C";
+}
+
+.quote blockquote:after {
+  content: "\201D";
+}
+
+.quote p {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.5em;
+  padding: 0 5% 8%;
+}
+
+.quote p:before {
+  content: "--"
+}
+
+
+/* The following is for the 3rd section
+with 'Why' */
+section:nth-of-type(3) {
+  border-bottom: solid #4D6A6D 1px;
+  font-size: 1.2em;
+}
+
+section:nth-of-type(3) h2 {
+  text-align: center;
+}
+
+section:nth-of-type(3) ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+section:nth-of-type(3) li {
+  width: 430px;
+}
+
+section:nth-of-type(3) img {
+  float: left;
+  margin: 3px;
+}
+
+section:nth-of-type(3) strong {
+  /* display: inline; */
+  margin-left: 5px;
+}
+
+section:nth-of-type(3) p {
+  margin-left: 5px;
+}
+
+
+
+
+/* The following is for the 5th section
+with 'Meet the team' */
+
+section:nth-of-type(5) {
+  text-align: center;
+  margin: 2px;
+}
+
+section:nth-of-type(5) h2 {
+  margin-top: 75px;
+}
+
+section:nth-of-type(5) ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section:nth-of-type(5) li {
+  padding: 2px;
+  margin: 5%;
+  max-width: 40%;
+  min-width: 300px;
+}
+
+section:nth-of-type(5) li img {
+  border-radius: 50%;
+  border: solid grey;
+  padding: 3px;
+}
+
+section:nth-of-type(5) li span {
+  display: block;
+}
+
+
+/* The following is for the 6th section
+with 'Sponsors' */
+
+section:nth-of-type(6) {
+  border-bottom: solid #4D6A6D 1px;
+}
+
+section:nth-of-type(6) h2 {
+  margin-top: 75px;
+  text-align: center;
+}
+
+section:nth-of-type(6) ul {
+  list-style-type: none;
+  /* padding: 3px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section:nth-of-type(6) li {
+  padding: 2px;
+}
+
+
+
+/* The following is for the last
+section --Footer */
+
+#footer {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1em;
+  flex-wrap: wrap;
+}
+
+#footer div {
+  margin: 5%;
+}
+
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+/* Not sure if this is good practice.
+I looked for ways to apply css to
+only small screens and
+max-device-width works on the phone
+symulator in chrome, but not if I
+make the browser small.
+max-width works for the screen
+getting really small, but not on the
+phone simulator.  So I added both. */
+
+@media only screen and (max-device-width: 600px) {
+    section:nth-of-type(3) li {
+      width: 90%;
+    }
+    section:nth-of-type(3) img {
+      display: none;
+    }
+    #footer div {
+      width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section:nth-of-type(3) li {
+      width: 90%;
+    }
+    section:nth-of-type(3) img {
+      display: none;
+    }
+    #footer div {
+      width: 90%;
+    }
+}
