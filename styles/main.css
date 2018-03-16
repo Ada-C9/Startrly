@@ -150,6 +150,14 @@ BLOCKQUOTE SECTIONS
   margin: 1em 4em;
 }
 
+.quote blockquote::before, .quote blockquote::after {
+  content: "\""
+}
+
+.quote p::before {
+  content: "\--"
+}
+
 /*****************************************
 WHY? SECTION
 ******************************************/
@@ -226,18 +234,17 @@ SPONSORS SECTION
   border-bottom: 2px gray solid;
 }
 
-.sponsors {
-
-}
-
 .sponsors ul {
   list-style: none;
-  width: 500px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+
+.sponsors ul li {
+  margin: 1.1em;
 }
 
 /*****************************************
