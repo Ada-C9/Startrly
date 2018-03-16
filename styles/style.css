@@ -231,27 +231,27 @@ section > h2 {
 }
 
 .why-grid-child {
-  background: #ccf1ff;
+  /* background: #ccf1ff; */
   background: linear-gradient(#ccf1ff, #e5ecff);
 }
 
 .quote2-grid-child {
-  background: #e5ecff;
+  /* background: #e5ecff; */
   background: linear-gradient(#e5ecff, #f2e5ff);
 }
 
 .team-grid-child {
-  background: #f2e5ff;
+  /* background: #f2e5ff; */
   background: linear-gradient(#f2e5ff, #ddf9d2);
 }
 
 .sponsors-grid-child {
-  background: #ddf9d2;
+  /* background: #ddf9d2; */
   background: linear-gradient(#ddf9d2, #ffcccc);
 }
 
 .support-grid-child {
-  background: #ffcccc;
+  /* background: #ffcccc; */
   background: linear-gradient(#ffcccc, 	#ffffcc);
 }
 
