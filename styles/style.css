@@ -9,48 +9,53 @@ ul {
   list-style-type: none;
 }
 
+.quotations {
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  color: #8B8B8C;
+}
+/* --------all of the page----------- */
+
 .container {
   display: grid;
-  grid-template-rows: 0.25fr 1fr 0.5fr 1fr .5fr;
+  grid-template-rows: 0.25fr 0.5fr 0.5fr 0.5fr .25fr;
 }
 
 .container section:first-child {
-  text-align: center;
-
-  font-size: 1.5em;
-  font-weight: bold;
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid lightgrey;
-  background-color: #F7F6F1;
-
 }
 
 .header {
   position: sticky;
+  text-align: right;
   top: 2%;
   border-bottom: 0.75px solid white;
   background-color: white;
   width: 100%;
-  text-align: right;
-}
-
-.header ul li {
   color: grey;
   font-weight: bold;
   font-size: 30px;
-  align-content: flex-start;
-  line-height: 16px;
-  display: inline-table;
+}
+
+.header ul li {
+  display: inline-block;
+}
+
+.header ul li:first-of-type {
+  border: grey;
 }
 
 .title {
-  background-color: #BDD6DD;
+  background-color: #DFDCE6;
   text-align: center;
   font-weight: bold;
   font-size: 2.5em;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 .title h1 {
@@ -63,7 +68,6 @@ ul {
   display: block;
   border: 1px solid grey;
   margin-top: 30px;
-  margin-left: 725px;
   margin-bottom: 30px;
   width: 200px;
   border-radius: 25px;
@@ -85,65 +89,59 @@ ul {
   font-size: .8em;
   font-style: italic;
 }
+/*------------why----------- */
 
-.container section:first-child {
+
+
+
+
+
+
+/* -------The team-------------- */
+
+.team h2 {
+  font-size: 2em;
   text-align: center;
-  color: grey;
-  background-color: white;
-  font-size: 1em;
 }
-
-.container .why {
-  font-size: 2em;
-  border-bottom: 1px solid grey;
-}
-
-.container .why strong {
-    display: inline-block;
-    justify-content: space-around;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    top: 6px;
-}
-
-.container .why img {
-  display: flex;
-  justify-content: space-around;
-}
-
-.why p {
-  position: relative;
-  margin-left: 30px;
-}
-
-.container section blockquote {
-  border-radius: 60px;
-  font-size: 2em;
-  font-style: italic;
-}
-
 .team ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  font-size: 2em;
 }
 
 .team ul li {
- display: flex;
- flex-flow: column wrap;
- align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 .team img {
-border: grey 6px double;
-border-radius: 50%;
-margin-left: 90px;
-margin-right: 90px;
+  border-radius: 50%;
+  border: grey double 5px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  transition: .2s;
+}
+
+.team img:hover {
+  transform: scale(1.5);
+}
+
+/*---------sponsors--------*/
+
+.sponsors {
+  display: flex;
+  flex-flow: column wrap-reverse;
 }
 
 .footer {
-  font-size: 1em;
+  text-align: left;
+  font-size: 1.5em;
   color: grey;
   font-weight: bold;
   font-style: italic;
+  display: flex;
+  align-items: flex-start;
 }
