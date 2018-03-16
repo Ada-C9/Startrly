@@ -4,6 +4,10 @@ h1, h2 {
   text-align: center;
 }
 
+a:hover {
+  background-color: blue;
+}
+
 nav {
   background-color: gray;
 }
@@ -44,7 +48,7 @@ section #splash_page {
   display: block;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 10px
+  padding-bottom: 10px;
 }
 
 
