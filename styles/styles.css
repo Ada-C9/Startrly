@@ -1,7 +1,11 @@
 
 
 h1, h2 {
-  text-align: center
+  text-align: center;
+}
+
+nav {
+  background-color: gray;
 }
 
 nav ul {
@@ -26,6 +30,7 @@ section #splash_page {
 }
 
 #splash_page h1 {
+  font-size: 35px;
 }
 
 #splash_page sub {
@@ -49,7 +54,7 @@ section.horiz_quote {
 }
 
 .horiz_quote {
-  padding: 15px;
+  padding: 15px;c
   border: 1px, solid;
   font-style: italic;
 }
@@ -99,6 +104,7 @@ section #why {
 }
 
 #why p {
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   width: 200px;
   grid-column: 3/4;
@@ -135,7 +141,7 @@ section #team {
     border-radius: 50%;
     grid-row 1, 2;
 }
-
+g
 #team li span{
   text-align: center;
   padding: 5px;
