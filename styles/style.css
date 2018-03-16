@@ -10,6 +10,7 @@
 
 /*full body styles*/
 body {
+  display:grid;
   font-family: 'Shadows Into Light',cursive;
   margin: 50px;
   background-color: #e6e6fa;
@@ -80,13 +81,15 @@ h2 {
 
 }
 
-[href="#"] {
+.header a {
   display: block;
   border-radius: 30%;
   color: hotpink;
   border-style:solid;
   text-decoration: none;
   padding: 5px;
+  text-align: center;
+  margin: 0 35%;
 }
 
 .header h1{
@@ -97,7 +100,7 @@ h2 {
   padding: 40px;
   display: inline-flex;
   font-size: 3em;
-  
+
 
 }
 
@@ -130,6 +133,7 @@ h2 {
 
 .why img {
  float:left;
+ padding: 10px;
 }
 
 .why {
