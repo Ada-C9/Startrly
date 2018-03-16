@@ -66,6 +66,10 @@ HEADER & NAVBAR
   margin-bottom: .5em;
 }
 
+nav ul li:hover {
+  cursor: pointer;
+}
+
 nav ul li:first-child {
   margin-right: auto;
   font-weight: bold;
@@ -260,6 +264,10 @@ FOOTER SECTION
 .footer {
   background-color: #333333;
 }
+.footer div ul li:hover {
+  cursor: pointer;
+}
+
 #footer-container {
   width: 100%;
   display: grid;
