@@ -44,6 +44,11 @@ body {
   border-bottom: 2px gray solid;
 }
 
+.section-title {
+  font-size: 3em;
+  text-align: center;
+}
+
 /*****************************************
 HEADER & NAVBAR
 ******************************************/
@@ -148,21 +153,16 @@ BLOCKQUOTE SECTIONS
 /*****************************************
 WHY? SECTION
 ******************************************/
-
+/* W3, min-height, min-width, float on images, */
 .why {
   border-bottom: 2px gray solid;
   height: 100%;
 }
 
-.why h2 {
-  font-size: 4em;
-}
-
 .why ul {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -172,20 +172,20 @@ WHY? SECTION
 }
 
 .why ul li strong{
-  display: flex;
-  font-size: 2em;
-  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .why ul li p {
-  display: flex;
-  font-size: 1.5em;
-  /* max-width: 500px; */
+  max-width: 400px;
+  text-align: left;
+  font-size: 1.25em;
 }
-/*
+
 .why ul li img {
-  display: flex;
-} */
+  float: left;
+  margin-right: 2em;
+}
 
 /*****************************************
 TEAM SECTION
@@ -195,27 +195,18 @@ TEAM SECTION
   border-bottom: 2px gray solid;
 }
 
-.team h2 {
-  font-size: 4em;
+.team-top, .team-below {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.25em;
+}
+
+.team-top li, .team-below li {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-}
-
-.team-top {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.team-top li {
-
-}
-
-.team-below {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .team ul li {
@@ -224,6 +215,7 @@ TEAM SECTION
 
 .team ul li img {
   border-radius: 50%;
+  margin: 1em;
 }
 
 /*****************************************
@@ -232,6 +224,20 @@ SPONSORS SECTION
 
 .sponsors {
   border-bottom: 2px gray solid;
+}
+
+.sponsors {
+
+}
+
+.sponsors ul {
+  list-style: none;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*****************************************
