@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Startrly</title>
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <body>
     <div>
 
-
       <nav>
         <ul>
-          <li>
+          <li id="startly">
             Startrly
           </li>
-          <li>
+          <li id="try-now">
             Try Now!
           </li>
-          <li>
+          <li id="about">
             About
           </li>
         </ul>
@@ -24,116 +26,175 @@
 
 
       <section>
-        <h1>Startrly</h1>
-        <sub>A catchy tagline for a great solution</sub>
+        <h1 id="title">Startrly</h1>
+        <sub id="tagline">A catchy tagline for a great solution</sub>
         <a href="#">Some Call to Action</a>
       </section>
 
 
-      <section>
-        <blockquote>
+      <section class ="quote">
+        <blockquote class ="blockquote">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </blockquote>
-        <p>
-          Mx. Lorem
+        <p class="author">
+          -- Mx. Lorem
         </p>
       </section>
 
 
-      <section>
+      <section id="why-images">
         <h2>Why?</h2>
-        <ul>
-          <li>
+        <ul id="why-list-items">
+          <li id="comfort-item">
             <img src="http://via.placeholder.com/100x100" />
+            <div id="comf-title">
             <strong>Comfortable</strong>
             <p>
               Et quas molestias excepturi sint occaecati cupiditate non providents, ut aut reiciendis voluptatibus maiores.
             </p>
+          </div>
           </li>
-          <li>
+          <li id="robust-item">
             <img src="http://via.placeholder.com/100x100" />
+            <div>
             <strong>Robust</strong>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.
             </p>
+          </div>
           </li>
-          <li>
+          <li id="convenient-item">
             <img src="http://via.placeholder.com/100x100" />
+            <div>
             <strong>Convenient</strong>
             <p>
               Itaque earum rerum hic tenetur a sapiente delectus.
             </p>
+          </div>
           </li>
         </ul>
       </section>
 
 
-      <section>
-        <blockquote>
+      <section class ="quote">
+        <blockquote class ="blockquote">
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </blockquote>
-        <p>
-          Mx. Ipsum
+        <p class="author">
+          -- Mx. Ipsum
         </p>
       </section>
 
 
       <section>
         <h2>Meet the team</h2>
-        <ul>
-          <li>
+        <ul id="team">
+          <div id="team-top-row">
+          <li id="kari">
             <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
+            <div>
             <span>Kari Kiwi</span>
+          </div>
+          <div>
             <span>CFO</span>
+          </div>
           </li>
-          <li>
+          <li id="dan">
             <img src="https://placebear.com/150/150" alt="profile for dan dragon" />
+            <div>
             <span>Dan Dragon</span>
+          </div>
+          <div>
             <span>CMO</span>
+          </div>
           </li>
-          <li>
+          <li id="chris">
             <img src="https://placebear.com/150/150" alt="profile for chris caribou" />
+            <div>
             <span>Chris Caribou</span>
+           </div>
+           <div>
             <span>CIO</span>
+          </div>
           </li>
-          <li>
+          </div>
+          </div>
+        </div>
+
+
+
+          <div id="team-bottom-row">
+
+          <li id="charles">
             <img src="https://placebear.com/150/150" alt="profile for charles cheetah" />
-            <span>Charles Cheetah</span>
+            <div>
+              <span>Charles Cheetah</span>
+            </div>
+
+          <div>
             <span>Board Member, CTO</span>
+          </div>
+
           </li>
-          <li>
+          <li id="dee">
             <img src="https://placebear.com/150/150" alt="profile for dee dugong" />
-            <span>Dee Dugong</span>
+            <div>
+              <span>Dee Dugong</span>
+            </div>
+          <div>
             <span>Startup Enthusiast</span>
+          </div>
+        </div>
           </li>
         </ul>
       </section>
 
 
-      <section>
+    <section>
         <h2>Sponsors</h2>
         <ul>
+        <div id="top-row-sponsers">
+          <div id="sponsers-300x100">
           <li>
             <img src="http://via.placeholder.com/300x100" />
           </li>
+        </div>
+
+        <div id="sponsers-250x125">
           <li>
             <img src="http://via.placeholder.com/250x125" />
           </li>
+        </div>
+
+        <div id="sponsers-275x70">
           <li>
             <img src="http://via.placeholder.com/275x70" />
           </li>
+        </div>
+
+        <div id="sponsers-250x120">
           <li>
             <img src="http://via.placeholder.com/250x120" />
           </li>
+        </div>
+      </div>
+
+        </div>
+          <div id="sponsors-220x100">
           <li>
             <img src="http://via.placeholder.com/220x100" />
           </li>
+        </div>
+        </div>
+
         </ul>
       </section>
 
 
-      <section>
-        <div>
+      <section id="footer-pg">
+        <!-- <div> -->
+          <div id="support">
+
           <h3>Support</h3>
           <ul>
             <li>
@@ -149,8 +210,10 @@
               Docs
             </li>
           </ul>
+
         </div>
-        <div>
+
+        <div id="about">
           <h3>About</h3>
           <ul>
             <li>
@@ -166,6 +229,6 @@
         </div>
       </section>
 
-    </div>
+    <!-- </div> -->
   </body>
 </html>
