@@ -242,7 +242,7 @@ nav > ul > li:first-child {
   padding-top: 1pt;
 }
 
-/* *Styling for footer section */ */
+/* *Styling for footer section */
 
 .footer-section {
   display: grid;
@@ -255,6 +255,6 @@ nav > ul > li:first-child {
   margin-left: 2.5rem;
 }
 
-.footer-section li {
+.footer-section ul li {
   list-style-type: none;
 }
