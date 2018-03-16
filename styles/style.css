@@ -1,0 +1,287 @@
+/********** import **********/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
+
+/********** global **********/
+li, h1, h2, h3, sub, a, p, strong, span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 1.7em;
+  color: #5E565A;
+}
+
+section {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  width: 150px;
+  hight: 150px;
+}
+
+/********** nav **********/
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.nav ul {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #EF767A;
+  background-color: #5E565A;
+
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 7fr 2fr 1fr;
+  margin: 0;
+}
+
+.nav li {
+  padding: 0 20px;
+  width: max-content;
+}
+
+/********** banner **********/
+.banner {
+  height: 200px;
+  padding-top: 70px;
+  padding-bottom: 550px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url("../images/banner-image.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner h1 {
+  font-family: Playfair, serif;
+  font-size: 4em;
+  color: #EF767A;
+
+  margin: 30px;
+}
+
+.banner sub {
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-family: Playfair, serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #51513D;
+
+  min-width: 600px;
+  min-height: 20px;
+}
+
+.banner a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #EF767A;
+  background-color: #5E565A;
+
+  width: max-content;
+  margin-top: 20px;
+  padding: 10px;
+
+  border-radius: 10px;
+}
+
+.banner a:hover {
+  color: #A9CBB7;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+/********** quote **********/
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #51513D;
+  background-color: #A9CBB7;
+  line-height: 2;
+
+  padding: 50px 100px;
+}
+
+.quote blockquote {
+  text-align: left;
+}
+
+.quote blockquote::before {
+  content: "\" "
+}
+
+.quote blockquote::after {
+  content: " \""
+}
+
+.quote p {
+  font-family: 'Playfair Display', serif;
+  text-align: right;
+}
+
+.quote p::before {
+  content: "-- "
+}
+
+/********** why **********/
+.why {
+  max-width: 1500px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.why ul {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+
+.why li {
+  text-align: left;
+
+  min-height: 150px;
+  padding: 20px;
+  display: grid;
+  grid-template: 20px 120px / 150px 200px;
+  grid-gap: 10px;
+}
+
+.why li img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.why li strong {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.why li p {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+/********** team **********/
+.team {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.team ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.team li {
+  line-height: 2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.team img {
+  margin: 20px 68px;
+  padding: 5px;
+  border: 2px gray solid;
+  border-radius: 80px;
+}
+
+/********** sponsors **********/
+.sponsors ul {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sponsors li {
+  min-width: 200px;
+}
+
+/********** footer **********/
+.footer {
+  text-align: left;
+  font-size: 1.2em;
+  color: #EF767A;
+  background-color: #5E565A;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 20px 40px;
+}
+
+/********** small screen **********/
+@media screen and (max-width: 600px) {
+  .nav ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .why {
+    max-width: 350px;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  .why li {
+    text-align: left;
+    font-size: 1.2em;
+
+    min-height: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template: 10px 90px / 250px;
+    grid-gap: 10px;
+  }
+
+  .why li img {
+    display: none;
+  }
+
+  .why li strong {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .why li p {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .footer {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
