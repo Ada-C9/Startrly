@@ -1,0 +1,109 @@
+/*NAV STYLING */
+#nav-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+.Startrly-link {
+  margin-right: auto;
+}
+.Try-Now-link {
+  display: flex;
+  padding-right: 75px;
+}
+.About-link {
+  display: flex;
+  padding-right: 70px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+}
+header sub {
+  display: flex;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+a {
+  display: flex;
+  font-size: 20px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px
+}
+.quote-block {
+  font-family: 'Limelight', cursive;
+  font-size: 20px;
+  font-style: italic;
+  padding-bottom: 20px;
+  border-bottom: 2px solid grey;
+  padding-top: 30px;
+  border-top: 2px solid grey;
+  background-color: lime;
+}
+.quote-block p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* TODO: FIGURE OUT HOW TO PROPERLY ROW UP THIS SECTION */
+.why-chunk {
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+padding-top: 20px;
+}
+.why-chunk h2 {
+  display: flex;
+  justify-content: center;
+}
+.convenient-info {
+  align-self: flex-end;
+}
+.comfortable-info {
+  align-self: flex-start;
+}
+
+/* TODO: MEET THE TEAM SECTION FORMATTING */
+#team-photos img {
+  border-radius: 50%
+}
+
+#team-photos h2 {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* TODO: ALIGN AND ADUJUST SPONSOR IMAGES */
+#sponsor-images {
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 2px solid grey;
+}
+
+#sponsor-images img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+#sponsor-images h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/* FOOTER SECTION WITH APPROPS STYLING */
+footer {
+  display: flex;
+  flex-direction: row;
+}
+.about-footer {
+  padding-left: 100px;
+}
