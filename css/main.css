@@ -128,3 +128,16 @@ font-size: 1.25em;
 .organize img{
   border-radius: 85%;
 }
+
+.sponsors{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer section {
+  display:grid;
+  grid-template-columns: 35% 35% 35%;
+  text-align: center;
+}
