@@ -1,8 +1,11 @@
+/* flexbox on unordered list */
+
 body {
   display: grid;
   /* grid-template: 100px 500px / 200px 100px 50%; */
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(9, 1fr);
+  font-family: 'Playfair+Display', sans-serif;
 }
 
 .topish {
@@ -56,7 +59,6 @@ body {
 /* should this be a button? */
 .header a {
   position: block;
-  /* text-align: center; */
   background-color: #FFF8DC;
   width: 200px;
   text-decoration: none;
@@ -64,6 +66,7 @@ body {
   border-radius: 5px;
   border: 1px solid;
   align-items: center;
+  /* margin: 0 35% */
 }
 
 body div section {
@@ -88,6 +91,7 @@ blockquote {
   font-style: italic;
 }
 
+/* li img {float left on image, margin-right: 10px} */
 .whys {
   list-style-type: none;
   display: flex;
