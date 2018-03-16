@@ -3,6 +3,11 @@ body {
   margin: 1%;
 }
 
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 10em;
+}
+
 h2 {
   text-align: center;
 }
@@ -20,6 +25,7 @@ ul {
 nav , .footer {
   background-color: #00b3b3;
 }
+
 /* Nav Section */
 nav ul {
   display: flex;
