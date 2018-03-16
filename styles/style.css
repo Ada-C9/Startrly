@@ -1,0 +1,153 @@
+body {
+  font-family: "Lato";
+}
+
+
+h1, h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+}
+
+li {
+  list-style-type: none;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+  margin: 3em 1em 1em 1em;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro sub {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.intro a {
+  border: 1px solid gray;
+  font-size: 2em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin: 1em;
+  color: gray;
+  text-decoration: none;
+}
+
+.intro a:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+
+.team ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 20%;
+}
+
+.why-list {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  justify-content: space-between;
+}
+
+.why-list img {
+  float: left;
+  margin-right: 0.5em;
+}
+
+.why-list strong {
+  font-size: 1em;
+  margin-top: 8px;
+}
+
+.why-list p {
+  font-size: 1em;
+}
+
+.team ul span {
+  display: block;
+  text-align: center;
+}
+
+.team img {
+  border-radius: 8em;
+}
+
+.team li {
+  padding: 1em 5em 1em 5em;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.attribution {
+  text-align: right;
+  padding-right: 100px;
+  margin-bottom: 3em;
+  font-style:italic;
+  font-size: 1.5em;
+}
+
+.attribution::before {
+  content: "--";
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  opacity: 0.5;
+}
+
+.footer div {
+  /* min-width: 50px;
+  min-height: 50px; */
+  padding-right: 5em;
+  padding-left: 5em;
+}
+
+.footer h3 {
+  text-align: left;
+  padding: 0em;
+}
+
+.footer ul {
+  padding: 0em;
+}
