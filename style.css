@@ -1,27 +1,48 @@
+/* nav bar using plain css */
 
-/* .intro {
+/* body div section nav ul {
+position: inline;
+list-style-type: none;
+}
+
+body div section nav ul li:nth-child(1) {
+float: left;
+}
+
+body div section nav ul li:nth-child(2) {
+float: right;
+}
+
+body div section nav ul li:nth-child(3) {
+float: right;
+} */
+
+/* .nav {
+  background-color: #f0e442;
+  grid-row: auto / span 2;
+} */
+
+body {
+  display: grid;
+  /* grid-template: 100px 500px / 200px 100px 50%; */
+  grid-template-columns: 1fr, 2fr, .5fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+}
+
+
+.menu {
 list-style-type: none;
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-between;
 align-items: flex-start;
-} */
-
-/* padding on whole page, redo nav bar */
-/* p:nth-child(2) */
-
-body div section nav ul {
-  position: inline;
-  list-style-type: none;
-    li:
-      nth-child (1): left;
-      nth-child (2): right;
-      nth-child (3): right;
 }
 
 
 body div section h1 {
+  padding: .5em;
+  padding-top: 3em;
   text-align: center;
   font-size: 2rem;
 }
@@ -35,36 +56,46 @@ background-color: lightgreen;
 padding: 150px;
 }
 
-/* main article a[href*="comments"] {
-  font-style: : italic;
-  color: orange;
-  text-decoration: none;
-} */
-
 sub {
   font-size: 20pt;
   text-align: center;
 }
 
 /* should this be a button? */
-a[href] {
-  text-align: center;
+.action-call {
+  display: inline-block;
+  text-align: auto ;
   background-color: #FFF8DC;
-  border-radius: 15%;
+  border-radius: 12%;
   border-style: groove;
   width: 180px;
   text-decoration: none;
-  display:block;
-  margin: 15px;
+  margin: 5px;
   padding: 5px;
   white-space:nowrap;
 }
 
 blockquote {
   font-style: italic;
+  grid-column-start: 2;
+  grid-row-start: 3 / span 2;
+  padding: 1em;
+}
+
+
+.quote-block {
+border-top: solid;
+border-bottom: solid;
 }
 
 #signature {
   text-align: right;
-  font-style: italic; /* not dry */
+  font-style: italic;
+}
+
+.whys {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
