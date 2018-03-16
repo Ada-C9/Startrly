@@ -1,0 +1,229 @@
+/* top nagivation bar */
+  nav ul {
+  height: 2em;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+
+  background-color:  #800000;
+  list-style: none;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bolder;
+  font-style: thick;
+  font-size: .95em;
+  letter-spacing: .15em;
+  color: white;
+}
+
+nav ul li:nth-of-type(2) {
+  margin-left: 55%;
+  margin-right: 8%;
+}
+
+nav ul li:last-of-type {
+  margin-right: 4%
+}
+
+/* intro, tagline, button */
+.intro {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: thin solid lightgray;
+}
+
+.intro h1 {
+  font-family: 'Trade Winds', cursive;
+  font-size: 3em;
+}
+
+.intro sub {
+  flex: .3;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Yantramanav', sans-serif;
+  letter-spacing: .1em;
+}
+
+.intro a {
+  padding: .5em;
+  border: thin solid darkblue;
+  border-radius: .5em;
+  text-decoration: none;
+  font-family: 'Yantramanav', sans-serif;
+  letter-spacing: .1em;
+  font-weight: bold;
+  background-color: darkblue;
+  color: white;
+}
+
+.intro a:hover {
+  background: gold;
+  color: black;
+}
+
+/* quotes */
+.quote {
+  height: 200px;
+  display: flex;
+  border-bottom: thin solid lightgray;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote blockquote {
+  font-style: italic;
+  line-height: 2em;
+  align-self: center;
+  font-family: 'Yantramanav', sans-serif;
+  letter-spacing: .1em;
+  font-weight: bold;
+}
+
+.quote p {
+  font-style: italic;
+  margin-left: 75%;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bold;
+}
+
+/* why section */
+#why-container ul {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Yantramanav', sans-serif;
+  list-style: none;
+  align-items: start;
+  justify-content: space-around;
+  border-bottom: thin solid lightgrey;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-bottom: 2em;
+}
+
+.header {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bolder;
+  font-size: 2em;
+  font-style: thick;
+  margin-bottom: 1;
+}
+
+.why-info {
+  display: grid;
+  grid-template-columns: 110px 200px;
+  align-items: start;
+  justify-content: start;
+  grid-template-areas: "image text";
+  margin: .5em;
+}
+
+.why-info strong {
+  grid-area: text;
+  align-items: start;
+}
+
+.why-info p {
+  margin-top: 1.5em;
+  grid-area: text;
+}
+
+.why-info img {
+  grid-area: image;
+  align-items: start;
+  justify-content: start;
+}
+
+#team ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bolder;
+  list-style-type: none;
+  flex-flow: wrap;
+  padding-left: 0;
+  margin-left: 8em;
+  margin-right: 8em;
+  padding-bottom: 3em;
+}
+
+.team-member {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.team-member span {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  border: darkblue 5px solid;
+}
+
+/* sponsers */
+#sponsers ul {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  list-style: none;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+#sponsers ul img {
+  margin: 5px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: thin solid lightgrey;
+  flex-flow: wrap;
+  padding-bottom: 2em;
+  background-color:  #800000;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  font-family: 'Yantramanav', sans-serif;
+  margin-right: 2em;
+  margin-top: .7em;
+  color: white;
+}
+
+#footer div {
+  padding-left: 4em;
+  padding-right: 3.5em;
+}
+
+.mini-header {
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bolder;
+  font-size: 1.25em;
+  font-style: thick;
+  margin-bottom: .0;
+  margin-top: 1.5em;
+  color: white;
+}
