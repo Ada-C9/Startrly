@@ -1,14 +1,10 @@
 /*****************************************
 COLORS:
-Bermuda Gray (#6D8CA0): Background
-Azure Blue (#336699): Navbar, footer
-Ecru White (#F4F5E7): Text
-Orange Peel (#FF9E01): Links
-
-#EB593C Orange: Header
+#6D8CA0: Bermuda Gray Section Background
+#ABDCD6 Teal: Section Background
+#FFFCEC Off-white: Section Background, text on dark
+#EB593C Orange: Header, button
 #333333 Charcoal: Footer, text on light, button
-#ABDCD6 Teal: Even Sections, gradient?
-#FFFCEC Off-white: Odd sections, text on dark
 ******************************************/
 
 /*****************************************
@@ -16,13 +12,14 @@ GENERAL
 ******************************************/
 
 html, body {
+  overflow: hidden;
   height: 100%;
-  width: 100%;
+  font-family: 'Fira Sans', sans-serif;
 }
 body {
   padding: 0;
+  overflow: auto;
   color: #F4F5E7;
-  background-color: #6D8CA0;
 }
 
 .grid-container {
@@ -41,7 +38,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 25rem;
-  border-bottom: 2px gray solid;
+  border-bottom: 2px #333333 solid;
 }
 
 .section-title {
@@ -54,12 +51,9 @@ HEADER & NAVBAR
 ******************************************/
 
 .header {
-  background-color: #336699;
-  height: 60%;
-  /* width: 100%; */
-  /* position: fixed;
-  top: -100px; */
-  border-bottom: 2.5rem solid gray;
+  background-color: #EB593C;
+  height: 100%;
+  position: fixed top;
 }
 
 .navbar-container {
@@ -68,7 +62,8 @@ HEADER & NAVBAR
 }
 
 .navbar-container>li {
-  padding: 1em;
+  padding: 1.5em;
+  margin-bottom: .5em;
 }
 
 nav ul li:first-child {
@@ -90,6 +85,10 @@ nav ul li:nth-last-child(-n+2) {
 /*****************************************
 JUMBOTRON SECTION
 ******************************************/
+.jumbotron {
+  background-color: #ABDCD6;
+  margin-top: -2em;
+}
 
 .jumbotron h1 {
   display: flex;
@@ -115,7 +114,7 @@ JUMBOTRON SECTION
 }
 
 .button {
-  background-color: #FF9E01;
+  background-color: #EB593C;
   border: none;
   color: #F4F5E7;
   padding: 1em 2em;
@@ -126,15 +125,19 @@ JUMBOTRON SECTION
 }
 
 .button:hover {
-  background-color: #336699;
-  color: #FF9E01;
-  border: 1px solid #FF9E01;
+  background-color: #333333;
+  color: #FFFCEC;
+  border: 1px solid #FFFCEC;
   font-style: italic;
 }
 
 /*****************************************
 BLOCKQUOTE SECTIONS
 ******************************************/
+.quote {
+  background-color: #FFFCEC;
+  color: #333333;
+}
 
 .quote blockquote {
   font-size: 2em;
@@ -163,8 +166,9 @@ WHY? SECTION
 ******************************************/
 /* W3, min-height, min-width, float on images, */
 .why {
-  border-bottom: 2px gray solid;
+  border-bottom: 1px #333333 solid;
   height: 100%;
+  background-color: #6D8CA0;
 }
 
 .why ul {
@@ -200,7 +204,8 @@ TEAM SECTION
 ******************************************/
 
 .team {
-  border-bottom: 2px gray solid;
+  border-bottom: 2px #333333 solid;
+  background-color: #6D8CA0;
 }
 
 .team-top, .team-below {
@@ -231,7 +236,8 @@ SPONSORS SECTION
 ******************************************/
 
 .sponsors {
-  border-bottom: 2px gray solid;
+  border-bottom: 2px #333333 solid;
+  background-color: #ABDCD6;
 }
 
 .sponsors ul {
@@ -252,7 +258,7 @@ FOOTER SECTION
 ******************************************/
 
 .footer {
-  background-color: #336699;
+  background-color: #333333;
 }
 #footer-container {
   width: 100%;
