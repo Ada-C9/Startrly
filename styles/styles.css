@@ -1,0 +1,33 @@
+h1, h2 {
+  text-align: center
+}
+
+
+
+#why ul {
+  display: flex
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#why li {
+  list-style: none;
+  display: grid;
+  grid-columns: 50% 50%
+  grid-rows: 25% 75%
+  width: calc(90% / 3);
+  height: 160px;
+  text-align: center;
+}
+
+#why li img {
+  display: grid
+  grid-column-start: 1
+  grid-colum-end: 2
+  grid-row: 1 /3}
+
+#why li strong {
+  display: grid
+  grid-column: 2/3
+  grid-row: 1/2
+}
