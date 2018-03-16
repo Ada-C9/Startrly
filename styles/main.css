@@ -2,6 +2,7 @@
 * {
   font-family: arial;
   margin: 0 auto;
+  width: auto;
 }
 
 /* applies a border to the bottom of each box model */
@@ -19,7 +20,6 @@
   color: purple;
   opacity: 0.7;
   position: fixed;
-  left: 0;
   top: 0;
   width: 100%;
 }
@@ -85,16 +85,17 @@
   color: purple;
 }
 
+/* pseudo selector for button in the header */
 #header a:hover {
   background-color: #bcd9e2;
 }
 
-/* adding the front quotation marks */
+/* the front quotation marks for all blockquotes */
 .blockquote::before {
   content: "\201C";
 }
 
-/* adding the back quotation marks */
+/* the back quotation marks for all blockquotes */
 .blockquote::after {
   content: "\201D";
 }
