@@ -1,0 +1,96 @@
+/* * {
+  border: black 1px solid;
+} */
+
+/* WHY PIE? */
+.side-along {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-along ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.side-along li {
+  margin: 20px;
+  max-width: 25%;
+}
+
+.side-along img {
+  max-width: 100px;
+  max-height: 100px;
+  float: left;
+  margin-right: .4em;
+  border-radius: 50%;
+  border: grey 3px double;
+}
+
+.team img {
+  border-radius: 50%;
+  border: solid .1em gray;
+  border: grey 3px double;
+  margin-bottom: 1em;
+}
+
+.side-along li strong {
+  padding: 0;
+}
+
+.side-along p {
+  font-style: italic;
+}
+
+/* TEAM */
+.team {
+  display: flex;
+  flex-direction: column;
+}
+
+.team ul {
+  padding: 0;
+  list-style-type: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team li {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2em;
+  margin: 5px 20px 0px 5px;
+  align-items: center;
+}
+
+.team img {
+  border-radius: 50%;
+  border: solid .1em gray;
+  border: grey 3px double;
+  margin-bottom: 1em;
+}
+
+
+/* SPONSORS */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.gallery ul {
+  padding: 0;
+  list-style-type: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery li {
+  padding: 1em;
+  margin: .25em;
+}
