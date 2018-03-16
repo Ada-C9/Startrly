@@ -66,14 +66,17 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
+  max-width: 55%;
+  min-width: 40%;
 }
 
 .team-bio-list img {
   border-color: lightgrey;
   border-radius: 360px;
   box-shadow: 0 0 0 2px lightgrey;
+  margin: 2.5em;
   padding: 5px;
-  margin: 1em;
 }
 
 .team-bio-list span {
@@ -86,8 +89,6 @@ li {
 }
 
 .sponsor-list {
-  /* align-content: center;
-  align-items: center; */
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -167,4 +168,5 @@ blockquote + p:before {
   display: grid;
   grid-template-columns: .25fr .25fr;
   align-items: left;
+  padding: 0 3em;
 }
