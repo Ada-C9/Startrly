@@ -94,10 +94,13 @@ ul {
 .why {
   font-size: 2.5em;
   border-bottom: 1px solid grey;
-  display: grid;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding-top: 20px;
   padding-left: 25px;
-  padding-right: 35px;
+  padding-right: 35px; */
+
 }
 
 .why h2 {
@@ -105,18 +108,23 @@ ul {
   padding-bottom: 20px;
 }
 
-.why ul {
-  margin-left: 100px;
-  margin-right: 90px;
-  margin-top: 100px;
+.why img {
+float: left;
+margin-right: 0.8em;
 }
 
 .why p {
+  max-width: 400px;
+  text-align: left;
   font-size: 0.75em;
 }
 
 
 /* -------The team-------------- */
+
+.team {
+  background-color: #F1F3EC;
+}
 
 .team h2 {
   font-size: 2em;
@@ -150,13 +158,17 @@ ul {
 
 /*---------sponsors--------*/
 
-.sponsors {
+.sponsors h2 {
+  font-size: 3em;
+}
+
+.sponsors ul {
   font-size: 2em;
-  background-color: #C7C5CC;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around center;
-  align-content: space-between;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer {
@@ -167,4 +179,8 @@ ul {
   font-style: italic;
   display: flex;
   align-items: flex-start;
+}
+
+.footer h3 {
+  text-align: left;
 }
