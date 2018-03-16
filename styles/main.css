@@ -252,6 +252,19 @@ FOOTER SECTION
 ******************************************/
 
 .footer {
-  border-bottom: 2px gray solid;
   background-color: #336699;
+}
+#footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+#footer-container h3 {
+  margin-left: 8.75em;
+}
+
+#footer-container ul {
+  list-style: none;
+  margin-left: 8em;
 }
