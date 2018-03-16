@@ -106,8 +106,6 @@ body {
 }
 
 .team ul {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -116,10 +114,19 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 55px;
+  width: 20%;
 }
 
 .team img {
   border-radius: 100px;
+  border: solid 2px;
+  color: #fff9e0;
+}
+
+.team li span {
+  margin-top: 10px;
+  min-width: 300px;
+  text-align: center;
 }
 
 .sponsors ul {
@@ -129,7 +136,7 @@ body {
 }
 
 .sponsors ul li {
-  margin: 5px;
+  margin: 4px;
 }
 
 .footer section {
