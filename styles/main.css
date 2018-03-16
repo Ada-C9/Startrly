@@ -1,6 +1,7 @@
-/* font for the whole site */
+/* font for the whole body */
 * {
   font-family: arial;
+  margin: 0 auto;
 }
 
 /* applies a border to the bottom of each box model */
@@ -18,13 +19,13 @@
   color: purple;
 }
 
-/* change the nav list item when hovering over */
+/* pseudo selector for nav list */
 #nav ul li:hover {
   color: lightyellow;
   text-decoration: underline;
 }
 
-/* controling the nav flexbox */
+/* nav ul flexbox */
 #nav ul {
   display: flex;
   justify-content: center;
@@ -34,16 +35,16 @@
 
 /* move first list in nav to the left */
 #nav ul li:first-of-type {
-  margin-right: auto;
+  margin-right: 50%;
 }
 
 /* move remainder nav lists to the right */
 #nav ul li:nth-of-type(1n+2) {
   margin-left: 80px;
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
-/* css for the header id */
+/* header flexbox */
 #header {
   display: flex;
   flex-direction: column;
@@ -70,7 +71,7 @@
   margin-bottom: 25px;
 }
 
-/* css for the button in the header */
+/* alignment for the button in the header */
 #header a {
   font-size: 1.3em;
   padding: 20px 30px;
@@ -91,7 +92,7 @@
   content: "\201D";
 }
 
-/* css for both blockquotes */
+/* alignment for both blockquotes */
 .blockquote {
   font-style: italic;
   text-align: left;
@@ -100,7 +101,7 @@
   letter-spacing: 1px;
 }
 
-/* css for both blockquote authors */
+/* alignment for both blockquote authors */
 .blockquote-author {
   text-align: right;
   margin: 70px 90px;
@@ -115,52 +116,65 @@
 /* all h2 header alignment */
 h2 {
   text-align: center;
-  margin: 50px 50px;
+  padding: 50px 50px;
+  margin-top: none;
 }
 
-/* Why? block contents alignment */
+/* Removes bullet points from all sections */
+.container section ul li {
+  list-style-type: none;
+}
+
+
+.why-block-content {
+  background-color: lightgray;
+}
+
+/* Why? block contents flexbox */
 .why-block-content ul{
   display: flex;
   flex-direction: row;
-  list-style-type: none;
-  /* flex-wrap: wrap; */
 }
 
 /* Why? block alignment for all the images */
 .why-block-content ul li img {
   float: left;
-  /* align-content: flex-start; */
+  height: 150px;
+  width: 150px;
 }
 
 /* adding margin for the Why? block li and all its contents */
 .comfortable *, .robust *, .convenient * {
-  margin: 10px 10px 60px 10px;
+  padding: 10px 10px 60px 10px;
 }
 
 /* css for Why? block list content */
 .comfortable, .robust, .convenient {
-  min-width: 300px;
+  min-width: 350px;
   flex-wrap: wrap;
 }
 
-/* hiding the bottom boarder for meet the team */
+/* hiding the bottom boarder for Meet the team section */
 .container .meet-the-team {
   border-bottom-style: none;
 }
 
-/* Meet the team block */
+/* Meet the team block flexbox */
 .meet-the-team-photos {
   display: flex;
-  flex-direction: column;
   flex-flow: row wrap;
+  height: 100%;
+  align-items: stretch;
 }
 
 /* Meet the team photos */
 #kary img, #dan img, #chris img, #charles img, #dee img {
   border-radius: 50%;
-  border: lightblue 1px solid;
+  border: lightblue 2px solid;
   padding: 0.5em;
   min-width: 20%;
+  margin: 50px 50px 0px 50px;
+  align-content: center;
 }
 
 /* Meet-the-team spans */
@@ -172,20 +186,48 @@ h2 {
   line-height: 2.5em;
 }
 
+/*
+#kary img, #dan img, #chris img, {
+height: 100%;
+align: center;
+}
+
+
 #charles img, #dee img {
-  border-radius: 50%;
-  border: lightblue 1px solid;
-  padding: 0.5em;
-  min-width: 20%;
-}
+height: 100%
+align-self: center;
+} */
 
-/* Meet the team lists */
-.meet-the-team-photos li {
-  list-style-type: none;
-}
 
-.sponsors {
+.sponsors ul {
   display: grid;
-  grid-column: 1 / span 3;
-  grid-row: span 2;
+  /* grid-template-columns: 100px 100px 100% 50%; */
+  /* grid-column: 1/ span 3;
+  grid-row: 2 / span 2; */
+  grid-area: 1 / 4 / 3 / 1;
+}
+
+#amazon img {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#nordstrom img {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#moz img {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#zillow img {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+#rover img {
+  grid-column: 1;
+  grid-row: 2;
 }
