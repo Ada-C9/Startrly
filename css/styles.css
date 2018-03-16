@@ -24,6 +24,10 @@ nav li {
   font-weight: bold;
 }
 
+h2 {
+  text-align: center;
+}
+
 .header {
   text-align: center;
 }
@@ -107,14 +111,31 @@ a.cta:hover {
   justify-content: space-around;
 }
 
-.why h2 {
-  text-align: center;
-}
-
 .why-list li {
   max-width: 30%;
 }
 
 .why-text-wrapper {
   margin-left: 15px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 55%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.team-members li {
+  margin: 5%;
+}
+.team-members img {
+  border-radius: 50%;
+}
+
+.team-members span {
+  display: block;
+  text-align: center;
 }
