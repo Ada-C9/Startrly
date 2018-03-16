@@ -75,6 +75,7 @@ section:nth-of-type(1) a{
 
 section:nth-of-type(1) a:hover {
   background-color: #A0A083;
+  color:
 }
 
 /* The following is for the two
@@ -152,37 +153,7 @@ section:nth-of-type(3) p {
 }
 
 
-@media only screen and (max-device-width: 600px) {
 
-    section:nth-of-type(3) li {
-      width: 90%;
-    }
-    section:nth-of-type(3) img {
-      display: none;
-    }
-
-    #footer li {
-      width: 90%;
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
-    section:nth-of-type(3) li {
-      width: 90%;
-    }
-    section:nth-of-type(3) img {
-      display: none;
-    }
-    #footer li {
-      width: 90%;
-    }
-}
-/* @media only screen and (max-width: 600px) {
-    section:nth-of-type(3) img {
-      display: none;
-    }
-} */
 
 /* The following is for the 5th section
 with 'Meet the team' */
@@ -256,6 +227,7 @@ section --Footer */
   display: flex;
   align-items: flex-start;
   font-size: 1em;
+  flex-wrap: wrap;
 }
 
 #footer div {
@@ -265,4 +237,39 @@ section --Footer */
 #footer ul {
   list-style-type: none;
   padding: 0;
+}
+
+
+/* Not sure if this is good practice.
+I looked for ways to apply css to
+only small screens and
+max-device-width works on the phone
+symulator in chrome, but not if I
+make the browser small.
+max-width works for the screen
+getting really small, but not on the
+phone simulator.  So I added both. */
+
+@media only screen and (max-device-width: 600px) {
+    section:nth-of-type(3) li {
+      width: 90%;
+    }
+    section:nth-of-type(3) img {
+      display: none;
+    }
+    #footer div {
+      width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section:nth-of-type(3) li {
+      width: 90%;
+    }
+    section:nth-of-type(3) img {
+      display: none;
+    }
+    #footer div {
+      width: 90%;
+    }
 }
