@@ -1,0 +1,149 @@
+/* stylesheet for startly webpage  */
+body {
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 0.25fr 1fr 0.5fr 1fr .5fr;
+}
+
+.container section:first-child {
+  text-align: center;
+
+  font-size: 1.5em;
+  font-weight: bold;
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+  background-color: #F7F6F1;
+
+}
+
+.header {
+  position: sticky;
+  top: 2%;
+  border-bottom: 0.75px solid white;
+  background-color: white;
+  width: 100%;
+  text-align: right;
+}
+
+.header ul li {
+  color: grey;
+  font-weight: bold;
+  font-size: 30px;
+  align-content: flex-start;
+  line-height: 16px;
+  display: inline-table;
+}
+
+.title {
+  background-color: #BDD6DD;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1 {
+  margin-top: 80px;
+}
+
+.title a {
+  font-size: .8em;
+  color: #B945CF;
+  display: block;
+  border: 1px solid grey;
+  margin-top: 30px;
+  margin-left: 725px;
+  margin-bottom: 30px;
+  width: 200px;
+  border-radius: 25px;
+  padding: 20px 0;
+  background-color: #E9E3EA;
+  text-decoration: none;
+  font-style: italic;
+
+}
+
+.title a:hover {
+  color: #45CF57;
+  text-decoration: underline;
+}
+
+.title sub {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: .8em;
+  font-style: italic;
+}
+
+.container section:first-child {
+  text-align: center;
+  color: grey;
+  background-color: white;
+  font-size: 1em;
+}
+
+.container .why {
+  font-size: 2em;
+  border-bottom: 1px solid grey;
+}
+
+.container .why strong {
+    display: inline-block;
+    justify-content: space-around;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    top: 6px;
+}
+
+.container .why img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.why p {
+  position: relative;
+  margin-left: 30px;
+}
+
+.container section blockquote {
+  border-radius: 60px;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.team ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.team ul li {
+ display: flex;
+ flex-flow: column wrap;
+ align-items: center;
+}
+
+.team img {
+border: grey 6px double;
+border-radius: 50%;
+margin-left: 90px;
+margin-right: 90px;
+}
+
+.footer {
+  font-size: 1em;
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+}
