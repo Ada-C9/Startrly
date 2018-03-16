@@ -1,5 +1,7 @@
 /* --------------------------------------------- */
 /* WHOLE PAGE: */
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
 
 body {
 
@@ -23,18 +25,27 @@ body {
 
 }
 
+
 * {
-  font-family: Helvetica;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.008em;
   max-width: 100%;
-  	height: auto;
-  /* box-sizing: border-box; */
+  height: auto;
+  background-color: #B0C4DE
 }
 
+h2 {
+  text-decoration: underline;
+}
 
 
 /* --------------------------------------------- */
 /* NAV */
 /* TODO: if window too small about has a min position..?*/
+header {
+  margin: auto;
+  text-align: center;
+}
 
 nav ul {
   grid-area: Header;
@@ -42,11 +53,20 @@ nav ul {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  color: #FFFFFF;
+  /* background-color: #F5DEB3; */
+  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;
+  border: 1px solid #F5BDB3;
+  padding: 10px;
+  border-radius: 20px;
 }
 
-/* li#startrly{
-flex-shrink: 3;
-} */
+nav ul li{
+  background-color: #F5DEB3;
+  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;
+  padding: 10px;
+  /* border: 1px solid #F5BDB3; */
+}
 
 li#try-now{
   margin-left: 60%;
@@ -76,19 +96,31 @@ li#about{
   padding: 120px
 }
 
+.head-title h1 {
+  color: #FFFFFF;
+}
+
+.head-title h1:hover {
+  color: #F5BDB3;
+}
 .head-title sub {
   font-weight: bold;
   font-size: 1.1em;
-  padding-bottom: 40px
+  padding-bottom: 40px;
+  color: #FFFFFF;
 }
 
 .head-title a {
   text-decoration: none;
-  color: grey;
-  border: 1px solid grey;
+  color: #FFFFFF;
+  /* border: 1px solid grey; */
   padding: 10px;
   border-radius: 5px;
   text-align: center;
+  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;
+  border: 1px solid #F5BDB3;
+  border-radius: 20px;
+  /* border: 2px outset #F5DEB3; */
 }
 
 /* --------------------------------------------- */
@@ -97,11 +129,12 @@ li#about{
 .quote {
   grid-area: Quote;
   font-style: italic;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid #F5DEB3;
+  border-top: 1px solid #F5DEB3;
   padding: 50px;
   padding-top: 80px;
   padding-bottom: 80px;
+  color: #F5DEB3;
 }
 
 .quote p {
@@ -129,8 +162,11 @@ make it flow down when the window get too small*/
 
 .why {
   grid-area: Why;
+  padding-top: 20px;
   padding-left: 25px;
   padding-right: 35px;
+  color: #FFFFFF;
+  /* color: #F5F5F5; */
 }
 
 .why h2 {
@@ -146,59 +182,34 @@ make it flow down when the window get too small*/
   grid-gap: 90px;
 }
 
-/* comfortable: */
-li#comfortable {
+li.because {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 10% 80% 10%;
+  grid-gap: 10px;
 }
 
-li#comfortable img {
+li.because img {
   grid-row: 1 / span 2;
+  border: #F5BDB3 2px solid;
+  /* background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat; */
 }
 
-li#comfortable p {
+li.because p {
   grid-row: 2 / span 2;
 }
 
-/* robust: */
-li#robust {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 10% 80% 10%;
-}
-
-li#robust img {
-  grid-row: 1 / span 2;
-}
-
-li#robust p {
-  grid-row: 2 / span 2;
-}
-
-/* convenient */
-
-li#convenient {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 10% 80% 10%;
-}
-
-li#convenient img {
-  grid-row: 1 / span 2;
-}
-
-li#convenient p {
-  grid-row: 2 / span 2;
-}
 /* --------------------------------------------- */
 /* TEAM */
 
+/* General attributes of the team: */
 .team {
   grid-area: Team;
+  padding-top: 20px;
   padding-left: 25px;
   padding-right: 60px;
   padding-bottom: 60px;
+  color: #F5F5F5;
 }
 
 .team h2 {
@@ -208,92 +219,47 @@ li#convenient p {
 
 .team ul {
   text-align: center;
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center; */
-
   display: grid;
-  /* grid-template-columns: repeat(5, 1fr); */
-  /* grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); */
-
-  /* grid-template-rows: repeat(2, 1fr); */
   grid-template-columns:repeat(auto-fit, minmax(60px, 1fr));
-
   list-style-type: none;
   grid-gap: 20px;
-  /* grid-row-gap: 20px; */
-
-
 }
-/* Kari */
-li#kari {
+
+.team li {
   display: grid;
   grid-template-rows: 6fr 1fr 1fr;
   justify-content: center;
   grid-row-gap: 10px;
+}
+
+.team li img {
+  border-radius: 90px;
+  border: lightgrey 10px double;
+  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;
+  /* border: 1px solid #F5BDB3;
+  border-radius: 20px; */
+}
+
+/* Assign position of each member of the team: */
+li.kari {
   grid-column: 1
 }
 
-li#kari  img {
-  border-radius: 90px;
-  border: lightgrey 10px double;
-}
-
-li#dan {
-  display: grid;
-  grid-template-rows: 6fr 1fr 1fr;
-  justify-content: center;
-  grid-row-gap: 10px;
+li.dan {
   grid-column: 3
 }
 
-li#dan  img {
-  border-radius: 90px;
-  border: lightgrey 10px double;
-}
-
-li#chris {
-  display: grid;
-  grid-template-rows: 6fr 1fr 1fr;
-  justify-content: center;
-  grid-row-gap: 10px;
+li.chris {
   grid-column: 5
 }
 
-li#chris  img {
-  border-radius: 90px;
-  border: lightgrey 10px double;
-}
-
-
-li#charles {
-  display: grid;
-  grid-template-rows: 6fr 1fr 1fr;
-  justify-content: center;
-  grid-row-gap: 10px;
+li.charles {
   grid-column: 2
 }
 
-li#charles  img {
-  border-radius: 90px;
-  border: lightgrey 10px double;
-}
-
-li#dee {
-  display: grid;
-  grid-template-rows: 6fr 1fr 1fr;
-  justify-content: center;
-  grid-row-gap: 10px;
+li.dee {
   grid-column: 4
 }
-
-li#dee img {
-  border-radius: 90px;
-  border: lightgrey 10px double;
-}
-
-
 
 /* --------------------------------------------- */
 /* SPONSORS */
@@ -301,7 +267,8 @@ li#dee img {
 .sponsors {
   grid-area: Sponsors;
   padding-bottom: 60px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #F5DEB3;
+  color: #F5F5F5;
 }
 
 .sponsors h2 {
@@ -320,6 +287,12 @@ li#dee img {
 .sponsors ul li {
   align-self: left;
 }
+
+.sponsors img {
+  border: lightgrey 10px double;
+  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;
+}
+
 /* --------------------------------------------- */
 /* FOOTER */
 
@@ -330,16 +303,14 @@ li#dee img {
   border: none;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.footer div:first-child{
-
+  color: #F5F5F5;
 }
 
 .footer div {
   margin-left: 50px;
   width: 15%;
   flex-wrap: nowrap;
+
 }
 .footer div ul {
   list-style-type: none;
