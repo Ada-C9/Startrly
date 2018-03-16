@@ -37,6 +37,10 @@ body {
   font-size: 18px;
 }
 
+.intro a:hover {
+  background-color: #FDBA63;
+}
+
 .intro a {
   color: #FFFFFF;
   border: solid 1px;
