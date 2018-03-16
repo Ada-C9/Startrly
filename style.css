@@ -34,8 +34,6 @@ nav > ul > li:first-child {
 
 /*
 Styling for first section Startly */
-
-
 .first-section{
   background-color: #E6E6FA;
   border-bottom: solid .5px lightgray;
@@ -104,4 +102,34 @@ Styling for first section Startly */
 
 .second-section p:before{
   content: "--";
+}
+
+.third-section {
+  padding-top: 40px;
+  margin: -1  rem 0 3rem;
+}
+
+.third-section ul {
+  border-bottom: solid .5px lightgray;
+  padding: 50px 50px 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: flex-start;
+}
+
+.third-section ul li {
+  max-width: 40%;
+  padding: 0 .3rem;
+}
+
+.third-section ul img{
+  float: left;
+  margin-bottom: 40%;
+  margin-right: 1.5%;
+}
+
+.third-section ul li p {
+  width: 285px;
 }
