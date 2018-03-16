@@ -5,6 +5,10 @@
   grid-template-rows: repeat(6 1fr);
 }
 
+body{
+  font-family: Montserrat, monospace, sans-serif;
+}
+
 /* div{
 } */
 
@@ -16,6 +20,8 @@
 }
 
 {margin-top: 3em}
+
+
 /*  styling for all h2*/
  h2{
   text-align: center;
