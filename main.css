@@ -6,14 +6,14 @@ body{
 }
 
 .grid-container{
-display: grid;
-justify-content: center;
-height:100%;
-width:100%
+  display: grid;
+  justify-content: center;
+  height:100%;
+  width:100%
 }
 
 
- main{
+main{
   background:linear-gradient(#e5d3e5,pink)
 }
 
@@ -28,10 +28,10 @@ header{
   font-size: 1.1rem
   overflow: hidden;
 
-position: fixed; /* Set the navbar to fixed position */
+  position: fixed; /* Set the navbar to fixed position */
 
-top: 0; /* Position the navbar at the top of the page */
-width: 100%; /* Full width */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 
 }
 
@@ -40,7 +40,7 @@ header:hover{
 }
 
 div {
-    margin-top: 3em; /* Add a top margin to avoid content overlay */
+  margin-top: 3em; /* Add a top margin to avoid content overlay */
 }
 
 section{
@@ -65,25 +65,25 @@ section{
 
 #call-to-action{
   display:block;
-    background-color: lightgrey;
-    height: 60%;
-    align-content: center;
-    text-align: center;
+  background-color: lightgrey;
+  height: 60%;
+  align-content: center;
+  text-align: center;
 
-    border: solid 1px black;
-    border-radius: 7%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    margin-bottom:3em;
-    width: 8em;
+  border: solid 1px black;
+  border-radius: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom:3em;
+  width: 8em;
 
-  }
+}
 
 
 section:nth-child(1){
   min-height: 18em;
-  }
+}
 
 .quote{
   border-top: 2px solid grey;
@@ -92,10 +92,10 @@ section:nth-child(1){
 
 
 blockquote {
-font-style: italic;
-text-align: left;
-line-height: 3em;
-padding: 1em
+  font-style: italic;
+  text-align: left;
+  line-height: 3em;
+  padding: 1em
 }
 
 blockquote::before{
@@ -114,13 +114,13 @@ blockquote::after{
 }
 
 .author::before {
-    content: "--";
+  content: "--";
 }
 
 .testimonials{
-display: flex;
-justify-content: space-evenly;
-flex-flow: row;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
 }
 
 .testimonial-block{
@@ -137,9 +137,9 @@ flex-flow: row;
 }
 
 .testimonial-wording{
-text-align: left;
-font-size: .7em
-overflow:visible;
+  text-align: left;
+  font-size: .7em
+  overflow:visible;
 }
 
 
@@ -156,8 +156,8 @@ ul{
 
 #start-nav{
   display:flex;
-margin-left:-2em;
-margin-top:1em;
+  margin-left:-2em;
+  margin-top:1em;
 
 
 }
@@ -192,21 +192,34 @@ sub{
   text-transform: capitalize;
 }
 
+.teamflex li {
+  padding: 1em
+}
+
+.teamflex{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.teammember{
+  display:flex;
+  width: 30%;
+  flex-wrap: wrap;
+
+}
 
 .team-member img{
   border-radius: 50%;
   border: black solid 3px;
-  padding: 2px
-}
-.teamflex{
-  display:flex;
-  flex-wrap: wrap;
+  padding: 2px;
+
 }
 
-.teammember{
-display:flex;
-  width: 30%;
-  
+.team-text{
+  display:flex;
+  flex-flow:column;
 }
 
 
@@ -217,24 +230,24 @@ display:flex;
 }
 
 footer section{
-display: flex;
-flex-wrap:wrap;
-text-align: center;
+  display: flex;
+  flex-wrap:wrap;
+  text-align: center;
 }
 
 
 
 
 .parallax {
-    /* The image used */
-    background-image: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  /* The image used */
+  background-image: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
 
-    /* Set a specific height */
-    min-height: 1em;
+  /* Set a specific height */
+  min-height: 1em;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
