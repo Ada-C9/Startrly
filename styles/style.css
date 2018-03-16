@@ -3,6 +3,12 @@ body {
   font-family: 'helvetica', 'arial', sans-serif;
 }
 
+section {
+  padding: 4rem 0 4rem 0;
+  margin: 0 0.5rem 0 0.5rem;
+  border-bottom: 1px solid lightblue;
+}
+
 ul, li {
   padding: 0;
   list-style-type: none;
@@ -25,6 +31,7 @@ sub {
 a {
   color: #000;
   font-size: 1.25rem;
+  text-transform: capitalize;
   text-decoration: none;
   padding: 1rem;
   margin-top: 3rem;
@@ -34,17 +41,6 @@ a {
 
 a:hover {
   background-color: lightgray;
-}
-
-hr {
-  height: 1px;
-  border: 0;
-  border-top: 1px solid lightblue;
-  margin: 0.5em;
-}
-
-section {
-  margin: 4em 0 4em 0;
 }
 
 .container {
@@ -68,15 +64,19 @@ nav li {
   text-align: center;
 }
 
-#nav1 {
+.col-1 {
   grid-column: 1 / 2;
 }
 
-#nav2 {
+.col-2 {
+  grid-column: 2 / 3;
+}
+
+.col-4{
   grid-column: 4 / 5;
 }
 
-#nav5 {
+.col-5 {
   grid-column: 5 / 6;
 }
 
@@ -104,24 +104,44 @@ nav li {
   font-style: italic;
 }
 
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+blockquote+p::before {
+  content: "--"
+}
+
 #why ul {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
   padding: 0 3rem 0 3rem;
 }
 
 #why li {
-  display: flex;
-  flex-direction: row;
-  padding: 0 2rem 0 2rem;
-}
-
-.float-right {
-  padding: 0 1rem 0 1rem;
+  flex: 1 1 250px;
+  padding: 1rem;
 }
 
 #why img {
-  height: 100px;
+  float: left;
+  padding-right: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  #why li {
+    flex: 1 1 100%;
+  }
+
+  #why img {
+    display: none;
+  }
 }
 
 #team img {
@@ -133,7 +153,7 @@ nav li {
 #team ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0 5rem 0 5rem;
 }
 
@@ -146,6 +166,10 @@ nav li {
 
 #team span {
   padding-top: 1rem;
+}
+
+#sponsors {
+  border: 0;
 }
 
 #sponsors ul {
