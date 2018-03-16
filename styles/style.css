@@ -1,0 +1,119 @@
+* {
+  font-family: 'Frank Ruhl Libre', serif;
+  margin: 10px;
+}
+
+#nav ul {
+  display: grid;
+  grid-template-columns: 12fr 1fr 1fr;
+  white-space: nowrap;
+  list-style-type: none;
+  padding: 15px;
+  font-size: 15px;
+  margin-left: 80px;
+  text-align: justify;
+}
+
+.header {
+  text-align: center;
+}
+
+#main-title {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#main-title:hover {
+  border-style: hidden;
+  border-radius: 5px;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+.header sub {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 2.0;
+}
+
+
+.header a:hover {
+  color: blue;
+}
+
+.header a {
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin:
+}
+
+section {
+  border-bottom: 3px solid gray;
+  padding-top: 10px;
+}
+
+
+#quote {
+  text-align: right;
+  padding-bottom: 60px;
+  line-height: 2.0;
+  margin-right: 40px;
+  font-style: italic;
+  font-size: 1em;
+}
+
+#end {
+  text-align: right;
+}
+
+.why ul li{
+  display: inline-grid;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.team {
+  border-bottom: 3px solid white;
+}
+
+.team-members li{
+  display: inline-grid;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+
+.sponsors li{
+  display: inline-grid;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.footer div {
+  margin-left: 90px;
+  padding-top: 50px;
+  margin-right: 90px;
+}
+
+h3 {
+  margin-left: 40px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
