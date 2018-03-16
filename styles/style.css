@@ -10,11 +10,10 @@
 
   list-style: none;
   font-family: 'Yantramanav', sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
+  font-style: thick;
   font-size: .95em;
   letter-spacing: .15em;
-  background-color: #660000;
-  color: white;
 }
 
 nav ul li:nth-of-type(2) {
@@ -28,7 +27,7 @@ nav ul li:last-of-type {
 
 /* intro, tagline, button */
 .intro {
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +90,6 @@ nav ul li:last-of-type {
   display: flex;
   flex-direction: row;
   font-family: 'Yantramanav', sans-serif;
-  font-weight: bolder;
   list-style: none;
   align-items: start;
   justify-content: space-around;
@@ -130,7 +128,6 @@ nav ul li:last-of-type {
 .why-info p {
   margin-top: 1.5em;
   grid-area: text;
-  font-weight: lighter;
 }
 
 .why-info img {
