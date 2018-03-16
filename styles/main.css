@@ -35,6 +35,7 @@ h2 {
   overflow: hidden;
   background-color: white;
   margin-top: 0;
+  z-index:10;
 }
 
 #startrly {
@@ -45,6 +46,11 @@ h2 {
   flex: 2;
   text-align: right;
   /*padding-right: 10px;*/
+}
+
+.main-content {
+  width:100%;
+  overflow:auto;
 }
 
 .header {
@@ -72,6 +78,17 @@ h2 {
 
 .header h1 {
   font-size: 26pt;
+  margin-top: 25px;
+  text-align: center;
+  animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 .testimonial {
@@ -147,10 +164,16 @@ h2 {
   transform: scale(1.3) rotate(5deg);
 }
 
-.team {
+.team-row-1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.team-row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .team li span {
@@ -165,61 +188,62 @@ h2 {
   flex-wrap: wrap;
 }
 
-/*.face {
-border-radius: 40%;
-}*/
-
-/*.circleborder {
-  border: 1px solid lightgray;
-  border-radius: 50%;
-  outline: lightgray;
-  outline-style: double;
-}*/
-
-/*flex box ideas*/
-/*give the nav a container class and style it display: flex. give each part of the nav a class or id, and style Startrly to be margin-right: auto;*/
-/*also do .container > .search { flex: 2 } or something, to make it take up more space*/
-/*#justify-content: center and align-items: center for things in the body>div>section (startrly, catchy tagline, call to action)*/
-/*this section could also be in a container that is set to flex-direction: column*/
-/*use align-self: flex-start or flex-end for things like the --Ms. Lorem/Mr Ipsum?*
-for mobile responsive media query change the flex-direction for the "Why" , Sponsors, and footer sections (maybe more?) to go from flex-column to flex-direction: row
-sample media queries:
-@media screen and (min-width: 600px){
-  article {
-   -webkit-flex-direction: row;
-    flex-direction: row;
-  }
-  article > * {
-    -webkit-flex: 1;
-    flex: 1;
-  }
-  aside {
-
-  -webkit-order: -1;
-   order: -1;
-  }
-  article > div {
-
-    -webkit-flex: 3;
-    flex: 3;
-  }
-  footer {
-    background-color: #ccc;
-  }
+.footer {
+  display: flex;
 }
 
-@media screen and (max-width: 600px){
-  article {
-    -webkit-flex-direction: column;
+.footer ul {
+  padding-left: 0;
+}
+
+.support-menu {
+  flex: 3;
+}
+
+.about-menu {
+  flex: 6;
+}
+
+@media screen and (max-width: 720px) {
+  .why img {
+    display: none;
+  }
+
+  .why {
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12pt;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 50px;
+    grid-template-areas:    "item1"
+                            "item2"
+                            "item3";
+  }
+
+  .why li {
+    padding-bottom: 30px;
+  }
+
+  .why li:first-child {
+    grid-area: item1;
+  }
+
+  .why li:nth-child(2) {
+    grid-area: item2;
+  }
+
+  .why li:nth-child(3) {
+    grid-area: item3;
+  }
+
+  .footer {
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
   }
-}
-
-
-
-
-html, body {
-  box-sizing: border-box;
-  height: 100%;
-  padding: 10px;
 }
