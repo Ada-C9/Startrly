@@ -4,9 +4,7 @@ body {
 }
 
 section {
-  padding: 4rem 0 4rem 0;
-  margin: 0 0.5rem 0 0.5rem;
-  border-bottom: 1px solid lightblue;
+  padding: 50px 0 50px 0;
 }
 
 ul, li {
@@ -26,7 +24,6 @@ h2 {
 
 /* Below styles apply to the navigation and footer */
 nav, footer {
- padding: 0;
  background-color: lightblue;
 }
 
@@ -69,8 +66,8 @@ sub {
   line-height: 150%
 }
 
-#landing > div {
-  padding: 3.5rem 0 3rem 0;
+.button {
+  padding: 50px 0 30px 0;
 }
 
 a {
@@ -93,6 +90,9 @@ a:hover {
   flex-flow: column wrap;
   font-family: 'PT Serif', serif;
   font-style: italic;
+  margin: 0 5px 0 5px;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
 }
 
 .quote > blockquote {
@@ -119,23 +119,22 @@ blockquote::after {
   content: "--"
 }
 
-/* Below styles apply only the why section */
-#why ul {
+/* Below styles apply to the why section only */
+#why > ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 3rem 0 3rem;
+  padding: 0 30px 0 30px;
 }
 
 #why li {
-  flex: 1 1 250px;
-  padding: 1rem;
+  flex: 1 1 300px;
+  padding: 20px;
 }
 
 #why img {
   float: left;
-  padding-right: 1rem;
-  padding-bottom: 0.25rem;
+  padding-right: 10px;
+  padding-bottom: 2px;
 }
 
 @media screen and (max-width: 500px) {
@@ -148,35 +147,38 @@ blockquote::after {
   }
 }
 
-#team img {
-  border-radius: 5rem;
-  padding: 0.2rem;
-  border: 1px lightgray solid;
-}
-
-#team ul {
+/* Below styles apply to the team section only */
+#team > ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0 5rem 0 5rem;
+  justify-content: center;
+  padding: 0 5% 0 5%;
 }
 
 #team li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 25px 8% 25px 8%;
+}
+
+#team img {
+  border-radius: 100px;
+  padding: 5px;
+  border: 1px lightblue solid;
 }
 
 #team span {
-  padding-top: 1rem;
+  padding-top: 10px;
 }
 
-/* Below styles apply only to the sponsors section */
-#sponsors {
-  border: 0;
+@media screen and (max-width: 500px) {
+  #team li {
+    padding: 25px 5% 25px 5%;
+  }
 }
 
+/* Below styles apply to the sponsors section only */
 #sponsors ul {
   display: flex;
   flex-flow: row wrap;
@@ -185,18 +187,26 @@ blockquote::after {
 }
 
 #sponsors li {
-  padding: 0 0.4rem 0 0.4rem;
+  padding: 0 5px 0 5px;
 }
 
-/* Below styles apply only to the footer */
+/* Below styles apply to the footer only */
 footer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  padding: 20px 10% 50px 10%;
+}
+
+#support {
+  flex: 1;
+}
+
+#about {
+  flex: 2.5;
 }
 
 @media screen and (max-width: 500px) {
-  footer div {
+  #id, #support {
     flex: 1 1 100%;
   }
 
