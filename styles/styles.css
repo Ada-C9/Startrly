@@ -1,11 +1,15 @@
 /* --------------------------------------------- */
-/* PAGE: */
-
-
+/* WHOLE PAGE: */
 
 body {
+
+  margin: 10px;
+  padding: 5px;
+  /* font-family: 'Open Sans', sans-serif; */
   display: grid;
   grid-template-rows: repeat(8, 800px);
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+
   grid-template-areas:
   "Header "
   "Intro"
@@ -16,31 +20,33 @@ body {
   "Sponsors"
   "Footer footer"
   /* grid-gap:  */
+
 }
 
 * {
   font-family: Helvetica;
+  max-width: 100%;
+  	height: auto;
+  /* box-sizing: border-box; */
 }
 
-/*
-header {
-margin: auto;
-text-align: center;
-} */
+
 
 /* --------------------------------------------- */
 /* NAV */
+/* TODO: if window too small about has a min position..?*/
 
 nav ul {
   grid-area: Header;
-
   list-style-type: none;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
 }
 
-
+/* li#startrly{
+flex-shrink: 3;
+} */
 
 li#try-now{
   margin-left: 60%;
@@ -56,16 +62,24 @@ li#about{
 
 /* --------------------------------------------- */
 /* INTRO */
+/* TODO: wrap text from sub if window too small*/
 
 .head-title{
   grid-area: Intro;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  /* text-align: center; */
   padding: 120px
 }
 
 .head-title sub {
   font-weight: bold;
   font-size: 1.1em;
+  padding-bottom: 40px
 }
 
 .head-title a {
@@ -74,6 +88,7 @@ li#about{
   border: 1px solid grey;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
 }
 
 /* --------------------------------------------- */
@@ -106,10 +121,6 @@ section blockquote::before {
 section blockquote::after {
   content: " '' ";
 }
-section {
-  /* border-bottom: 1px solid black; */
-}
-
 
 /* --------------------------------------------- */
 /* WHY */
@@ -130,11 +141,10 @@ make it flow down when the window get too small*/
 .why ul {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
   list-style-type: none;
   grid-gap: 90px;
 }
-
 
 /* comfortable: */
 li#comfortable {
@@ -150,7 +160,6 @@ li#comfortable img {
 li#comfortable p {
   grid-row: 2 / span 2;
 }
-
 
 /* robust: */
 li#robust {
@@ -187,18 +196,152 @@ li#convenient p {
 
 .team {
   grid-area: Team;
+  padding-left: 25px;
+  padding-right: 60px;
+  padding-bottom: 60px;
 }
+
+.team h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.team ul {
+  text-align: center;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center; */
+
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); */
+
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-columns:repeat(auto-fit, minmax(60px, 1fr));
+
+  list-style-type: none;
+  grid-gap: 20px;
+  /* grid-row-gap: 20px; */
+
+
+}
+/* Kari */
+li#kari {
+  display: grid;
+  grid-template-rows: 6fr 1fr 1fr;
+  justify-content: center;
+  grid-row-gap: 10px;
+  grid-column: 1
+}
+
+li#kari  img {
+  border-radius: 90px;
+  border: lightgrey 10px double;
+}
+
+li#dan {
+  display: grid;
+  grid-template-rows: 6fr 1fr 1fr;
+  justify-content: center;
+  grid-row-gap: 10px;
+  grid-column: 3
+}
+
+li#dan  img {
+  border-radius: 90px;
+  border: lightgrey 10px double;
+}
+
+li#chris {
+  display: grid;
+  grid-template-rows: 6fr 1fr 1fr;
+  justify-content: center;
+  grid-row-gap: 10px;
+  grid-column: 5
+}
+
+li#chris  img {
+  border-radius: 90px;
+  border: lightgrey 10px double;
+}
+
+
+li#charles {
+  display: grid;
+  grid-template-rows: 6fr 1fr 1fr;
+  justify-content: center;
+  grid-row-gap: 10px;
+  grid-column: 2
+}
+
+li#charles  img {
+  border-radius: 90px;
+  border: lightgrey 10px double;
+}
+
+li#dee {
+  display: grid;
+  grid-template-rows: 6fr 1fr 1fr;
+  justify-content: center;
+  grid-row-gap: 10px;
+  grid-column: 4
+}
+
+li#dee img {
+  border-radius: 90px;
+  border: lightgrey 10px double;
+}
+
+
 
 /* --------------------------------------------- */
 /* SPONSORS */
 
 .sponsors {
   grid-area: Sponsors;
+  padding-bottom: 60px;
+  border-bottom: 1px solid black;
 }
 
+.sponsors h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.sponsors ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left space-around;
+  align-items: center;
+}
+
+.sponsors ul li {
+  align-self: left;
+}
 /* --------------------------------------------- */
 /* FOOTER */
 
 .footer {
   grid-area: Footer;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer div:first-child{
+
+}
+
+.footer div {
+  margin-left: 50px;
+  width: 15%;
+  flex-wrap: nowrap;
+}
+.footer div ul {
+  list-style-type: none;
+  margin-left: -40px;
 }
