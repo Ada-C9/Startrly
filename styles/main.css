@@ -6,7 +6,7 @@
 
 /* applies a border to the bottom of each box model */
 .container section {
-  border-bottom: lightblue 1px solid;
+  border-bottom: #bcd9e2 1px solid;
 }
 
 /* syle for the nav list items */
@@ -15,8 +15,13 @@
   line-height: 60px;
   list-style-type: none;
   font-weight: bold;
-  background-color: lightblue;
+  background-color: #bcd9e2;
   color: purple;
+  opacity: 0.7;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 /* pseudo selector for nav list */
@@ -29,8 +34,6 @@
 #nav ul {
   display: flex;
   justify-content: center;
-  /* display: grid;
-  grid-template-columns: 4.5fr 0.5fr 0.5fr; */
 }
 
 /* move first list in nav to the left */
@@ -40,8 +43,8 @@
 
 /* move remainder nav lists to the right */
 #nav ul li:nth-of-type(1n+2) {
-  margin-left: 80px;
-  margin-right: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 /* header flexbox */
@@ -56,14 +59,14 @@
 
 /* css for the header title: Startrly */
 #header h1 {
-  color: #688BF3;
+  color: #bf56bf;
   font-family: arial;
-  font-size: 35pt;
+  font-size: 40pt;
   font-family: 'Limelight', bold;
   margin: auto;
 }
 
-/* css for the tagline */
+/* alignment for the tagline */
 #header sub {
   line-height: 70px;
   font-weight: bold;
@@ -71,15 +74,19 @@
   margin-bottom: 25px;
 }
 
-/* alignment for the button in the header */
+/* css for the button in the header */
 #header a {
   font-size: 1.3em;
   padding: 20px 30px;
   margin-bottom: 70px;
-  border: lightblue 3px solid;
+  border: #bcd9e2 3px solid;
   border-radius: 7px;
   text-decoration: none;
   color: purple;
+}
+
+#header a:hover {
+  background-color: #bcd9e2;
 }
 
 /* adding the front quotation marks */
@@ -108,7 +115,7 @@
   font-style: italic;
 }
 
-/* adding -- in front of the blockquote authors */
+/* adding '--' in front of the blockquote authors */
 .blockquote-author::before {
   content: "--";
 }
@@ -120,14 +127,14 @@ h2 {
   margin-top: none;
 }
 
-/* Removes bullet points from all sections */
+/* Remove bullet points from all sections */
 .container section ul li {
   list-style-type: none;
 }
 
-
+/* background color for Why? block */
 .why-block-content {
-  background-color: lightgray;
+  background-color: #bcd9e2;
 }
 
 /* Why? block contents flexbox */
@@ -163,18 +170,15 @@ h2 {
 .meet-the-team-photos {
   display: flex;
   flex-flow: row wrap;
-  height: 100%;
-  align-items: stretch;
 }
 
 /* Meet the team photos */
 #kary img, #dan img, #chris img, #charles img, #dee img {
   border-radius: 50%;
-  border: lightblue 2px solid;
+  border: #bcd9e2 3px solid;
   padding: 0.5em;
   min-width: 20%;
   margin: 50px 50px 0px 50px;
-  align-content: center;
 }
 
 /* Meet-the-team spans */
@@ -185,19 +189,6 @@ h2 {
   align-items: center;
   line-height: 2.5em;
 }
-
-/*
-#kary img, #dan img, #chris img, {
-height: 100%;
-align: center;
-}
-
-
-#charles img, #dee img {
-height: 100%
-align-self: center;
-} */
-
 
 .sponsors ul {
   display: grid;
@@ -230,4 +221,25 @@ align-self: center;
 #rover img {
   grid-column: 1;
   grid-row: 2;
+}
+
+.footer {
+  background-color: #bcd9e2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about {
+  flex 1;
+  width: 150px;
+  height: 100px;
+  margin: 50px 50px;
+  float: left;
+}
+
+.support {
+  flex: 1;
+  width: 150px;
+  height: 100px;
+  margin: 50px 50px;
 }
