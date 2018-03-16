@@ -42,7 +42,7 @@ body div > section.hero {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background: #eee url('../mountains_small.jpg') no-repeat center center;
+  background: #eee url('../images/mountains.jpg') no-repeat center center;
   color: #fff;
 }
 
@@ -137,6 +137,8 @@ ul.why-section li {
 body section ul.why-section li img {
   float: left;
   margin-right: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 /* team styles  */
@@ -151,6 +153,13 @@ ul.team-section li span {
 
 ul.team-section li img {
   border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+/* sponsor styles  */
+section.sponsors img{
+  max-width: 200px;
 }
 
 /* footer styles  */
