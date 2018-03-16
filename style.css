@@ -1,0 +1,160 @@
+nav > ul {
+   list-style-type: none;
+   display: flex;
+}
+
+h2{
+  text-align: center;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#startly{
+  margin-right: auto;
+}
+
+#try-now{
+  margin-right:80px;
+}
+
+#about{
+  margin-right:30px;
+}
+
+section:nth-child(2n+1){
+  color: black;
+  border: 2px solid lightgray;
+
+}
+
+section:first-of-type{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+#title{
+  font-size: 55px;
+}
+#tagline{
+  font-size: 25px;
+}
+
+section:first-of-type > a{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+section:first-of-type > a:hover {
+  background-color: orange;
+}
+
+.quote{
+  display:grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr);
+  font-family:cursive;
+  height:250px;
+}
+
+.blockquote{
+  grid-column: 3/-4;
+  grid-row: 4;
+}
+
+.author{
+  grid-row:5;
+  grid-column: 7/-3;
+}
+
+
+#why-list-items{
+  display:flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+#comfort-item{
+  display: grid;
+  grid-template-columns: 110px auto;
+
+}
+
+#robust-item{
+  display:grid;
+  grid-template-columns: 110px auto;
+}
+
+#convenient-item{
+  display:grid;
+  grid-template-columns: 110px auto;
+}
+
+#team-top-row img{
+   border-radius: 50%;
+}
+#team-bottom-row img{
+   border-radius: 50%;
+}
+#team-top-row{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+#team-bottom-row {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+#top-row-sponsers{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  list-style-type:none;
+}
+
+#top-row-sponsers div{
+  margin: 20px;
+}
+
+#sponsors-220x100{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type:none;
+}
+
+#footer-pg{
+  display:grid;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(20,1fr);
+  height:50px;
+}
+
+#footer-pg ul{
+    list-style-type: none;
+}
+
+#support{
+  grid-column: 2/4;
+  margin-left: 20px;
+}
+
+ #about{
+  grid-column: 5/auto;
+}
