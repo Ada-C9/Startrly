@@ -6,6 +6,9 @@ body {
   font-family: "Times New Roman", Times, serif
 }
 
+* {
+  list-style-type: none;
+}
 .parallax {
     /* The image used */
     background-image: url("http://beyondmeasuretraining.com/wp-content/uploads/2017/10/Start-Road-Cocaine-Addiction-Treatment-SummitHelps.com_.jpg");
@@ -27,7 +30,6 @@ nav {
   background-color: turquoise;
 }
 nav > ul {
-  list-style-type: none;
   display: flex;
   justify-content: space-around;
 }
@@ -113,7 +115,6 @@ section > p:before {
   flex: 1;
   flex-direction: row;
   justify-content:space-around;
-  list-style-type: none;
 }
 .why ul li {
   display: block;
@@ -186,7 +187,6 @@ section > p:before {
   align-items: flex-start;
 }
 .footer ul {
-  list-style-type: none;
   text-align: left;
   padding: 0;
 }
