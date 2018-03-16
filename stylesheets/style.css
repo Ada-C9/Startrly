@@ -1,27 +1,57 @@
+
+body {
+  height: 100%;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 #main-container {
   font-family: Montserrat, sans-serif;
+  background-image: url("../images/seattle-color.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 /* Nav Bar */
 nav ul {
   opacity: 1;
-  background: white;
+  z-index: 2;
+  background: #262626;
+  color: white;
   width: 100vw;
-  margin-top: -0.5vw;
-  padding-top: 3vh;
+  margin-top: -0.3vw;
   position: fixed;
   list-style-type: none;
   display: grid;
-  grid-template: 5vh / 70vw 15vw 1fr;
+  grid-template: 8vh / 75vw 10vw 1fr;
+  align-items: center;
 }
 
+nav ul li {
+  padding: 3vh;
+  margin-right: auto;
+}
+
+nav ul li:hover {
+  background-color: #D3D3D3;
+  color: #cca300;
+}
 nav ul li:first-of-type {
   margin-right: auto;
 }
 
-nav ul li:nth-of-type(2) {
-  padding-right: 4vw;
+nav li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
+
 
 /* Header */
 #main-header section {
@@ -37,26 +67,36 @@ nav ul li:nth-of-type(2) {
 }
 
 #main-header h1 {
-  margin-top: 30vh;
+  font-size: 3em;
+  margin-top: 40vh;
+  color: #b30000;
 }
 
 #main-header a {
+  background-color: #FFFFFF;
   margin: 4em;
   padding: 1.3rem;
-  border: solid #d3d3d3 0.1em;
+  border: solid #cca300 0.1em;
   border-radius: 0.5rem;
   color: black;
   text-decoration: none;
   font-size: 0.6em;
 }
 
+#main-header a:hover {
+  border-color: #FFFFFF;
+  background-color: #cca300;
+  color: #f0f0f0;
+}
+
 /* Blockquote sections */
 .blockquote {
   width: 98vw;
+  background-color: rgba(240,240,240,0.5);
   margin: auto;
   text-align: left;
-  border-top: solid thin black;
-  border-bottom: solid thin black;
+  border-top: solid thin rgba(0,0,0,0.5);
+  border-bottom: solid thin rgba(0,0,0,0.5);
   font-style: italic;
   font-size: 1.8em;
   line-height: 2em;
@@ -163,7 +203,7 @@ footer {
   grid-template: 1fr / 1fr 1fr;
   width: 50vw;
   margin-left: 5vw;
-  margin-bottom: 10vw;
+  padding-bottom: 10vw;
 }
 
 footer h3 {
