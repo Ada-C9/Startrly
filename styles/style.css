@@ -1,0 +1,201 @@
+/* ## Primary Requirements
+
+ ✔️ Add normalize.css
+
+- Use CSS to rearrange the layout to match the drawing as much as possible (it doesn't need to be perfect). You should utilize the following layout techniques at least once:
+  - CSS grid
+  - Flexbox
+- Add styling
+  ✔️ At least one google font
+  ✔️ At least one pseudo selector (like hover)
+  - Background color on one section
+- Identify repeated styles and use CSS selectors and class/id names to organize and DRY your code. */
+
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* font-family: 'Dancing Script', cursive; */
+/* .body-container {
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+} */
+
+.top-nav {
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-rows: 30px;
+  padding-right: 5%;
+  position: fixed;
+  overflow: hidden;
+  background-color: #FFF;
+  top: 0;
+  margin-top: 0;
+
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10%; */
+}
+
+li { list-style-type: none; }
+.top-nav li:hover {
+  color: pink;
+}
+
+h1 { font-size: 5em; }
+
+sub {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+#button-link {
+  color: #000;
+  /* background-color: #ECF0F1; */
+  border: 2px grey solid;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.section-1-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  padding-bottom: 10%;
+  border-bottom: 1px black solid;
+}
+
+.quote-section {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px black solid;
+  padding: 100px;
+  background-color: #ffc876;
+}
+
+.quote-section blockquote {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+
+.quote-section blockquote::before {
+  content: "\""
+}
+
+.quote-section blockquote::after {
+  content: "\""
+}
+
+.quote-section p::before{
+  content: "-";
+}
+
+.quote-section p {
+  align-self: flex-end;
+}
+
+.section-3-container {
+  margin: 5%;
+  display: grid;
+  border-bottom: 1px black solid;
+  padding: 100px;
+}
+
+h2{
+  text-align: center;
+}
+
+.section-3-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5%;
+
+}
+.section-3-list-item {
+  display: grid;
+  grid-template-areas:
+    "Image Title"
+    "Image Quote";
+  grid-column-gap: 10px;
+  padding: 10px;
+}
+
+.section-3-list-item img {
+  grid-area: Image;
+}
+
+.section-3-list-item strong {
+  grid-area: Title;
+}
+
+.section-3-list-item p {
+  grid-area: Quote;
+}
+
+.section-4-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+
+}
+
+.section-4-list li{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+}
+
+.section-4-list li img {
+  border: grey 5px double;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+  float:left;
+}
+
+.section-4-list li span {
+  line-height: 3em;
+  /* padding: 5px; */
+}
+
+.sponsor-images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 1px black solid;
+  padding: 100px;
+ }
+
+.footer-menu {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 10%;
+}
+/* .footer-title{
+
+  text-align: left;
+} */
+
+.footer-list {
+  padding-left: 0%;
+}
