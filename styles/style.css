@@ -1,0 +1,216 @@
+/* Below styles apply to the entire page */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+section {
+  padding: 50px 0 50px 0;
+}
+
+ul, li {
+  padding: 0;
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Below styles apply to the navigation and footer */
+nav, footer {
+ background-color: lightblue;
+}
+
+/* Below styles apply to the navigation only */
+nav > ul {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+}
+
+nav li {
+ font-weight: bold;
+ text-align: center;
+}
+
+.col-1 {
+ grid-column: 1 / 2;
+}
+
+.col-2 {
+ grid-column: 2 / 3;
+}
+
+.col-5 {
+ grid-column: 5 / 6;
+}
+
+/* Below styles apply to the landing section only */
+h1 {
+  font-size: 3rem;
+}
+
+#landing {
+  text-align: center;
+}
+
+sub {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 150%
+}
+
+.button {
+  padding: 50px 0 30px 0;
+}
+
+a {
+  color: #000;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: lightblue;
+  border-radius: 0.5rem;
+}
+
+a:hover {
+  background-color: lightgray;
+}
+
+/* Below styles apply to the blockquote sections */
+.quote {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  margin: 0 5px 0 5px;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+}
+
+.quote > blockquote {
+  font-size: 1.35rem;
+  padding: 0 10% 0 10%;
+  line-height: 200%;
+}
+
+.quote > p {
+  font-size: 1.25rem;
+  align-self: flex-end;
+  padding-right: 10%;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+.quote > p::before {
+  content: "--"
+}
+
+/* Below styles apply to the why section only */
+#why > ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 30px 0 30px;
+}
+
+#why li {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+#why img {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  #why li {
+    flex: 1 1 100%;
+  }
+
+  #why img {
+    display: none;
+  }
+}
+
+/* Below styles apply to the team section only */
+#team > ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 5% 0 5%;
+}
+
+#team li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 8% 25px 8%;
+}
+
+#team img {
+  border-radius: 100px;
+  padding: 5px;
+  border: 1px lightblue solid;
+}
+
+#team span {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  #team li {
+    padding: 25px 5% 25px 5%;
+  }
+}
+
+/* Below styles apply to the sponsors section only */
+#sponsors ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#sponsors li {
+  padding: 0 5px 0 5px;
+}
+
+/* Below styles apply to the footer only */
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 10% 50px 10%;
+}
+
+#support {
+  flex: 1;
+}
+
+#about {
+  flex: 2.5;
+}
+
+@media screen and (max-width: 500px) {
+  #id, #support {
+    flex: 1 1 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
