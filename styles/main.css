@@ -132,6 +132,7 @@ blockquote:before {
 
 blockquote {
   font-size: 1em;
+  margin: 4em 15em auto 15em;
   padding: 1em;
 }
 
@@ -144,6 +145,7 @@ blockquote + p:before {
 }
 
 .cite {
+  margin: 0 6em 3em 6em;
   text-align: right;
 }
 
@@ -156,7 +158,6 @@ blockquote + p:before {
   display: grid;
   font-style: italic;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 0.5fr; */
   line-height: 1.75em;
   padding: 0 3em;
 }
