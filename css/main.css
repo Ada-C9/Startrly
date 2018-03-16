@@ -147,3 +147,9 @@ footer section {
   grid-template-columns: 35% 35% 35%;
   text-align: center;
 }
+
+a[href="#"]:hover{
+  text-decoration: none;
+  color: gold;
+  font-size: 2.5em;
+}
