@@ -212,6 +212,11 @@ h2 {
   padding-top: 40px;
 }
 
+/* applied padding to the h3 header */
+.footer h3 {
+  padding-bottom: 20px;
+}
+
 /* alignment for the support ul */
 .support ul {
   grid-column: 1;
