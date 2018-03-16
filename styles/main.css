@@ -1,0 +1,225 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 40px;
+  border-bottom: 1.5px solid lightgray;
+}
+
+h2 {
+  text-align: center;
+  font-size: 14pt;
+  padding-bottom: 30px;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 30px 5% 20px 5%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 0;
+}
+
+#startrly {
+  flex: 3;
+}
+
+#try-now, #about {
+  flex: 2;
+  text-align: right;
+  /*padding-right: 10px;*/
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
+}
+
+.header a {
+  border: 1.5px solid lightgray;
+  border-radius: 10%;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+.header sub {
+  padding: 10px 10px 30px 10px;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.header h1 {
+  font-size: 26pt;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  font-family: serif;
+  font-style: italic;
+  font-size: 14pt;
+  line-height: 2;
+}
+
+.testimonial p {
+  text-align: right;
+}
+
+.testimonial blockquote::before {
+  content: "\"";
+}
+
+.testimonial blockquote::after {
+  content: "\"";
+}
+
+.testimonial p::before {
+  content: "--";
+}
+
+.why-section {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.why {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr 30px 1fr;
+  font-size: 10pt;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.why img {
+  float: left;
+  padding-right: 10px;
+}
+
+.why li:first-child {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.why li:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.why li:nth-child(3) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.team img {
+  position: relative;
+  border-radius: 50%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: grey 5px double;
+  transition: all .5s;
+}
+
+.team img:hover {
+  transform: scale(1.3) rotate(5deg);
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team li span {
+  display: block;
+  text-align: center;
+  line-height: 2;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*.face {
+border-radius: 40%;
+}*/
+
+/*.circleborder {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  outline: lightgray;
+  outline-style: double;
+}*/
+
+/*flex box ideas*/
+/*give the nav a container class and style it display: flex. give each part of the nav a class or id, and style Startrly to be margin-right: auto;*/
+/*also do .container > .search { flex: 2 } or something, to make it take up more space*/
+/*#justify-content: center and align-items: center for things in the body>div>section (startrly, catchy tagline, call to action)*/
+/*this section could also be in a container that is set to flex-direction: column*/
+/*use align-self: flex-start or flex-end for things like the --Ms. Lorem/Mr Ipsum?*
+for mobile responsive media query change the flex-direction for the "Why" , Sponsors, and footer sections (maybe more?) to go from flex-column to flex-direction: row
+sample media queries:
+@media screen and (min-width: 600px){
+  article {
+   -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  article > * {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  aside {
+
+  -webkit-order: -1;
+   order: -1;
+  }
+  article > div {
+
+    -webkit-flex: 3;
+    flex: 3;
+  }
+  footer {
+    background-color: #ccc;
+  }
+}
+
+@media screen and (max-width: 600px){
+  article {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
+
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+}
