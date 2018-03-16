@@ -190,56 +190,37 @@ h2 {
   line-height: 2.5em;
 }
 
+/* css grid for the Sponsors block */
 .sponsors ul {
   display: grid;
-  /* grid-template-columns: 100px 100px 100% 50%; */
-  /* grid-column: 1/ span 3;
-  grid-row: 2 / span 2; */
-  grid-area: 1 / 4 / 3 / 1;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 75px;
 }
 
-#amazon img {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-#nordstrom img {
-  grid-column: 1;
-  grid-row: 4;
-}
-
-#moz img {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-#zillow img {
-  grid-column: 4;
-  grid-row: 1;
-}
-
+/* attempting to position rover in the center */
 #rover img {
-  grid-column: 1;
-  grid-row: 2;
+  /* grid-template-columns: 50px; */
+  grid-column: 1 / 3;
 }
 
 .footer {
   background-color: #bcd9e2;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 40px;
 }
 
-.about {
-  flex 1;
-  width: 150px;
+.support ul {
+  grid-column: 1;
   height: 100px;
-  margin: 50px 50px;
-  float: left;
+  width: 150px;
+  padding: 0px;
 }
 
-.support {
-  flex: 1;
-  width: 150px;
+.about ul {
+  grid-column: 2;
   height: 100px;
-  margin: 50px 50px;
+  width: 150px;
+  padding: 0px;
 }
