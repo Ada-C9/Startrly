@@ -139,6 +139,7 @@ h2 {
 }
 
 .footer {
+  background-color: #fef9e7;
   display: grid;
   grid-template-columns: 1fr 1fr 8fr;
   list-style-type: none;
