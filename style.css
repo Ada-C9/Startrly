@@ -97,11 +97,20 @@ body {
   background: #FDBA63;
 }
 
-.team img {
-  border-radius: 100px;
+.team ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.team span {
+.team li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 55px;
+}
+
+.team img {
   border-radius: 100px;
 }
 
@@ -119,10 +128,11 @@ body {
   color: #FFFFFF;
   background: #000072;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer section div {
-  margin-right: 80px;
+  margin-right: 100px;
 }
 
 .footer section ul {
