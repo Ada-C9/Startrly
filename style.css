@@ -36,7 +36,7 @@ nav > ul > li:first-child {
 Styling for first section Startly */
 .first-section{
   background-color: #E6E6FA;
-  border-bottom: solid .5px lightgray;
+  border-bottom: solid 1.5px lightgray;
   min height: 200px;
   padding-top: 100px;
   padding-bottom: 40px;
@@ -80,7 +80,7 @@ Styling for first section Startly */
 
 .second-section{
   font-style: italic;
-  border-bottom: solid .5px lightgray;
+  border-bottom: solid 1.5px lightgray;
   min height: 100px;
   padding: 5% 23% 1% 23%;
   display: flex;
@@ -110,7 +110,7 @@ Styling for first section Startly */
 }
 
 .third-section ul {
-  border-bottom: solid .5px lightgray;
+  border-bottom: solid 2px lightgray;
   padding: 50px 50px 50px 50px;
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +137,7 @@ Styling for first section Startly */
 
 .fourth-section {
   font-style: italic;
-  border-bottom: solid .5px lightgray;
+  border-bottom: solid 2px lightgray;
   min height: 100px;
   padding: 5% 20% 5% 20%;
   display: flex;
@@ -175,7 +175,7 @@ Styling for first section Startly */
 
 .fifth-section ul img{
   border-radius: 50%;
-  border-style: solid .03rem lightgray;
+  border-style: dashed .03rem lightgray;
   align-self: center;
   margin: 3rem 9rem 1rem 5.5rem;
   padding: 0;
@@ -190,7 +190,7 @@ margin: .2rem 9rem .6rem 5.5rem;
 }
 
 .sixth-section {
-  border-bottom: solid .5px lightgray;
+  border-bottom: solid 1.5px lightgray;
 }
 
 .sixth-section ul {
@@ -212,8 +212,12 @@ margin: .2rem 9rem .6rem 5.5rem;
 
 .seventh-section {
   display: grid;
-  grid-template-columns: 100px 50px;
-  width: 50%
+  grid-template-columns: repeat(5, 20%);
+  margin: 1.5rem;
+}
+
+.seventh-section h3 {
+  margin-left: 2.5rem;
 }
 
 .seventh-section ul li {
