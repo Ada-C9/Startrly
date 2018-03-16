@@ -1,17 +1,16 @@
 /* --------------------------------------------- */
 /* WHOLE PAGE: */
+
+/* import GooglFont: */
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 
 body {
-
   margin: 10px;
   padding: 5px;
-  /* font-family: 'Open Sans', sans-serif; */
   display: grid;
   grid-template-rows: repeat(8, 800px);
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-
   grid-template-areas:
   "Header "
   "Intro"
@@ -21,10 +20,7 @@ body {
   "Team"
   "Sponsors"
   "Footer footer"
-  /* grid-gap:  */
-
 }
-
 
 * {
   font-family: 'Gloria Hallelujah', cursive;
@@ -41,7 +37,8 @@ h2 {
 
 /* --------------------------------------------- */
 /* NAV */
-/* TODO: if window too small about has a min position..?*/
+/* TODO: if resizing window, still having trouble with the nav..?*/
+
 header {
   margin: auto;
   text-align: center;
@@ -54,8 +51,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   color: #FFFFFF;
-  /* background-color: #F5DEB3; */
-  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;
+  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat; /* Gradiant color.. */
   border: 1px solid #F5BDB3;
   padding: 10px;
   border-radius: 20px;
@@ -63,9 +59,8 @@ nav ul {
 
 nav ul li{
   background-color: #F5DEB3;
-  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;
+  background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;  /* Gradiant color.. */
   padding: 10px;
-  /* border: 1px solid #F5BDB3; */
 }
 
 li#try-now{
@@ -82,17 +77,15 @@ li#about{
 
 /* --------------------------------------------- */
 /* INTRO */
-/* TODO: wrap text from sub if window too small*/
+/* TODO: .head-title sub --> not wrapping when rezising window...*/
 
 .head-title{
   grid-area: Intro;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   height: 100px;
   justify-content: space-between;
   align-items: center;
-  /* text-align: center; */
   padding: 120px
 }
 
@@ -113,14 +106,12 @@ li#about{
 .head-title a {
   text-decoration: none;
   color: #FFFFFF;
-  /* border: 1px solid grey; */
   padding: 10px;
   border-radius: 5px;
   text-align: center;
   background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat;
   border: 1px solid #F5BDB3;
   border-radius: 20px;
-  /* border: 2px outset #F5DEB3; */
 }
 
 /* --------------------------------------------- */
@@ -149,16 +140,14 @@ section blockquote {
   line-height: 2.5;
 }
 section blockquote::before {
-  content: " '' ";
+  content: "''";
 }
 section blockquote::after {
-  content: " '' ";
+  content: "''";
 }
 
 /* --------------------------------------------- */
 /* WHY */
-/* TODO: make it wrap around the img
-make it flow down when the window get too small*/
 
 .why {
   grid-area: Why;
@@ -166,7 +155,6 @@ make it flow down when the window get too small*/
   padding-left: 25px;
   padding-right: 35px;
   color: #FFFFFF;
-  /* color: #F5F5F5; */
 }
 
 .why h2 {
@@ -192,7 +180,6 @@ li.because {
 li.because img {
   grid-row: 1 / span 2;
   border: #F5BDB3 2px solid;
-  /* background: #F5BDB3 -webkit-gradient(linear, left top, left bottom, from(#F5E9B3), to(#F5BDB3)) no-repeat; */
 }
 
 li.because p {
@@ -202,7 +189,7 @@ li.because p {
 /* --------------------------------------------- */
 /* TEAM */
 
-/* General attributes of the team: */
+/* General sltyle for the team: */
 .team {
   grid-area: Team;
   padding-top: 20px;
