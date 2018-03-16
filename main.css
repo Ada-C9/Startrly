@@ -34,7 +34,6 @@ nav ul {
 
   display: grid;
   grid-area: 8fr
-
 }
 
 nav ul li {
@@ -100,7 +99,7 @@ nav ul li:last-child {
   border-bottom-width: thin;
   font-style: italic;
   padding: 2em;
-
+  background-color: Lavender
 }
 
 .quote blockquote {
@@ -173,11 +172,48 @@ nav ul li:last-child {
   grid-row: 6 / 7;
 }
 
+.team h2 {
+  text-align: center;
+}
+
+.team ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 5em;
+  margin-right: 5em;
+  justify-content: center;
+}
+
+.team li {
+  list-style: none;
+  margin: 100px
+}
+
+.team li img {
+  border-radius: 5em;
+  margin: 20px;
+}
+
+.team li span {
+  display: block;
+  text-align: center;
+}
+
+
 /*formatting for the sponsor section*/
 .sponsors {
   grid-row: 7 / 8;
   border-bottom-style: solid;
   border-bottom-width: thin;
+}
+
+.sponsors ul {
+
+}
+
+.sponsors ul li {
+  
 }
 
 /*formatting for the footer*/
