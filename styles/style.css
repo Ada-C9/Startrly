@@ -26,14 +26,14 @@ img {
 }
 
 /********** nav **********/
-nav {
+.nav {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 3;
 }
 
-nav ul {
+.nav ul {
   font-size: 1.5em;
   font-weight: bold;
   color: #EF767A;
@@ -45,13 +45,13 @@ nav ul {
   margin: 0;
 }
 
-nav li {
+.nav li {
   padding: 0 20px;
   width: max-content;
 }
 
-/********** header **********/
-.header {
+/********** banner **********/
+.banner {
   height: 200px;
   padding-top: 70px;
   padding-bottom: 550px;
@@ -67,7 +67,7 @@ nav li {
   background-size: cover;
 }
 
-.header h1 {
+.banner h1 {
   font-family: Playfair, serif;
   font-size: 4em;
   color: #EF767A;
@@ -75,7 +75,7 @@ nav li {
   margin: 30px;
 }
 
-.header sub {
+.banner sub {
   text-transform: capitalize;
   text-decoration: underline;
   font-family: Playfair, serif;
@@ -87,7 +87,7 @@ nav li {
   min-height: 20px;
 }
 
-.header a {
+.banner a {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
@@ -101,7 +101,7 @@ nav li {
   border-radius: 10px;
 }
 
-.header a:hover {
+.banner a:hover {
   color: white;
 }
 
@@ -233,7 +233,7 @@ nav li {
 
 /********** small screen **********/
 @media screen and (max-width: 600px) {
-  nav ul {
+  .nav ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -245,13 +245,14 @@ nav li {
   }
 
   .why li {
+    text-align: left;
+    font-size: 1.2em;
+
+    min-height: 100px;
+    padding: 20px;
     display: grid;
     grid-template: 10px 90px / 250px;
     grid-gap: 10px;
-    text-align: left;
-    min-height: 100px;
-    padding: 20px;
-    font-size: 1.2em;
   }
 
   .why li img {
@@ -270,6 +271,7 @@ nav li {
 
   .footer {
     text-align: center;
+
     display: flex;
     flex-direction: column;
   }
