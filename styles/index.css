@@ -99,6 +99,7 @@ a#button{
 blockquote {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  font-style: italic;
   margin-top: 40px;
 }
 
@@ -114,7 +115,7 @@ blockquote::after, blockquote::before {
 }
 
 blockquote + p::before {
-  content: " - ";
+  content: " -- ";
 }
 
 /* WHY SECTION  */
