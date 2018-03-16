@@ -140,6 +140,8 @@ ul li.why-grid-container {
   grid-template-areas:
   "i w"
   "i q";
+  max-width: 30%;
+  column-gap: 5px;
 }
 
 .why-grid-container img {
@@ -147,6 +149,7 @@ ul li.why-grid-container {
   align-self: flex-start;
   height: 100px;
   width: 100px;
+  margin-right: 2px;
 }
 
 .why-grid-container strong {
