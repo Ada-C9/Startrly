@@ -1,0 +1,284 @@
+/*****************************************
+COLORS:
+#6D8CA0: Bermuda Gray Section Background
+#ABDCD6 Teal: Section Background
+#FFFCEC Off-white: Section Background, text on dark
+#EB593C Orange: Header, button
+#333333 Charcoal: Footer, text on light, button
+******************************************/
+
+/*****************************************
+GENERAL
+******************************************/
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Fira Sans', sans-serif;
+}
+body {
+  padding: 0;
+  overflow: auto;
+  color: #F4F5E7;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.flex-container {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  border-bottom: 2px #333333 solid;
+}
+
+.section-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+/*****************************************
+HEADER & NAVBAR
+******************************************/
+
+.header {
+  background-color: #EB593C;
+  height: 100%;
+  position: fixed top;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-container>li {
+  padding: 1.5em;
+  margin-bottom: .5em;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: .5em;
+}
+
+nav ul li:nth-last-child(-n+2) {
+  font-size: 1.5em;
+  padding-top: .5em;
+}
+
+.header nav ul {
+  list-style: none;
+}
+
+/*****************************************
+JUMBOTRON SECTION
+******************************************/
+.jumbotron {
+  background-color: #ABDCD6;
+  margin-top: -2em;
+}
+
+.jumbotron h1 {
+  display: flex;
+  align-self: center;
+  font-size: 4em;
+  font-weight: 700;
+  margin: .25em;
+}
+
+.jumbotron sub {
+  display: flex;
+  align-self: center;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.jumbotron a {
+  display: flex;
+  align-self: center;
+  margin: 2em;
+  font-size: 1.5em;
+}
+
+.button {
+  background-color: #EB593C;
+  border: none;
+  color: #F4F5E7;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #333333;
+  color: #FFFCEC;
+  border: 1px solid #FFFCEC;
+  font-style: italic;
+}
+
+/*****************************************
+BLOCKQUOTE SECTIONS
+******************************************/
+.quote {
+  background-color: #FFFCEC;
+  color: #333333;
+}
+
+.quote blockquote {
+  font-size: 2em;
+  font-style: italic;
+  margin: 0 5.5em;
+}
+
+.quote p {
+  display: flex;
+  align-self: flex-end;
+  font-size: 2em;
+  font-style: italic;
+  margin: 1em 4em;
+}
+
+.quote blockquote::before, .quote blockquote::after {
+  content: "\""
+}
+
+.quote p::before {
+  content: "\--"
+}
+
+/*****************************************
+WHY? SECTION
+******************************************/
+/* W3, min-height, min-width, float on images, */
+.why {
+  border-bottom: 1px #333333 solid;
+  height: 100%;
+  background-color: #6D8CA0;
+}
+
+.why ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.why ul li {
+  margin: 4em;
+  max-width: 500px;
+}
+
+.why ul li strong{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.why ul li p {
+  max-width: 400px;
+  text-align: left;
+  font-size: 1.25em;
+}
+
+.why ul li img {
+  float: left;
+  margin-right: 2em;
+}
+
+/*****************************************
+TEAM SECTION
+******************************************/
+
+.team {
+  border-bottom: 2px #333333 solid;
+  background-color: #6D8CA0;
+}
+
+.team-top, .team-below {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.25em;
+}
+
+.team-top li, .team-below li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team ul li {
+  list-style: none;
+}
+
+.team ul li img {
+  border-radius: 50%;
+  margin: 1em;
+}
+
+/*****************************************
+SPONSORS SECTION
+******************************************/
+
+.sponsors {
+  border-bottom: 2px #333333 solid;
+  background-color: #ABDCD6;
+}
+
+.sponsors ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sponsors ul li {
+  margin: 1.1em;
+}
+
+/*****************************************
+FOOTER SECTION
+******************************************/
+
+.footer {
+  background-color: #333333;
+}
+.footer div ul li:hover {
+  cursor: pointer;
+}
+
+#footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+#footer-container h3 {
+  margin-left: 8.75em;
+}
+
+#footer-container ul {
+  list-style: none;
+  margin-left: 8em;
+}
