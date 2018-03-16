@@ -1,0 +1,197 @@
+/*NAV BAR*/
+
+nav > ul {
+  color: #D4EC0F;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  list-style-type: none;
+  background-color: gray;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 6px;
+  padding-bottom: 3px;
+}
+
+/*TITLE SECTION*/
+
+.page-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: flex-end;
+  padding-bottom: 3%;
+  background-color: #BABBF9;
+}
+
+.page-title > h1 {
+  font-size: 4em;
+  font-family: 'Permanent Marker', cursive;
+  color: #480355;
+}
+
+a {
+  width: 140px;
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  color: magenta;
+  border: 1px solid #228A7D;
+  border-radius: 10px;
+  background-color: #EDF5F4;
+}
+
+a:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+sub {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #279598;
+  font-style: italic;
+}
+
+section:not(.page-title) {
+  border-top: solid #414535 1px;
+
+}
+
+/*QUOTE SECTIONS*/
+
+.quote {
+  font-style: italic;
+}
+
+.quote > p {
+  text-align: right;
+  margin-right: 80px;
+}
+
+.quote > p:before {
+  content: '--';
+}
+
+.quote > blockquote {
+  text-align: center;
+}
+
+blockquote:before
+{
+content: '\201C';
+}
+
+blockquote:after
+{
+content: '\201D';
+}
+
+/*H2 TITLES*/
+
+h2 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  color: #480355;
+
+}
+
+/*TEAM SECTION*/
+
+.team ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.team ul li {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.team img {
+  border: grey 6px double;
+  border-radius: 50%;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+/*WHY SECTION*/
+
+ul.descriptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*padding: 3vw;*/
+}
+
+ul li.why-grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 25px 120px;
+  grid-template-areas:
+  "i w"
+  "i q";
+}
+
+.why-grid-container img {
+  grid-area: i;
+  align-self: flex-start;
+  height: 100px;
+  width: 100px;
+}
+
+.why-grid-container strong {
+  grid-area: w;
+  text-align: left;
+}
+
+.why-grid-container p {
+  grid-area: q;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  height: 70px;
+}
+
+
+/*SPONSOR SECTION*/
+
+.sponsors {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center space-between;
+  align-content: space-between;
+  list-style-type: none;
+}
+
+/*FOOTER SECTION*/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding-left: 80px;
+  background-color: #D4EC0F;
+}
+
+.footer-about {
+  margin-left: 5%;
+}
+
+h3.footer-about {
+
+}
+
+/*section:nth-of-type(odd) { background-color: #BABBF9}*/
+/*not sure why the above doesnt fill the whole section and leaves a bit of white at the bootom*/
