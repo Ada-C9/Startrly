@@ -48,6 +48,10 @@ body {
   margin-top: 1em;
 }
 
+.intro a:hover {
+  background-color: #FDBA63;
+}
+
 .firstquote, .secondquote {
   background-color: #e0f6ff;
   border-top: solid #FFFFFF;
