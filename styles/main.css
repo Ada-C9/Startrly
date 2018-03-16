@@ -111,13 +111,13 @@
   content: "--";
 }
 
-/* Why? block h2 header alignment  */
+/* Why? block h2 header alignment */
 .why-block-content h2 {
   text-align: center;
   margin: 50px 50px;
 }
 
-/* Why? block contents alignment  */
+/* Why? block contents alignment */
 .why-block-content ul {
   display: flex;
   list-style-type: none;
@@ -134,7 +134,48 @@
   margin: 10px 10px 60px 10px;
 }
 
+/* css for Why? block list content */
 .comfortable, .robust, .convenient {
   min-width: 300px;
   flex-wrap: wrap;
+}
+
+/* hiding the bottom boarder for meet the team */
+.container .meet-the-team {
+  border-bottom-style: none;
+}
+
+/* Meet the team block h2 header alignment  */
+.meet-the-team h2 {
+  text-align: center;
+  margin: 50px 50px;
+}
+
+/* Meet the team block */
+.meet-the-team-photos {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+/* Meet the team photos */
+#kary img, #dan img, #chris img, #charles img, #dee img {
+  border-radius: 50%;
+  border: lightblue 1px solid;
+  padding: 0.5em;
+  min-width: 20%;
+}
+
+#kary span, #dan span, #chris span, #charles span, #dee span {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.5em;
+}
+
+/* Meet the team lists */
+.meet-the-team-photos li {
+  list-style-type: none;
+  flex-direction: row;
 }
