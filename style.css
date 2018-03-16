@@ -1,28 +1,3 @@
-/* nav bar using plain css */
-
-/* body div section nav ul {
-position: inline;
-list-style-type: none;
-}
-
-body div section nav ul li:nth-child(1) {
-float: left;
-}
-
-body div section nav ul li:nth-child(2) {
-float: right;
-}
-
-body div section nav ul li:nth-child(3) {
-float: right;
-} */
-
-/* .nav {
-background-color: #f0e442;
-grid-row: auto / span 2;
-} */
-
-
 body {
   display: grid;
   /* grid-template: 100px 500px / 200px 100px 50%; */
@@ -33,7 +8,8 @@ body {
 .topish {
   background-color: lightgreen;
   padding: 80px;
-  /* padding-bottom: 100px; */
+  padding-left: 100px;
+  padding-right: 100px;
   /* align-content: center; */
 }
 
@@ -55,6 +31,12 @@ body {
   margin-left: 50px;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header  h1:hover {
   display: flex;
   flex-direction: column;
@@ -74,13 +56,14 @@ body {
 /* should this be a button? */
 .header a {
   position: block;
-  text-align: center;
+  /* text-align: center; */
   background-color: #FFF8DC;
   width: 200px;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid;
+  align-items: center;
 }
 
 body div section {
@@ -153,7 +136,9 @@ img[src*="placebear"] {
   flex-wrap: wrap;
   align-items: baseline;
   flex: 1;
-  align-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  /* align-content: space-between; */
 }
 
 .endish {
