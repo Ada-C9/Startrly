@@ -6,9 +6,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: none;
+  flex-wrap: nowrap;
 
-  list-style-type: none;
+  list-style: none;
   font-family: 'Yantramanav', sans-serif;
   font-weight: bold;
   font-size: .95em;
@@ -19,10 +19,11 @@
 
 nav ul li:nth-of-type(2) {
   margin-left: 55%;
+  margin-right: 8%;
 }
 
 nav ul li:last-of-type {
-  margin-right: 5%
+  margin-right: 4%
 }
 
 /* intro, tagline, button */
@@ -60,7 +61,7 @@ nav ul li:last-of-type {
   color: white;
 }
 
-/* first quote */
+/* quotes */
 .quote {
   height: 200px;
   display: flex;
@@ -91,101 +92,131 @@ nav ul li:last-of-type {
   flex-direction: row;
   font-family: 'Yantramanav', sans-serif;
   font-weight: bolder;
-  list-style-type: none;
-  align-items: center;
+  list-style: none;
+  align-items: start;
   justify-content: space-around;
   border-bottom: thin solid lightgrey;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-bottom: 2em;
 }
 
-#why-container h2 {
+.header {
   display: flex;
   height: 50px;
   justify-content: center;
   align-items: flex-end;
   font-family: 'Yantramanav', sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 2em;
   font-style: thick;
-  margin-bottom: 0;
+  margin-bottom: 1;
 }
 
-.first {
+.why-info {
   display: grid;
-  grid-template-columns: 100px 200px;
+  grid-template-columns: 110px 200px;
   align-items: start;
   justify-content: start;
-  grid-template-areas:
-    "image text";
+  grid-template-areas: "image text";
+  margin: .5em;
 }
 
-.first strong {
+.why-info strong {
   grid-area: text;
   align-items: start;
-  justify-content: start;
 }
 
-.first p {
+.why-info p {
+  margin-top: 1.5em;
   grid-area: text;
-  margin-top: 1em;
-  align-items: start;
   font-weight: lighter;
 }
 
-.first img {
+.why-info img {
   grid-area: image;
+  align-items: start;
+  justify-content: start;
+}
+
+#team ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bolder;
+  list-style-type: none;
+  flex-flow: wrap;
+  padding-left: 0;
+  margin-left: 8em;
+  margin-right: 8em;
+  padding-bottom: 3em;
+}
+
+.team-member {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.team-member span {
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
 }
 
-.second {
-  display: grid;
-  grid-template-columns: 100px 200px;
-  align-items: start;
-  justify-content: start;
-  grid-template-areas:
-    "image text";
+.team-member img {
+  border-radius: 50%;
+  border: #002699 5px solid;
 }
 
-.second strong {
-  grid-area: text;
-  align-items: start;
-  justify-content: start;
+/* sponsers */
+#sponsers ul {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  list-style: none;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
 }
 
-.second p {
-  grid-area: text;
-  margin-top: 1em;
-  align-items: start;
-  font-weight: lighter;
+#sponsers ul img {
+  margin: 5px;
 }
 
-.second img {
-  grid-area: image;
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: flex-start;
+  border-top: thin solid lightgrey;
+  flex-flow: wrap;
+  padding-bottom: 2em;
 }
 
-.third {
-  display: grid;
-  grid-template-columns: 100px 200px;
-  align-items: start;
-  justify-content: start;
-  grid-template-areas:
-    "image text";
+#footer ul {
+  list-style: none;
+  padding: 0;
+  font-family: 'Yantramanav', sans-serif;
+  margin-right: 2em;
+  margin-top: .7em;
 }
 
-.third strong {
-  grid-area: text;
-  align-items: start;
-  justify-content: start;
+#footer div {
+  padding-left: 4em;
+  padding-right: 3.5em;
 }
 
-.third p {
-  grid-area: text;
-  margin-top: 1em;
-  align-items: start;
-  font-weight: lighter;
-}
-
-.third img {
-  grid-area: image;
-  align-items: flex-start;
+.mini-header {
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bolder;
+  font-size: 1.25em;
+  font-style: thick;
+  margin-bottom: .0;
+  margin-top: 1.5em;
 }
