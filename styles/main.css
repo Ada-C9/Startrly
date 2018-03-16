@@ -9,6 +9,7 @@ h1, h2, h3 {
 
 * {
   font-family: 'Montserrat', sans-serif;
+  /* color: white; */
 }
 
 body > nav, body > div section {
@@ -37,6 +38,7 @@ body div > section.hero {
   height: 100vh;
   display: flex;
   justify-content: center;
+  background: #eee url('../mountains_small.jpg') no-repeat center center;
 }
 
 div.hero-content {
