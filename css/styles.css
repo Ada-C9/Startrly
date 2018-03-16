@@ -1,14 +1,33 @@
+/* Gobal css */
+body {
+  margin: 1%;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .container {
   display: grid;
   grid-template: 1fr / repeat (8, 50px);
 }
 
+nav , .footer {
+  background-color: #00b3b3;
+}
+/* Nav Section */
 nav ul {
   display: flex;
 }
 
 .startrly {
  flex-grow: 1;
+ margin-left: 2%;
 }
 
 nav li {
@@ -16,10 +35,7 @@ nav li {
   font-weight: bold;
 }
 
-h2 {
-  text-align: center;
-}
-
+/* Header section */
 .header {
   text-align: center;
 }
@@ -58,6 +74,7 @@ a.cta:hover {
   color: #f5c7ef;
 }
 
+/* Quote sections */
 .quote {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
@@ -94,9 +111,10 @@ a.cta:hover {
   content: "~~";
 }
 
+/* Why Section */
 .why-list, .why-list li {
   display: flex;
-  padding: 0;
+  flex-wrap: wrap;
 }
 
 .why-list {
@@ -111,13 +129,13 @@ a.cta:hover {
   margin-left: 15px;
 }
 
+/* Team-members section */
 .team-members {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 55%;
   margin: 0 auto;
-  padding: 0;
 }
 
 .team-members li {
@@ -130,4 +148,19 @@ a.cta:hover {
 .team-members span {
   display: block;
   text-align: center;
+}
+
+/* Sponsors section */
+.sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Footer  */
+
+.footer div {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-left: 8%;
 }
