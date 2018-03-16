@@ -4,10 +4,15 @@ Bermuda Gray (#6D8CA0): Background
 Azure Blue (#336699): Navbar, footer
 Ecru White (#F4F5E7): Text
 Orange Peel (#FF9E01): Links
+
+#EB593C Orange: Header
+#333333 Charcoal: Footer, text on light, button
+#ABDCD6 Teal: Even Sections, gradient?
+#FFFCEC Off-white: Odd sections, text on dark
 ******************************************/
 
 /*****************************************
-                 GENERAL
+GENERAL
 ******************************************/
 
 html, body {
@@ -27,6 +32,11 @@ body {
 
 .flex-container {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -35,12 +45,15 @@ body {
 }
 
 /*****************************************
-             HEADER & NAVBAR
+HEADER & NAVBAR
 ******************************************/
 
 .header {
   background-color: #336699;
   height: 60%;
+  /* width: 100%; */
+  /* position: fixed;
+  top: -100px; */
   border-bottom: 2.5rem solid gray;
 }
 
@@ -70,7 +83,7 @@ nav ul li:nth-last-child(-n+2) {
 }
 
 /*****************************************
-             JUMBOTRON SECTION
+JUMBOTRON SECTION
 ******************************************/
 
 .jumbotron h1 {
@@ -97,14 +110,14 @@ nav ul li:nth-last-child(-n+2) {
 }
 
 .button {
-    background-color: #FF9E01;
-    border: none;
-    color: #F4F5E7;
-    padding: 1em 2em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
+  background-color: #FF9E01;
+  border: none;
+  color: #F4F5E7;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .button:hover {
@@ -115,7 +128,7 @@ nav ul li:nth-last-child(-n+2) {
 }
 
 /*****************************************
-            BLOCKQUOTE SECTIONS
+BLOCKQUOTE SECTIONS
 ******************************************/
 
 .quote blockquote {
@@ -133,7 +146,7 @@ nav ul li:nth-last-child(-n+2) {
 }
 
 /*****************************************
-             WHY? SECTION
+WHY? SECTION
 ******************************************/
 
 .why {
@@ -145,16 +158,76 @@ nav ul li:nth-last-child(-n+2) {
   font-size: 4em;
 }
 
+.why ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.why ul li {
+  margin: 4em;
+  max-width: 500px;
+}
+
+.why ul li strong{
+  display: flex;
+  font-size: 2em;
+  float: right;
+}
+
+.why ul li p {
+  display: flex;
+  font-size: 1.5em;
+  /* max-width: 500px; */
+}
+/*
+.why ul li img {
+  display: flex;
+} */
+
 /*****************************************
-             TEAM SECTION
+TEAM SECTION
 ******************************************/
 
 .team {
   border-bottom: 2px gray solid;
 }
 
+.team h2 {
+  font-size: 4em;
+  text-align: center;
+}
+
+.team-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.team-top li {
+
+}
+
+.team-below {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.team ul li {
+  list-style: none;
+}
+
+.team ul li img {
+  border-radius: 50%;
+}
+
 /*****************************************
-             SPONSORS SECTION
+SPONSORS SECTION
 ******************************************/
 
 .sponsors {
@@ -162,7 +235,7 @@ nav ul li:nth-last-child(-n+2) {
 }
 
 /*****************************************
-             FOOTER SECTION
+FOOTER SECTION
 ******************************************/
 
 .footer {
