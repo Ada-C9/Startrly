@@ -1,0 +1,165 @@
+  *{
+    list-style-type: none;
+
+  }
+  .grid-container {
+      display: grid;
+      align-content: center;
+
+  }
+
+  .nav-grid-items, .line-grid-items,.quote-grid-items,.why-grid-items,.block-quote-grid-items,.team-grid-items,.sponsors-grid-items,.footer-grid-items{
+    border:1px solid;
+
+  }
+
+  .nav{
+    position:fixed;
+    width:100%;
+}
+.nav-list{
+  display:flex;
+
+}
+.nav-list li{
+  display:inline;
+  width:15%;
+}
+.nav-list li:first-of-type{
+  margin-right:auto;
+  margin-left:10%;
+}
+#list{
+  color:black;
+  font-size: 15px;
+}
+.name{
+  display:flex;
+  flex-direction: column;
+  margin-top:0%;
+}
+.name > h1{
+  text-align: center;
+  margin-top:5%;
+  font-size: 5em;
+  justify-content: center;
+  font-family:sans-serif;
+}
+
+.name > sub{
+font-size: 3em;
+font-family:inherit;
+text-align: center;
+}
+  .name a{
+  display:inline-block;
+  font-size: 1.5em;
+  margin:2em auto 3em auto;
+  padding:10px;
+  border-radius:10%;
+  border:groove 1px;
+  text-decoration: none;
+}
+
+ #blockquote{
+
+  text-align:center;
+  font-style: italic;
+
+
+}
+ #writer{
+  text-align: right;
+  padding-right:30px;
+  font-style: italic;
+}
+
+
+ .flex-container{
+  display:flex;
+  flex-flow:row;
+  justify-content: space-around;
+
+
+}
+.why{
+  text-align: center;
+  font-size: 2em;
+}
+
+.flex-items{
+  width:40vw;
+  display:flex;
+  flex-flow:row;
+
+}
+ .flex-items > img {
+   width:50px;
+   height:100px;
+   border-radius: 10%;
+ }
+.strong{
+  font-size:20px;
+  text-align:left;
+  width:50%;
+  margin-left:10px;
+}
+
+#quote{
+  display:grid;
+  grid-template-columns:50%;
+  Justify-content: space-around;
+  align-items: center;
+  font-style: italic;
+
+
+}
+#writer1{
+
+   display:flex;
+   justify-content: flex-end;
+   align-items: center;
+   font-style: italic;
+
+}
+.team-container{
+  list-style-type:none;
+ display:flex;
+ flex-wrap:wrap;
+ justify-content: center;
+
+}
+.team-items{
+  width:30%;
+  display:block;
+  /* text-align:center; */
+  margin-top:2%;
+  justify-content:space-between;
+}
+#team{
+    margin-top:3%;
+    text-align: center;
+
+
+  }
+.team-container img{
+    border-radius: 50%;
+  }
+  .team-items > span{
+    display:block;
+    margin-top:1.5%
+  }
+  .title{
+    text-align: center;
+  }
+
+  .sponsors li{
+    display:inline-block;
+    text-align: center;
+  }
+
+  #support-text, #about-text{
+    width: 20%;
+    display:inline-block;
+
+  }
