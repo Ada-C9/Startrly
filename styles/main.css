@@ -1,0 +1,175 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Futura', sans-serif;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  /* color: white; */
+}
+
+body > nav, body > div section {
+  padding: 20px;
+  border-bottom: solid 1px #ddd;
+}
+
+/* nav styles  */
+
+body div nav {
+  color: #fff;
+}
+
+body div nav ul {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+}
+
+body div nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
+/* hero banner styles  */
+
+body div > section.hero {
+  margin-top: -8vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #eee url('../images/mountains.jpg') no-repeat center center;
+  color: #fff;
+}
+
+div.hero-content {
+  text-align: center;
+  align-self: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+div.hero-content sub {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+div.hero-content a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 40px;
+  border: solid 1px #fff;
+}
+
+body div > section.hero a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* blockquote styles  */
+
+body div > section:nth-of-type(2), body div > section:nth-of-type(4) {
+  height: 30vh;
+  background: #eee;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote::before {
+  content: '\201c';
+}
+
+blockquote::after {
+  content: '\201d';
+}
+
+blockquote + p {
+  text-align: right;
+}
+
+blockquote + p::before {
+  content: '\2014';
+}
+
+div.quote {
+  width: 60vw;
+  margin: 50px auto;
+}
+
+/* why and team sections  */
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+.display-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+body section ul.display-flex li {
+  width: 300px;
+  min-height: 125px;
+  margin: 20px;
+  align-content: space-between;
+}
+
+/* why styles  */
+
+ul.why-section li {
+  width: 27vw;
+  margin: 10px;
+}
+
+body section ul.why-section li img {
+  float: left;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+/* team styles  */
+
+ul.team-section li {
+  text-align: center;
+}
+
+ul.team-section li span {
+  display: block;
+}
+
+ul.team-section li img {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+/* sponsor styles  */
+section.sponsors img{
+  max-width: 200px;
+}
+
+/* footer styles  */
+
+body div > section:last-child {
+  justify-content: flex-start;
+  background-color: #eee;
+}
+
+body div > section:last-child div.links {
+  margin-left: 30px;
+  min-width: 15vw;
+}
