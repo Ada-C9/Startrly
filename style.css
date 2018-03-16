@@ -1,17 +1,18 @@
-* {
-  font-family: Arial;
-}
 
 h2 {
-  text-align: center
+  text-align: center;
+  font-family: Special Elite;
 }
 
 /* Styling for nav  */
+
 nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: lightgray;
+  background-color: #264d73;
+  font-family: Arial;
+  color: white;
 }
 
 nav > ul {
@@ -32,10 +33,10 @@ nav > ul > li:first-child {
   width: 62%
 }
 
-/*
-Styling for first section Startly */
-.first-section{
-  background-color: #E6E6FA;
+/*Styling for home section Startly */
+
+.home-section {
+  background: url("https://www.gsb.stanford.edu/sites/gsb/files/styles/1630x_variable/public/resources/greer-startup-culture.jpg?itok=He7qabHm");
   border-bottom: solid 1.5px lightgray;
   min height: 200px;
   padding-top: 100px;
@@ -46,70 +47,87 @@ Styling for first section Startly */
   align-items: center;
 }
 
-.first-section h1 {
-  font-family: Rammetto One;
+.home-section h1 {
+  font-family: Aldrich;
+  font-size: 65pt;
   margin-top: 5%;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
+  color:#cc8800;
+  text-shadow: 10px 10px 15px #332200;
 }
 
-.first-section sub {
-  font-family: Ubuntu;
-  font-size: 20pt;
+.home-section sub {
+  font-family: Special Elite;
+  font-size: 25pt;
   position: inherit;
-  padding-bottom: 20px;
+  color: #800000;
+  line-height: 130%;
+  background-color: lightgray ;
 }
 
-.first-section a{
+.home-section a {
   text-decoration: none;
+  font-family: Arial;
   margin-top: 50px;
-  display: block;
+  display: inline-block;
   padding: 15px;
-  border: 2px solid gray;
+  border: 2px solid #660022;
   border-radius: 10px;
-  background-color: gray;
-
+  background-color: white;
 }
 
-.first-section a:hover{
-  background-color: #7B68EE;
+.home-section a:hover {
+  background-color: #660022;
 }
 
-.first-section a:visited{
-  color: #191970;
+.home-section a:unvisited {
+  color: white;
 }
 
-.second-section{
-  font-style: italic;
+.home-section a:visited {
+  color:  #264d73;
+}
+
+/*Styling for blockquote one section*/
+
+.blockquote-one {
+  font-family: Tangerine;
+  font-size: 30pt;
   border-bottom: solid 1.5px lightgray;
   min height: 100px;
   padding: 5% 23% 1% 23%;
   display: flex;
   flex-direction: column;
   line-height: 30pt;
+  background-color: #f2f2f2;
 }
 
-.second-section blockquote:before {
+.blockquote-one blockquote:before {
   content: open-quote;
 }
-.second-section blockquote:after {
+
+.blockquote-one blockquote:after {
   content: close-quote;
 }
 
-.second-section p {
+.blockquote-one p {
   padding-right: 0;
   text-align: right;
 }
 
-.second-section p:before{
+.blockquote-one p:before{
   content: "--";
 }
 
-.third-section {
+/*Styling for why section */
+
+.why-section {
   padding-top: 40px;
   margin: -1  rem 0 3rem;
+  font-family: Arial;
 }
 
-.third-section ul {
+.why-section ul {
   border-bottom: solid 2px lightgray;
   padding: 50px 50px 50px 50px;
   display: flex;
@@ -119,53 +137,63 @@ Styling for first section Startly */
   align-items: flex-start;
 }
 
-.third-section ul li {
+.why-section strong{
+  font-family: Special Elite;
+  color: #264d73;
+}
+
+.why-section li {
   max-width: 40%;
   padding: 0 .3rem;
 }
 
-.third-section ul img{
+.why-section img{
   float: left;
   margin-bottom: 40%;
   margin-right: 1.5%;
 }
 
-.third-section ul li p {
+.why-section p {
   width: 285px;
 }
 
+/*Styling for blockquote two section*/
 
-.fourth-section {
-  font-style: italic;
+.blockquote-two {
+  font-family: Tangerine;
+  font-size: 30pt;
   border-bottom: solid 2px lightgray;
   min height: 100px;
-  padding: 5% 20% 5% 20%;
+  padding: 5% 10% 5% 10%;
   display: flex;
   flex-direction: column;
   line-height: 30pt;
 }
 
-.fourth-section blockquote:before {
+.blockquote-two blockquote:before {
   content: open-quote;
 }
-.fourth-section blockquote:after {
+.blockquote-two blockquote:after {
   content: close-quote;
 }
 
-.fourth-section p {
+.blockquote-two p {
   padding: 0;
   text-align: right;
 }
 
-.fourth-section p:before {
+.blockquote-two p:before {
   content: "--";
 }
 
-.fifth-section {
+/*Styling for members section */
+
+.members-section {
   margin-top: 5%;
+  font-family: Arial;
 }
 
-.fifth-section ul {
+.members-section ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -173,28 +201,31 @@ Styling for first section Startly */
   padding-bottom: 55px;
 }
 
-.fifth-section ul img{
+.members-section img {
   border-radius: 50%;
   border: 4.5px solid lightgray;
   border-style: double;
   align-self: center;
   margin: 3rem 9rem 1rem 5.5rem;
-  padding: 0;
 }
 
 
-.fifth-section ul span{
-display: block;
-text-align: center;
-justify-content: space-between;
-margin: .2rem 9rem .6rem 5.5rem;
+.members-section span {
+  display: block;
+  text-align: center;
+  font-family: Special Elite;
+  justify-content: space-between;
+  margin: .2rem 9rem .6rem 5.5rem;
 }
 
-.sixth-section {
+/*Styling for sponsors section */
+
+.sponsors-section {
   border-bottom: solid 1.5px lightgray;
+  font-family: Arial;
 }
 
-.sixth-section ul {
+.sponsors-section ul {
   padding-top: 30px;
   padding-bottom: 55px;
   display: flex;
@@ -204,23 +235,26 @@ margin: .2rem 9rem .6rem 5.5rem;
   align-items: center;
 }
 
-.sixth-section ul img {
+.sponsors-section img {
   display: flex;
   align-self: center;
   margin: 0rem 1rem 0.1rem 1rem;
   padding-top: 1pt;
 }
 
-.seventh-section {
+/* *Styling for footer section */ */
+
+.footer-section {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   margin: 1.5rem;
+  font-family: Arial;
 }
 
-.seventh-section h3 {
+.footer-section h3 {
   margin-left: 2.5rem;
 }
 
-.seventh-section ul li {
+.footer-section li {
   list-style-type: none;
 }
