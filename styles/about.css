@@ -1,0 +1,34 @@
+/* * {
+  border: black 1px solid;
+} */
+
+/* HERO */
+.hero h1 {
+  font-size: 4em;
+  min-width: 400px;
+  text-align: center;
+}
+
+.about-btns {
+  padding-top: 1em;
+  min-width: 400px;
+  text-align: center;
+}
+
+/* MAIN CONTENT */
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.content section {
+  padding: 1em;
+}
+
+.content p {
+  margin-left: 4.5em;
+  margin-right: 2em;
+}

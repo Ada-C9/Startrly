@@ -1,0 +1,20 @@
+/* * {
+  border: black 1px solid;
+} */
+
+/* MAIN */
+main {
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* QUOTES */
+.quote:first-of-type {
+  border-top: dotted .25em #ff758d;
+  border-bottom: dotted .25em #E8E8E8;
+}
+
+.quote:nth-of-type(3) {
+  border-top: dotted .25em #E8E8E8;
+  border-bottom: dotted .25em #E8E8E8;
+}
