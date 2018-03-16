@@ -29,7 +29,7 @@ ul {
   grid-row-start: 1;
 }
 
-.header  {
+#header  {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
