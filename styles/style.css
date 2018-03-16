@@ -1,5 +1,6 @@
 .mom-grid {
   display: grid;
+
 }
 
 .name-grid-child, .quote-grid-child, .why-grid-child, .quote2-grid-child, .sponsors-grid-child {
@@ -208,10 +209,8 @@ section > h2 {
 }
 
 .top-nav {
-  background: #e9fbf7;
   background: linear-gradient(#e9fbf7, 	#e5f9ff);
-  /* border: solid 2px blue; */
-}
+  }
 
 .company-name {
   text-align: center;
@@ -226,32 +225,26 @@ section > h2 {
 }
 
 .quote-grid-child {
-  background: #ddeaee;
   background: linear-gradient(#ddeaee, #ccf1ff);
 }
 
 .why-grid-child {
-  /* background: #ccf1ff; */
   background: linear-gradient(#ccf1ff, #e5ecff);
 }
 
 .quote2-grid-child {
-  /* background: #e5ecff; */
   background: linear-gradient(#e5ecff, #f2e5ff);
 }
 
 .team-grid-child {
-  /* background: #f2e5ff; */
   background: linear-gradient(#f2e5ff, #ddf9d2);
 }
 
 .sponsors-grid-child {
-  /* background: #ddf9d2; */
   background: linear-gradient(#ddf9d2, #ffcccc);
 }
 
 .support-grid-child {
-  /* background: #ffcccc; */
   background: linear-gradient(#ffcccc, 	#ffffcc);
 }
 
