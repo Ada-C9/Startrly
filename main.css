@@ -1,86 +1,240 @@
 
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Mina');
 
-.flex-container{
-display: flex;
-flex-direction:column;
-align-items: center;
-justify-content: center;
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
-header{
-    border-width: 3px;
-    border-style: solid;
-    -webkit-border-image:
-      -webkit-gradient(linear, 0 100%, 0 0,
-         from(black), to(r#a097a5))) 1 100%;
-    -webkit-border-image:
-      -webkit-linear-gradient(bottom, black, #a097a5, 0, 0)) 1 100%;
-    -moz-border-image:
-      -moz-linear-gradient(bottom, black, #a097a5, 0)) 1 100%;
-    -o-border-image:
-      -o-linear-gradient(bottom, black, #a097a5)) 1 100%;
-    border-image:
-      linear-gradient(to top, black, #a097a5)) 1 100%;
+.grid-container{
+display: grid;
+justify-content: center;
+height:100%;
+width:100%
+}
+
+
+ main{
+  background:linear-gradient(#e5d3e5,pink)
 }
 
 header{
   display: inline;
-  background-color: #a097a5;
-  width: 100%;
+  background-color: #e5d3e5;
+  /* text-decoration: underline overline; */
+  font-weight: lighter;
+  font-style: italic;
+  text-align: justify;
+  text-transform: lowercase;
+  font-size: 1.1rem
+  overflow: hidden;
+
+position: fixed; /* Set the navbar to fixed position */
+
+top: 0; /* Position the navbar at the top of the page */
+width: 100%; /* Full width */
 
 }
 
-.nav-ul-container{
-  list-style: none;
+header:hover{
+  background-color: #b582b5;
 }
 
-.nav-ul-container li{
-  display: inline-block;
-  margin: 0.5em;
-}
-
-.start-nav{
-margin-left: 300px;
-padding-right: 80%;
+div {
+    margin-top: 3em; /* Add a top margin to avoid content overlay */
 }
 
 section{
+  /* background-color: #e5d3e5; */
   align-content: center;
   text-align: center;
 }
 
-h1{
-  font-size: 7vh;
-  display: block;
+.first-impression{
+  display:flex;
+  flex-flow: column;
+  align-content: space-between;
 }
-sub{
-  font-size: 5vh;
-  display:inline-block;
-  padding:2%;
-  position:inherit;
+
+.first-impression h1{
+  padding-top: 2em;
+}
+
+#tagline{
+  padding: 1em;
 }
 
 #call-to-action{
   display:block;
-    background-color: grey;
+    background-color: lightgrey;
     height: 60%;
     align-content: center;
     text-align: center;
 
-    border: solid 3px black;
-    border-radius: 20%;
-    margin:auto;
-    width:15%
+    border: solid 1px black;
+    border-radius: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom:3em;
+    width: 8em;
 
   }
 
 
+section:nth-child(1){
+  min-height: 18em;
+  }
+
+.quote{
+  border-top: 2px solid grey;
+  border-bottom:2px solid grey;
+}
+
+
+blockquote {
+font-style: italic;
+text-align: left;
+line-height: 3em;
+padding: 1em
+}
+
+blockquote::before{
+  content: open-quote;
+}
+
+blockquote::after{
+  content: close-quote;
+}
+.author{
+  font-style: italic;
+  text-align: right;
+  padding-right: 1em;
+  margin-bottom: 1em
+
+}
+
+.author::before {
+    content: "--";
+}
+
+.testimonials{
+display: flex;
+justify-content: space-evenly;
+flex-flow: row;
+}
+
+.testimonial-block{
+  /* align-items: center; */
+  flex-flow: row;
+  display: flex;
+  text-align:left;
+  width: 30%
+}
+
+.testimonial-block img{
+  width:100px;
+  height:100px
+}
+
+.testimonial-wording{
+text-align: left;
+font-size: .7em
+overflow:visible;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+
+#nav-ul-container li{
+  display: inline-block;
+  list-style: none;
+
+}
+
+#start-nav{
+  display:flex;
+margin-left:-2em;
+margin-top:1em;
+
+
+}
+
+#nav-element-right{
+  display:flex;
+  float: right;
+  display:inline-block;
+}
+
+#nav-element-right li{
+  margin: 1em;
+}
+
+
+
+h1{
+  font-size: 7vh;
+  display: block;
+  margin:0;
+  font-weight:666;
+}
+
+sub{
+  font-size: 3vh;
+  display:inline-block;
+  margin:3%
+  position:inherit;
+  text-align: center;
+  padding: 1em;
+  font-weight:100;
+  text-transform: capitalize;
+}
+
+
+.team-member img{
+  border-radius: 50%;
+  border: black solid 3px;
+  padding: 2px
+}
+.teamflex{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.teammember{
+display:flex;
+  width: 30%;
+  
+}
+
+
+.sponsors{
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+footer section{
+display: flex;
+flex-wrap:wrap;
+text-align: center;
+}
 
 
 
 
+.parallax {
+    /* The image used */
+    background-image: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
 
+    /* Set a specific height */
+    min-height: 1em;
 
-footer{
-  align-self:flex-start;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
