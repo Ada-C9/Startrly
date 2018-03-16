@@ -134,8 +134,8 @@
 
   /* make quote name align right */
   .quote p{
-    justify-content: flex-end;
-    padding-right: 5px;
+    padding-right: 100px;
+    margin-right: 100px;
     text-align: right;
   }
 
