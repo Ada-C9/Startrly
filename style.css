@@ -170,13 +170,14 @@ Styling for first section Startly */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
+  padding-bottom: 55px;
 }
 
 .fifth-section ul img{
   border-radius: 50%;
+  border-style: solid .03rem lightgray;
   align-self: center;
-  margin: 3rem 7rem 1rem 6rem;
+  margin: 3rem 9rem 1rem 5.5rem;
   padding: 0;
 }
 
@@ -185,20 +186,28 @@ Styling for first section Startly */
 display: block;
 text-align: center;
 justify-content: space-between;
-  margin: .2rem 7rem .6rem 5.2rem;
+margin: .2rem 9rem .6rem 5.5rem;
 }
 
 .sixth-section {
-  padding-top: 70px;
-  padding-bottom: 60px;
   border-bottom: solid .5px lightgray;
 }
 
-.sixth-section ul li {
+.sixth-section ul {
+  padding-top: 30px;
+  padding-bottom: 55px;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+}
+
+.sixth-section ul img {
+  display: flex;
+  align-self: center;
+  margin: 0rem 1rem 0.1rem 1rem;
+  padding-top: 1pt;
 }
 
 .seventh-section {
