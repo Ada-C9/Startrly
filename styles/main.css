@@ -1,0 +1,242 @@
+/* font for the whole body */
+* {
+  font-family: arial;
+  margin: 0 auto;
+  width: auto;
+}
+
+/* applies a border to the bottom of each box model */
+.container section {
+  border-bottom: #bcd9e2 1px solid;
+}
+
+/* syle for the nav list items */
+#nav ul {
+  margin: 0px;
+  line-height: 60px;
+  list-style-type: none;
+  font-weight: bold;
+  background-color: #bcd9e2;
+  color: purple;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* pseudo selector for nav list */
+#nav ul li:hover {
+  color: lightyellow;
+  text-decoration: underline;
+}
+
+/* nav ul flexbox */
+#nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* move first list in nav to the left */
+#nav ul li:first-of-type {
+  margin-right: 50%;
+}
+
+/* move remainder nav lists to the right */
+#nav ul li:nth-of-type(1n+2) {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* header flexbox */
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 7rem;
+  align-items: center;
+  background-color: lightyellow;
+}
+
+/* css for the header title: Startrly */
+#header h1 {
+  color: #bf56bf;
+  font-family: arial;
+  font-size: 40pt;
+  font-family: 'Limelight', bold;
+  margin: auto;
+}
+
+/* alignment for the tagline */
+#header sub {
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+/* css for the button in the header */
+#header a {
+  font-size: 1.3em;
+  padding: 20px 30px;
+  margin-bottom: 70px;
+  border: #bcd9e2 3px solid;
+  border-radius: 7px;
+  text-decoration: none;
+  color: purple;
+}
+
+/* pseudo selector for button in the header */
+#header a:hover {
+  background-color: #bcd9e2;
+}
+
+/* the front quotation marks for all blockquotes */
+.blockquote::before {
+  content: "\201C";
+}
+
+/* the back quotation marks for all blockquotes */
+.blockquote::after {
+  content: "\201D";
+}
+
+/* alignment for both blockquotes */
+.blockquote {
+  font-style: italic;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 70px 150px 10px 150px;
+  letter-spacing: 1px;
+}
+
+/* alignment for both blockquote authors */
+.blockquote-author {
+  text-align: right;
+  margin: 70px 90px;
+  font-style: italic;
+}
+
+/* adding '--' in front of the blockquote authors */
+.blockquote-author::before {
+  content: "--";
+}
+
+/* all h2 header alignment */
+h2 {
+  text-align: center;
+  padding: 50px 50px;
+  margin-top: none;
+}
+
+/* Remove bullet points from all sections */
+.container section ul li {
+  list-style-type: none;
+}
+
+/* background color for Why? block */
+.why-block-content {
+  background-color: #bcd9e2;
+}
+
+/* Why? block contents flexbox */
+.why-block-content ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Why? block alignment for all the images */
+.why-block-content ul li img {
+  float: left;
+  height: 150px;
+  width: 150px;
+}
+
+/* Why? block paragraphs */
+.why-block-content p {
+  text-align: left;
+  max-width: 400px;
+}
+
+/* adding margin for the Why? block li and all its contents */
+.comfortable *, .robust *, .convenient * {
+  padding: 10px 10px 60px 10px;
+}
+
+/* css for Why? block list content */
+.comfortable, .robust, .convenient {
+  min-width: 350px;
+  flex-wrap: wrap;
+}
+
+/* hiding the bottom boarder for Meet the team section */
+.container .meet-the-team {
+  border-bottom-style: none;
+}
+
+/* Meet the team block flexbox */
+.meet-the-team-photos {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Meet the team photos */
+#kary img, #dan img, #chris img, #charles img, #dee img {
+  border-radius: 50%;
+  border: #bcd9e2 3px solid;
+  padding: 0.5em;
+  min-width: 20%;
+  margin: 50px 50px 0px 50px;
+}
+
+/* Meet-the-team spans */
+#kary span, #dan span, #chris span, #charles span, #dee span {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.5em;
+}
+
+/* css grid for the Sponsors class */
+.sponsors ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.sponsors img {
+  width: 200px;
+  margin: 20px 20px 20px 20px;
+}
+
+
+/* flexbox for the footer class section */
+.footer {
+  background-color: #bcd9e2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 40px;
+}
+
+/* applied padding to the h3 header in the footer class */
+.footer h3 {
+  padding-bottom: 20px;
+}
+
+/* alignment for the support class ul */
+.support ul {
+  grid-column: 1;
+  height: 100px;
+  width: 150px;
+  padding: 0px;
+}
+
+/* alignment for the about class ul */
+.about ul {
+  grid-column: 2;
+  height: 100px;
+  width: 150px;
+  padding: 0px;
+}
