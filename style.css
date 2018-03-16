@@ -175,7 +175,8 @@ Styling for first section Startly */
 
 .fifth-section ul img{
   border-radius: 50%;
-  border-style: dashed .03rem lightgray;
+  border: 4.5px solid lightgray;
+  border-style: double;
   align-self: center;
   margin: 3rem 9rem 1rem 5.5rem;
   padding: 0;
