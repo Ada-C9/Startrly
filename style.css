@@ -30,7 +30,7 @@ nav > ul > li {
 /*Styling for home section Startly */
 
 .home-section {
-  background: url("https://www.gsb.stanford.edu/sites/gsb/files/styles/1630x_variable/public/resources/greer-startup-culture.jpg?itok=He7qabHm");
+  background: url("images/greer-startup-culture.jpg");
   border-bottom: solid 1.5px lightgray;
   min height: 200px;
   padding-top: 100px;
