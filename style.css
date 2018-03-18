@@ -1,0 +1,253 @@
+
+
+h2 {
+  text-align: center;
+  font-family: Special Elite;
+}
+
+/* Styling for nav  */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #264d73;
+  font-family: Arial;
+  color: white;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 7fr 2fr 1fr;
+  margin: 5;
+}
+
+nav > ul > li {
+  padding: 0 40px;
+  width: max-content;
+}
+
+/*Styling for home section Startly */
+
+.home-section {
+  background: url("images/greer-startup-culture.jpg");
+  border-bottom: solid 1.5px lightgray;
+  min height: 200px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section h1 {
+  font-family: Aldrich;
+  font-size: 65pt;
+  margin-top: 5%;
+  padding-bottom: 13px;
+  color:#cc8800;
+  text-shadow: 10px 10px 15px #332200;
+}
+
+.home-section sub {
+  font-family: Special Elite;
+  font-size: 25pt;
+  position: inherit;
+  color: #800000;
+  line-height: 130%;
+  background-color: lightgray ;
+}
+
+.home-section a {
+  text-decoration: none;
+  font-family: Arial;
+  margin-top: 50px;
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid #660022;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.home-section a:hover {
+  background-color: #660022;
+}
+
+.home-section a:unvisited {
+  color: white;
+}
+
+.home-section a:visited {
+  color:  #264d73;
+}
+
+/*Styling for blockquote one section*/
+
+.blockquote-one {
+  font-family: Tangerine;
+  font-size: 30pt;
+  border-bottom: solid 1.5px lightgray;
+  min height: 100px;
+  padding: 5% 23% 1% 23%;
+  display: flex;
+  flex-direction: column;
+  line-height: 30pt;
+  background-color: #f2f2f2;
+}
+
+.blockquote-one blockquote:before {
+  content: open-quote;
+}
+
+.blockquote-one blockquote:after {
+  content: close-quote;
+}
+
+.blockquote-one p {
+  padding-right: 0;
+  text-align: right;
+}
+
+.blockquote-one p:before{
+  content: "--";
+}
+
+/*Styling for why section */
+
+.why-section {
+  padding-top: 40px;
+  margin: -1rem 0 5rem;
+  font-family: Arial;
+}
+
+.why-section ul {
+  border-bottom: solid 2px lightgray;
+  padding: 50px 50px 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: flex-start;
+}
+
+.why-section strong{
+  font-family: Special Elite;
+  color: #264d73;
+}
+
+.why-section li {
+  max-width: 30%;
+  padding: 0 .3rem;
+}
+
+.why-section img{
+  float: left;
+  margin-right: 10px;
+}
+
+.why-section p {
+  width: 285px;
+}
+
+/*Styling for blockquote two section*/
+
+.blockquote-two {
+  font-family: Tangerine;
+  font-size: 30pt;
+  border-bottom: solid 2px lightgray;
+  min height: 100px;
+  padding: 5% 10% 5% 10%;
+  display: flex;
+  flex-direction: column;
+  line-height: 30pt;
+}
+
+.blockquote-two blockquote:before {
+  content: open-quote;
+}
+.blockquote-two blockquote:after {
+  content: close-quote;
+}
+
+.blockquote-two p {
+  padding: 0;
+  text-align: right;
+}
+
+.blockquote-two p:before {
+  content: "--";
+}
+
+/*Styling for members section */
+
+.members-section {
+  margin-top: 5%;
+  font-family: Arial;
+}
+
+.members-section ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 55px;
+}
+
+.members-section img {
+  border-radius: 50%;
+  border: 4.5px solid lightgray;
+  border-style: double;
+  align-self: center;
+  margin: 3rem 9rem 1rem 5.5rem;
+}
+
+
+.members-section span {
+  display: block;
+  text-align: center;
+  font-family: Special Elite;
+  justify-content: space-between;
+  margin: .2rem 9rem .6rem 5.5rem;
+}
+
+/*Styling for sponsors section */
+
+.sponsors-section {
+  border-bottom: solid 1.5px lightgray;
+  font-family: Arial;
+}
+
+.sponsors-section ul {
+  padding-top: 30px;
+  padding-bottom: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+}
+
+.sponsors-section img {
+  display: flex;
+  align-self: center;
+  margin: 0rem 1rem 0.1rem 1rem;
+  padding-top: 1pt;
+}
+
+/* *Styling for footer section */
+
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  margin: 1.5rem;
+  font-family: Arial;
+}
+
+.footer-section h3 {
+  margin-left: 2.5rem;
+}
+
+.footer-section ul li {
+  list-style-type: none;
+}
