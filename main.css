@@ -55,12 +55,12 @@ ul {
     list-style-type: none;
 }
 
+/* takes off link underline */
 a {
   text-decoration: none;
 }
 
 /* nav bar style */
-
 nav {
   position: fixed;
   width: 100%;
@@ -94,7 +94,6 @@ nav ul li:hover {
   margin-top: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   font-size: 3em;
   border-bottom: solid 2px;
@@ -179,7 +178,6 @@ h2 {
   height: 100px;
   width: 100px;
 }
-
 /* end why section styling */
 
 /* team section styling */
