@@ -52,8 +52,8 @@ h2 {
 }
 .firstview div:last-child a {
   border: 3px solid gray;
-  color: white;
-  background-color: #336699;
+  color:  #ffffe6;
+  background-color: #99b3e6;
   border-radius: 5em;
   font-size: 1.5rem;
   margin-top: 5px;
