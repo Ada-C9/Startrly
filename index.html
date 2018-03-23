@@ -3,34 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Startrly</title>
+    <link href="styles/normalize.css" rel"stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+    </style>
   </head>
-  <body>
+  <body class="parallax">
+
     <div>
-
-
-      <nav>
+      <nav class="nav">
         <ul>
-          <li>
-            Startrly
+          <li id="startly">
+            <a href="www.startrly.com">Startrly</a>
           </li>
-          <li>
-            Try Now!
+          <li id="try">
+            <a href="www.startrly.com">Try Now!</a>
           </li>
-          <li>
-            About
+          <li id="about">
+            <a href="www.startrly.com">About</a>
           </li>
         </ul>
       </nav>
 
-
-      <section>
+    <main >
+      <section class="header" >
         <h1>Startrly</h1>
         <sub>A catchy tagline for a great solution</sub>
         <a href="#">Some Call to Action</a>
       </section>
 
 
-      <section>
+      <section class="quote">
         <blockquote>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </blockquote>
@@ -40,25 +44,25 @@
       </section>
 
 
-      <section>
+      <section >
         <h2>Why?</h2>
-        <ul>
+        <ul class="why">
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="https://picsum.photos/100/100/?random" />
             <strong>Comfortable</strong>
             <p>
               Et quas molestias excepturi sint occaecati cupiditate non providents, ut aut reiciendis voluptatibus maiores.
             </p>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="https://picsum.photos/100/100/?random" />
             <strong>Robust</strong>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.
             </p>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="https://picsum.photos/100/100/?random" />
             <strong>Convenient</strong>
             <p>
               Itaque earum rerum hic tenetur a sapiente delectus.
@@ -68,7 +72,7 @@
       </section>
 
 
-      <section>
+      <section class="quote">
         <blockquote>
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </blockquote>
@@ -78,31 +82,31 @@
       </section>
 
 
-      <section>
+      <section >
         <h2>Meet the team</h2>
-        <ul>
+        <ul class="team">
           <li>
-            <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
+            <img src="https://picsum.photos/150/150/?random" alt="profile for kari kiwi" />
             <span>Kari Kiwi</span>
             <span>CFO</span>
           </li>
           <li>
-            <img src="https://placebear.com/150/150" alt="profile for dan dragon" />
+            <img src="https://picsum.photos/150/150/?random" alt="profile for dan dragon" />
             <span>Dan Dragon</span>
             <span>CMO</span>
           </li>
           <li>
-            <img src="https://placebear.com/150/150" alt="profile for chris caribou" />
+            <img src="https://picsum.photos/150/150/?random" alt="profile for chris caribou" />
             <span>Chris Caribou</span>
             <span>CIO</span>
           </li>
           <li>
-            <img src="https://placebear.com/150/150" alt="profile for charles cheetah" />
+            <img src="https://picsum.photos/150/150/?random" alt="profile for charles cheetah" />
             <span>Charles Cheetah</span>
             <span>Board Member, CTO</span>
           </li>
           <li>
-            <img src="https://placebear.com/150/150" alt="profile for dee dugong" />
+            <img src="https://picsum.photos/150/150/?random" alt="profile for dee dugong" />
             <span>Dee Dugong</span>
             <span>Startup Enthusiast</span>
           </li>
@@ -112,30 +116,31 @@
 
       <section>
         <h2>Sponsors</h2>
-        <ul>
+        <ul class="sponsors">
           <li>
-            <img src="http://via.placeholder.com/300x100" />
+            <img src="https://picsum.photos/200/100/?random" />
           </li>
           <li>
-            <img src="http://via.placeholder.com/250x125" />
+            <img src="https://picsum.photos/200/150/?random" />
           </li>
           <li>
-            <img src="http://via.placeholder.com/275x70" />
+            <img src="https://picsum.photos/275/70/?random" />
           </li>
           <li>
-            <img src="http://via.placeholder.com/250x120" />
+            <img src="https://picsum.photos/250/120/?random" />
           </li>
           <li>
-            <img src="http://via.placeholder.com/220x100" />
+            <img src="https://picsum.photos/220/100/?random" />
           </li>
         </ul>
       </section>
+    </main>
 
-
+    <footer>
       <section>
         <div>
           <h3>Support</h3>
-          <ul>
+          <ul class="support">
             <li>
               Demo
             </li>
@@ -152,7 +157,7 @@
         </div>
         <div>
           <h3>About</h3>
-          <ul>
+          <ul class="about">
             <li>
               Our Mission
             </li>
@@ -165,7 +170,7 @@
           </ul>
         </div>
       </section>
-
+    </footer>
     </div>
   </body>
 </html>

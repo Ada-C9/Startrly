@@ -1,0 +1,223 @@
+/*requirements*/
+/*use CSS grid and flex box at least once*/
+/* one+ google font*/
+/*pseudo selector such as hover*/
+/*background color to one section*/
+/*identify repeated styles and dry up code*/
+
+
+
+
+/*full body styles*/
+body {
+  display:grid;
+  font-family: 'Shadows Into Light',cursive;
+  margin: 50px;
+  background-color: #e6e6fa;
+  height: 100%
+}
+
+/*.parallax {
+    /* The image used */
+    /*background-image: url("https://picsum.photos/600/600/?random");*/
+
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+h2 {
+  text-align: center;
+}
+
+/*nav section styles*/
+
+
+.nav ul {
+  display:flex;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  /*height: 200px;*/
+  justify-content:flex-end;
+}
+/*makes responsive*/
+
+
+.nav li a {
+  color:hotpink;
+  font-size: 1.9em;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.nav #try{
+  padding-right: 60px;
+}
+/*startly in nav should be far left*/
+
+.nav #startly {
+  flex: 1;
+}
+
+/*change nav words to links*/
+.nav a:hover {
+  background-color: #000000;
+  border-radius: 100%;
+}
+
+
+/*header section styles*/
+.header {
+  /*display:flex;*/
+  text-align: center;
+  /*flex-direction: column;*/
+  padding-bottom: 80px;
+  padding-top: 50px;
+
+}
+
+.header a {
+  display: block;
+  border-radius: 30%;
+  color: hotpink;
+  border-style:solid;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  margin: 0 35%;
+}
+
+.header h1{
+  font-size: 6em;
+}
+
+.header sub {
+  padding: 40px;
+  display: inline-flex;
+  font-size: 3em;
+
+
+}
+
+/*quote section styles*/
+.quote {
+  padding: 60px;
+  /*background-color: #dbc2fb;*/
+  background: #ff69b4;
+  background:-webkit-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -moz-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -ms-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -o-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: linear-gradient(to top, #ff69b4, #e6e6fa);;
+
+
+}
+.quote blockquote {
+  font-style: italic;
+  text-align: left;
+
+}
+
+.quote:nth-child(2n) {
+  text-align: right;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+/*why section styles*/
+
+.why img {
+ float:left;
+ padding: 10px;
+}
+
+.why {
+  display:grid;
+  grid-template-columns: repeat(6, auto);
+}
+
+.why li {
+  list-style-type: none;
+}
+
+/*team section styles*/
+
+section h2 {
+  margin-top: 50px;
+}
+.team {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px;
+
+}
+.team li img {
+  border-radius: 100%;
+  justify-content: center;
+  padding: 30px;
+}
+
+.team li span {
+  text-align:center;
+  display: block;
+}
+
+.team li {
+  list-style-type: none;
+}
+
+
+/* sponsors section styles*/
+.sponsors  {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  padding: 50px;
+
+}
+
+.sponsors img {
+  padding: 20px;
+}
+
+.sponsors li {
+  list-style-type: none;
+  /*justify-content: center;*/
+}
+/*footer section styles*/
+footer {
+  background: #ff69b4;
+  background:-webkit-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -moz-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -ms-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: -o-linear-gradient(bottom, #ff69b4, #e6e6fa);
+  background: linear-gradient(to top, #ff69b4, #e6e6fa);
+}
+
+footer section  {
+  display:flex;
+  justify-content: space-around;
+}
+
+.support {
+  list-style-type: none;
+
+}
+
+.about {
+  list-style-type: none;
+}
+
+
+footer {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+
+}
