@@ -1,0 +1,173 @@
+/* Gobal css */
+body {
+  margin: 1%;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 10em;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template: 1fr / repeat (8, 50px);
+}
+
+nav , .footer {
+  background-color: #00b3b3;
+}
+
+/* Nav Section */
+nav ul {
+  display: flex;
+}
+
+.startrly {
+ flex-grow: 1;
+ margin-left: 2%;
+}
+
+nav li {
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+/* Header section */
+.header {
+  text-align: center;
+}
+
+.tagline {
+  margin-bottom: 3%;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.cta {
+  display: block;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+a.cta {
+  text-decoration: none;
+  margin: 2.5% auto;
+}
+
+a.cta::before {
+  color:#48143f;
+}
+
+a.cta::after {
+  color:blue;
+}
+
+a.cta:hover {
+  color: #f5c7ef;
+}
+
+/* Quote sections */
+.quote {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.quote-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  max-width: 45%;
+  font-style: italic;
+}
+
+.quote blockquote {
+  line-height: 150%;
+  margin: 0;
+  padding: 2% 0 .5%;
+}
+
+.quote blockquote::before {
+  content: open-quote;
+}
+
+.quote blockquote::after {
+  content: close-quote;
+}
+
+.quote p {
+  align: flex-start;
+}
+
+.quote p::before {
+  content: "~~";
+}
+
+/* Why Section */
+.why-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.why-list {
+  justify-content: space-around;
+}
+
+.why-list li {
+  max-width: 30%;
+}
+
+.why-list img {
+  float: left;
+  margin-right: 5%;
+}
+
+/* Team-members section */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+.team-members li {
+  margin: 5%;
+}
+.team-members img {
+  border-radius: 50%;
+}
+
+.team-members span {
+  display: block;
+  text-align: center;
+}
+
+/* Sponsors section */
+.sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Footer  */
+
+.footer div {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-left: 8%;
+}
