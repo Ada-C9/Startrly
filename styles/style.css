@@ -1,0 +1,253 @@
+.mom-grid {
+  display: grid;
+
+}
+
+.name-grid-child, .quote-grid-child, .why-grid-child, .quote2-grid-child, .sponsors-grid-child {
+  border-bottom: solid 1px gray;
+}
+
+.top-nav {
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.top-list {
+  display: flex;
+}
+
+.top-list li {
+  display: inline;
+  width: 15%;
+}
+
+.top-list li:first-of-type {
+  margin-right: auto;
+  margin-left: 10%;
+}
+
+.nav-font {
+  color: black;
+  font-size: 15px;
+}
+
+.company-name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+.company-name > h1 {
+  margin-top: 15%;
+  font-size: 5em;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.company-name > sub {
+  font-size: 2em;
+  font-family: inherit;
+}
+
+a[href="some-call"] {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  color: grey;
+  margin: 2em auto 3em auto;
+  padding: 10px;
+  border: groove 1px grey;
+  border-radius: 10%;
+}
+
+.quote-grid-child, .quote2-grid-child {
+  font-family: fantasy;
+  margin-top: 0;
+  padding-top: 2em;
+}
+
+.blockquote {
+  font-size: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  line-height: 200%;
+  font-style: italic;
+}
+
+.author {
+  text-align: right;
+  font-size: 20px;
+  padding-right: 200px;
+  font-style: italic;
+}
+
+section > h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.mom-box {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.box {
+  width: 30vw;
+  display: flex;
+  flex-flow: row;
+}
+
+.box > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+.texts > strong {
+  font-size: 20px;
+}
+
+.texts {
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.team {
+  margin-top: 4%;
+}
+
+.team-pic {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-pic img {
+  border-radius: 50%;
+}
+.team-pic img:hover {
+  border-color: teal;
+  border-radius: 20%;
+}
+
+.helper {
+  width: 33%;
+  display: block;
+  text-align: center;
+  margin-top: 2%;
+  justify-content: space-between;
+}
+
+.helper > span {
+  display: block;
+  margin-top: 1.5%;
+}
+
+.sponsors > li {
+  display: inline;
+  margin-left: 2%;
+  width: 30%;
+}
+
+.sponsors {
+  margin-bottom: 5%;
+}
+
+.sponsors .pic-1 {
+  width: 300px;
+  height: 100px;
+}
+
+.sponsors .pic-2 {
+  width: 250px;
+  height: 125px;
+}
+.sponsors .pic-3 {
+  width: 275px;
+  height: 70px;
+}
+
+.sponsors .pic-4 {
+  width: 250px;
+  height: 120px;
+}
+
+.sponsors .pic-5 {
+  width: 220px;
+  height: 100px;
+}
+
+.sponsors-grid-child {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer > div {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.support-about {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.support-about > ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+.top-nav {
+  background: linear-gradient(#e9fbf7, 	#e5f9ff);
+  }
+
+.company-name {
+  text-align: center;
+  background-image: url("https://pixteller.com/assets/storage/designs_images/2017-07-30/11/backgrounds-passion-simple-background-image-1-597d9ccb6d0b7.png");
+
+  height: 30%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.quote-grid-child {
+  background: linear-gradient(#ddeaee, #ccf1ff);
+}
+
+.why-grid-child {
+  background: linear-gradient(#ccf1ff, #e5ecff);
+}
+
+.quote2-grid-child {
+  background: linear-gradient(#e5ecff, #f2e5ff);
+}
+
+.team-grid-child {
+  background: linear-gradient(#f2e5ff, #ddf9d2);
+}
+
+.sponsors-grid-child {
+  background: linear-gradient(#ddf9d2, #ffcccc);
+}
+
+.support-grid-child {
+  background: linear-gradient(#ffcccc, 	#ffffcc);
+}
+
+@media screen and (max-width: 480px) {
+
+}
