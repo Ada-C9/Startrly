@@ -1,0 +1,254 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* display: grid;
+  grid-template-rows: repeat(8,1fr) */
+  color: #EFA423;
+  background-image: url(https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-0.3.5&s=d3547427b680316b55291f31a12e19d5&auto=format&fit=crop&w=2249&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.9s;
+  -moz-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+}
+
+/* takes out bullets from ul */
+ul {
+    list-style-type: none;
+}
+
+/* takes off link underline */
+a {
+  text-decoration: none;
+}
+
+/* nav bar style */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #EFA423;
+  height: 3.2em;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #0E7D93;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 10vw;
+}
+
+nav ul li:first-of-type {
+  margin-right: auto;
+}
+
+nav ul li:nth-of-type(2) {
+  padding-right: 17vw;
+}
+nav ul li:hover {
+  color: #E1E2E2;
+}
+/* end nav bar style */
+
+/* startrly title*/
+.header {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3em;
+  border-bottom: solid 2px;
+  border-color: lightgrey;
+  line-height: .7;
+  font-family: 'Handlee', cursive;
+}
+
+.button {
+  margin: 60px 0 80px 0;
+  font-size: .4em;
+  text-align: center;
+  background: white;
+  border-radius: 7px;
+  border: solid 2px lightgrey;
+  padding: 20px;
+  background-color: #FFC271;
+  color: #0E7D93;
+}
+
+.button:hover {
+  background-color: lightgrey;
+}
+
+/* quote styling */
+.quote {
+  text-align: left;
+  font-size: 30px;
+  font-style: italic;
+  margin: 60px 150px;
+  line-height: 1.7;
+}
+.quote p {
+  text-align: right;
+}
+
+.quote blockquote:before {
+  content: "\""
+}
+.quote blockquote:after {
+  content: "\""
+}
+.quote p:before {
+  content: "--"
+}
+/* end quote styling */
+
+/* h2 styling */
+h2 {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* why section styling */
+.reasons {
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  border-color: lightgrey;
+  line-height: .7;
+  min-height: 400px;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  justify-content: center;
+  font-size: 1.2em;
+  line-height: 15px;
+}
+
+.reasons ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.reasons li {
+  flex: 0 0 17em;
+}
+
+.reasons img {
+  float: left;
+  margin: 0 10px 0 0;
+  height: 100px;
+  width: 100px;
+}
+/* end why section styling */
+
+/* team section styling */
+.team {
+  display: grid;
+  border-top: solid 2px;
+  border-color: lightgrey;
+
+}
+
+.team ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 5.5em;
+}
+
+.team img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+
+}
+
+.team span {
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+
+.team li {
+  margin: 3em;
+}
+/* end team section styling */
+
+/* sponsors styling */
+.sponsors {
+  border-top: solid 2px;
+  border-color: lightgrey;
+  padding-bottom: 40px;
+}
+
+.sponsors ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsors ul li {
+  margin: 0 10px 10px 10px;
+}
+/* end sponsors styling */
+
+
+/* footer styling */
+.footer {
+  border-top: solid 2px;
+  border-color: lightgrey;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.footer div {
+  margin: 1.5em 5em 0 5em;
+  /* margin-left: 5em;
+  margin-right: 5em; */
+}
+
+.footer ul {
+  text-align: left;
+  padding: 0;
+}
+/* end footer styling */
