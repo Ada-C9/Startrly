@@ -1,0 +1,157 @@
+/* flexbox on unordered list */
+
+body {
+  display: grid;
+  /* grid-template: 100px 500px / 200px 100px 50%; */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  font-family: 'Playfair+Display', sans-serif;
+}
+
+.topish {
+  background-color: lightgreen;
+  padding: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* align-content: center; */
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  /* align-items: flex-start;
+  vertical-align: top; */
+}
+
+.start { /* nav bar */
+  margin-right: auto
+}
+
+.about { /* nav bar */
+  margin-left: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header  h1:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: auto; */
+  padding-bottom: 2em;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.header sub {
+  font-size: 1.1em;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+/* should this be a button? */
+.header a {
+  position: block;
+  background-color: #FFF8DC;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  align-items: center;
+  /* margin: 0 35% */
+}
+
+body div section {
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  grid-column-start: 2;
+  grid-row-start: 3 / span 2;
+  padding: 1em;
+}
+
+.quoteish {
+  border-top: solid;
+  border-bottom: solid;
+  padding: 20px;
+}
+
+#signature {
+  text-align: right;
+  font-style: italic;
+}
+
+/* li img {float left on image, margin-right: 10px} */
+.whys {
+  list-style-type: none;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ------Meet the team------------------ */
+.meet-us{  /* not rlly doing anything now */
+  padding: 1rem;
+}
+
+img[src*="placebear"] {
+  border-radius: 50% 50% 50% 50%;
+}
+
+.meet-us ul div li p span {
+  position: inline-block;
+}
+
+.meet-3 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* grid-column: 1 / span 3;
+  grid-row: 1; */
+}
+
+.meet-2 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: baseline;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  /* align-content: space-between; */
+}
+
+.endish {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  border-top: solid;
+}
+
+.endish div ul {
+  list-style-type: none;
+}
