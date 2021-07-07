@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');/* *{
+  border-style: dotted;
+  border-width: 1px;
+  border-color: red;
+  } */
+
+  /* navigation */
+  .navigation-list{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .navigation-list{
+    display:grid;
+    grid-template-columns: 5fr 2fr 2fr;
+    /* use google font */
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .nav{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+  /* get rid of bullet list */
+  section ul{
+    list-style: none;
+    padding: 0px;
+  }
+
+  /* make border with padding after each section */
+  section{
+    padding: 50px;
+    border-bottom: .5px solid black;
+  }
+
+  /* get rid of bullet list in navigation toolbar */
+  nav ul{
+    list-style: none;
+    padding-left: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  /* make list in line, and flexible to adjustments */
+  nav li{
+    display:inline-block;
+    justify-content:flex-start;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav li:hover{
+    background-color: lavender;
+  }
+
+  /* make intro into a flexible column, and center it */
+  .intro{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: lavender;
+    line-height: 30px;
+  }
+
+  .intro sub{
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    line-height: 30px;
+    top: -0.5em;
+  }
+
+  /* create style of button */
+  .button {
+    background-color: white;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 12px;
+    line-height: 30px
+  }
+
+  /* take underline out of link text */
+  .button:link{
+    text-decoration: none;
+    color: grey;
+  }
+
+  /* make visted link look different with psuedoclass*/
+  .button:link:visited{
+    text-decoration: line-through;
+    color: black;
+    border-color: black;
+  }
+
+  /* quote italic */
+  .quote{
+    font-style: italic;
+    display: inline-block;
+    justify-content: flex-start;
+  }
+
+  /* add quotation marks */
+  section blockquote{
+    quotes: "“" "”" "‘" "’";
+  }
+
+  /* in the beginning of quote */
+  section blockquote:before{
+    content: open-quote;
+  }
+
+  /* at end of quote, close  */
+  section blockquote:after{
+    content: close-quote;
+  }
+  .quote{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* make quote name align right */
+  .quote p{
+    padding-right: 100px;
+    margin-right: 100px;
+    text-align: right;
+  }
+
+  /* add double line before name */
+  .quote p:before{
+    content: "--";
+  }
+  /* why section */
+  /* align h2 center */
+  section h2{
+    position: relative;
+    text-align: center;
+  }
+
+  .why-blocks ul{
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .why-blocks img{
+    float: left;
+  }
+
+  /* meet the team pictures section */
+  .pics{
+    padding: 5px;
+  }
+
+  .pics img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 3px;
+    border:1px solid grey;
+    filter: grayscale(100%);
+    justify-content: center;
+    text-align: left;
+  }
+
+  .pics li span{
+    text-align: center;
+    display:block;
+    line-height: 25px;
+  }
+
+  #container2{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "kari kari dan dan chris chris"
+    ".. charles charles dee dee ..";
+    align-content: center;
+  }
+
+  .kari{
+    grid-area: kari;
+  }
+
+  .dan {
+    grid-area: dan;
+  }
+
+  .chris {
+    grid-area: chris;
+  }
+
+  .charles {
+    grid-area: charles;
+  }
+
+  .dee{
+    grid-area: dee;
+  }
+
+  /* sponsor section */
+  .sponsor-img {
+    display: inline-block;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .sponsor-img{
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .sponsor-img li{
+    justify-content: center;
+    display:grid;
+  }
+
+  /* footer section */
+  #footer-box{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .box1{
+    width: 15%;
+    height: 200px;
+    float: left;
+  }
+
+  .box2{
+    margin-left: 15%;
+    height: 200px;
+  }
